@@ -1,0 +1,30 @@
+```{r abbreviations, echo=FALSE}
+abbreviations <- readr::read_delim(col_names = FALSE, delim = ";", trim_ws = TRUE, file = "
+  ACEi; Angiotensin-converting enzyme inhibitor
+  ARB; Angiotensin receptor blocker
+  BB; Beta blocker
+  CCB; Calcium channel blocker
+  CDM; Common data model
+  dCCB; Dihydropyridine calcium channel blocker
+  HTN; Hypertension
+  LEGEND; Large-scale Evidence Generation and Evaluation across a Network of Databases
+  CDM; Common data model
+  MACE; Major adverse cardiovascular event
+  MDRR; Minimum detectable risk ratio
+  OHDSI; Observational Health Data Science and Informatics
+  OMOP; Observational Medical Outcomes Partnership
+  PS; Propensity score
+  RAS; Renin-angiotensin system
+  RCT; Randomized controlled trial
+  THZ; Thiazide or thiazide-like diuretics
+")
+
+tab <- kable(abbreviations, col.names = NULL, linesep = "", booktabs = TRUE)
+
+if (knitr::is_latex_output()) {
+  tab %>% kable_styling(latex_options = c("striped", "hold_position"), 
+                        font_size = latex_table_font_size)
+} else {
+  tab %>% kable_styling(bootstrap_options = "striped")
+}
+```
