@@ -1,0 +1,27 @@
+**Background and Significance**: Hypertension is a major cause of morbidity and mortality globally and is associated with an elevated risk of cardiovascular events. Recommended anti-hypertensive agents can be applied to patients as a single agent (monotherapy) or in combination. In the case of combination, initial combination strategy can be considered, or stepped care strategy using a monotherapy followed by adding other agents use can be considered. 
+
+Many patients are unable to reach their target blood pressure with a monotherapy, therefore, they often use two or more medications in combination. Recent European hypertension guidelines recommend initial combination treatment for general patients with hypertension; however, the US guidelines maintain a recommendation of stepped care for most patients with uncontrolled blood pressure. Our team has already generated large-scale evidence comparing the effectiveness of each monotherapy and initial combination therapy for hypertension. Now, we will explore how the choice of step therapy medication affects patients’ cardiovascular and safety outcomes.
+
+
+**Study Aims**: To determine real-world comparative effectiveness and safety of stepped care strategy of hypertension using health information encompassing millions of patients with hypertension, with a focus on individual at comorbidity risk and other key subgroups for treatment heterogeneity.
+
+**Study Description**: We will conduct large-scale, systematic, observational studies to make pairwise comparisons of all stepped care regimens at the drug-, class- and population subgroup-level within our proposed Large-Scale Evidence Generations Across a Network of Database for Hypertension Stepped Care (LEGEND-HTNStepCare) initiative. LEGEND-HTNStepCare will leverage the Observational Health Data Sciences and Informatics (OHDSI) Community that provides access to a standing global network of administrative claims and electronic health record (EHR) data sources. LEGEND-HTNStepCare will study: 
+
+* **Population**: Adult, hypertension patients who newly added a secondary antihypertensive agent for their uncontrolled blood pressure by monotherapy
+
+* **Comparators**:
+  - RAS agents: Benazepril, Captopril, Enalapril, Fosinopril, Lisinopril, Moexipril, Perindopril, Quinapril, Ramipril, Trandolapril, Azilsartan, Candesartan, Eprosartan, Irbesartan, Losartan, Olmesartan, Telmisartan, Valsartan
+  - THZ: Chlorthalidone, Hydrochlorothiazide, Indapamide, Metolazone
+  - CCB: Amlodipine, Felodipine, Isradipine, Nicardipine, Nifedipine, Nisoldipine, Diltiazem, Verapamil
+  - BB: Atenolol, Acebutolol, Betaxolol, Bisoprolol, Carvedilol, Labetalol, Metoprolol, Nadolol, Nebivolol, Penbutolol, Pindolol, Propranolol
+
+* **Outcomes**:
+  - Primary: 3- and 4-point major adverse cardiovascular events
+  - Secondary effectiveness: Acute myocardial infarction, hospitalization with heart failure, revascularization, stroke, sudden cardiac death
+  - Secondary safety: Abdominal pain, Abnormal weight gain, Abnormal weight loss, Acute pancreatitis, Acute renal failure, All-cause mortality, Angioedema, Anaphylactic reaction, Anemia, Anxiety, Bone fracture, Bradycardia, Cardiac arrhythmia, Chest pain or angina, Chronic kidney disease, Cough, Diarrhea, Dementia, Depression, Diarrhea, End stage renal disease, Fall, Gastrointestinal bleeding, Genitourinary infection, Gout, Headache, Hepatic failure, Hyperkalemia, Hypokalemia, Hyponatremia, Hypomagnesemia, Hypotension, Impotence, Joint pain, Malignant neoplasm, Measured renal dysfunction, Nausea, Neutropenia or agranulocytosis, Peripheral edema, Photosensitivity, Rash, Rhabdomyolysis, Syncope, Transient ischemic attack, Thrombocytopenia, Type 2 diabetes, Unstable angina, Vasculitis, Venous thromboembolism, Vertigo, Vomiting
+  
+For each data source and comparison, LEGEND-HTNStepCare will employ a state-of-the-art design:
+
+* **Design**: Observational: active-comparator, new-user cohort study
+
+Our systematic framework will address residual confounding, publication bias and $p$-hacking using data-driven, large-scale propensity adjustment for measured confounding, a large set of negative control outcome experiments to address unmeasured and systematic bias, prespecification and full disclosure of hypotheses tested and their results. These approaches capitalize on mature OHDSI open source resources and a large body of clinical and quantitative research that the LEGEND-HTNStepCare investigators originated and continue to drive. Finally, LEGEND-HTNStepCare is dedicated to open science and transparency and will publicly share all our analytic code from reproducible cohort definitions through turn-key software, enabling other research groups to leverage our methods, data, and results in order to verify and extend our findings.
