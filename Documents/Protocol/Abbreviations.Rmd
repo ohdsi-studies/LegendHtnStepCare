@@ -17,7 +17,7 @@ abbreviations <- readr::read_delim(col_names = FALSE, delim = ";", trim_ws = TRU
   RAS; Renin-angiotensin system
   RCT; Randomized controlled trial
   THZ; Thiazide or thiazide-like diuretics
-")
+", show_col_types = FALSE)
 
 tab <- kable(abbreviations, col.names = NULL, linesep = "", booktabs = TRUE)
 
