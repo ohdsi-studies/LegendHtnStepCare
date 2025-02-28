@@ -58,7 +58,7 @@ csl: bmj.csl
 ---
 
 ```{r setup, include=FALSE}
-library(LegendHtnStepCare)
+# library(LegendHtnStepCare)
 knitr::opts_chunk$set(echo = TRUE, warning=FALSE)
 options(kableExtra.latex.load_packages = FALSE)
 library(kableExtra)
@@ -114,7 +114,7 @@ parties <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE, file
   Harlan M. Krumholz; Department of Internal Medicine, Yale University, New Haven, CT, USA
   Marc A. Suchard; Department of Biostatistics, University of California, Los Angeles, Los Angeles, CA, USA
   Yuan Lu *; Department of Internal Medicine, Yale University, New Haven, CT, USA
-")
+", show_col_types = FALSE)
 
 tab <- kable(parties, booktabs = TRUE, linesep = "") %>%
   column_spec(1, width = "10em") %>%
@@ -149,7 +149,7 @@ if (knitr::is_latex_output()) {
 amendments <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE, file = "
   Number; Date; Section of study protocol; Amendment or update; Reason
   1; 14-Apr-2024; All; Update; Initial draft
-")
+", show_col_types = FALSE)
 
 tab <- kable(amendments, booktabs = TRUE, linesep = "")
 
@@ -171,7 +171,7 @@ dates <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE, file =
   Start of analysis; 
   End of analysis;
   Results presentation;
-")
+", show_col_types = FALSE)
 
 tab <- kable(dates, booktabs = TRUE, linesep = "")
 
@@ -197,5 +197,6 @@ if (knitr::is_latex_output()) {
 
 # (APPENDIX) Appendix {-}
 
-```{r child = "Appendix.Rmd"}
-```
+(This section has been intentionally left blank.)
+
+# Trigger push
