@@ -123,8 +123,8 @@ data_sources <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE,
 tab <- kable(data_sources, booktabs = TRUE, linesep = "",
       caption = "Committed LEGEND-HtnStepCare data sources and the populations they cover.") %>%
   kable_styling(bootstrap_options = "striped", latex_options = "striped") %>%
-  pack_rows("Administrative claims", 1, 3, latex_align = "c", indent = FALSE) %>%
-  pack_rows("Electronic health records (EHRs)", 4, 5, latex_align = "c", indent = FALSE)
+  # pack_rows("Administrative claims", 1, 3, latex_align = "c", indent = FALSE) %>%
+  pack_rows("Electronic health records (EHRs)", 1, 5, latex_align = "c", indent = FALSE)
 
 if (knitr::is_latex_output()) {
   tab %>%
@@ -349,8 +349,8 @@ We will prefer stratification over matching if both sufficiently balance patient
 We will execute each comparison using three different TAR definitions, reflecting different and important causal contrasts:
 
 * Intent-to-treat (TAR: index + 1 → end of observation) captures both direct treatment effects and (long-term) behavioral/treatment changes that initial assignment triggers [@Hernan2012-kz];
-* On-treatment-1 (TAR: index + 1 → treatment discontinuation) is more patient-centered [@Murray2018-zf] and captures direct treatment effect while allowing for escalation with additional T2DM agents; and
-* On-treatment-2 (TAR: index + 1 → discontinuation or escalation with T2DM agents) carries the least possible confounding with other concurrent T2DM agents.
+* On-treatment-1 (TAR: index + 1 → treatment discontinuation) is more patient-centered [@Murray2018-zf] and captures direct treatment effect while allowing for escalation with additional antihypertensive agents; and
+* On-treatment-2 (TAR: index + 1 → discontinuation or escalation with T2DM agents) carries the least possible confounding with other concurrent antihypertensive agents.
 
 Our “on-treatment” is often called “per-protocol”. Systematically executing with multiple causal contrasts enables us to identify potential biases that missing prescription data, treatment escalation and behavioral changes introduce, while preserving the ease of intent-to-treat interpretation and power if the data demonstrate them as unbiased. 
 Appendix A.3 reports the modified cohort exit rule for the on-treatment-2 TAR.
@@ -392,7 +392,7 @@ Blinded to effect estimates, investigators and stakeholders will evaluate extens
 These diagnostics will include
 
 1. Minimum detectable risk ratio (MDRR) as a typical proxy for power,
-2. Preference score distributions to evaluate empirical equipoise10 and population generalizability,
+2. Preference score distributions to evaluate empirical equipoise [@Walker2013-za] and population generalizability,
 3. Extensive patient characteristics to evaluate cohort balance before and after PS-adjustment,
 4. Negative control calibration plots to assess residual bias, and
 5. Kaplan-Meier plots to examine hazard ratio proportionality assumptions.
@@ -434,12 +434,12 @@ LEGEND-HTNStepCare does not involve human subject research.
 The project does, however, use human data collected during routine healthcare provision.
 Most often the data are de-identified within data source.
 All data partners executing the LEGEND-T2DM studies within their data sources will have received institutional review board (IRB) approval or waiver for participation in accordance to their institutional governance prior to execution (see Table \@ref(tab:irb)).
-LEGEND-T2DM executes across a federated and distributed data network, where analysis code is sent to participating data partners and only aggregate summary statistics are returned, with no sharing of patient-level data between organizations.
+LEGEND-HTNStepCare executes across a federated and distributed data network, where analysis code is sent to participating data partners and only aggregate summary statistics are returned, with no sharing of patient-level data between organizations.
 
 ```{r irb, echo=FALSE}
 data_sources <- readr::read_delim(col_names = TRUE, delim = "&", trim_ws = TRUE, file = "
 Data source & Statement
-Yale New Haven Health System (YNHHS) & Use of the YNHHS EHR data source was approved by the Yale University Institutional Review Board as an OHDSI network study (IRB\\# pending).
+Yale New Haven Health System (YNHHS) & Use of the YNHHS EHR data source was approved by the Yale University Institutional Review Board as an OHDSI network study (IRB\\#2000026013).
 Sentara Healthcare System (Sentara) & Use of the Sentara EHR data source was approved by the Senatara Health Institutional Review Board as an OHDSI network study (IRB\\# pending).
 Department of Veterans Affairs (VA) & Use of the VA EHR data source was approved by the Department of Veterans Affairs Central Institutional Review Board and was determined to meet the criteria for exemption under Exemption category4(3) and approved the request for Waiver of HIPAA Authorization (IRB\\# pending).
 
@@ -490,11 +490,11 @@ Open access to this app will be through a general public facing LEGEND-HtnStepCa
 
 ## Scientific meetings and publications
 
-We will deliver multiple presentations annually at scientific venues including the annual meetings of the American Diabetes Association, American College of Cardiology, American Heart Association and American Medical Informatics Association.
+We will deliver multiple presentations annually at scientific venues including the annual meetings of the American College of Cardiology, American Heart Association and American Medical Informatics Association.
 We will also prepare multiple scientific publications for clinical, informatics and statistical journals.
 
 ## General public
 
 We believe in sharing our findings that will guide clinical care with the general public.
-LEGEND-HtnStepCare will use social-media (Twitter) to facilitate this.
-With dedicated support from the OHDSI communications specialist, we will deliver regular press releases at key project stages, distributed via the extensive media networks of UCLA, Columbia and Yale.
+LEGEND-HtnStepCare will use social-media (e.g., X and LinkedIn) to facilitate this.
+With dedicated support from the OHDSI communications specialist, we will deliver regular press releases at key project stages, distributed via the extensive media networks of Yale, UCLA, and Columbia.
