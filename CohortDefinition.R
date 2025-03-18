@@ -10,7 +10,7 @@ library(Capr)
 library(CirceR)
 library(testthat)
 
-workDir = file.path(getwd(), 'LegendHtnStepCare')
+workDir = file.path(getwd())
 
 ## Create a function to generate cohort definition
 
@@ -150,16 +150,14 @@ createCohortDefinition <- function(cs1, cs2){
 }
 
 ## Define concepts for each antihypertensive drug class
-conceptDefinition = list(c(1307863,1328165),
-                         c(1318137,1318853,1319133,1319880,1326012,1332418,1353776,
-                           19004539,19015802,19020061,19071995,19089969,19102106,19113063),
-                         c(1335471, 1340128, 19050216, 1341927, 1363749, 19122327, 1308216,
-                           1310756, 1373225, 1331235, 1334456, 1342439, 19102107),
-                         c(1351557, 1346686, 1347384, 1367500, 40226742, 1317640, 1308842, 40235485),
-                         c(1395058, 974166, 978555, 907013, 19010493),
-                         c(950370,1307046,1314002,1314577,1319998,1322081,1327978,1338005,
-                           1345858,1346823,1353766,1386957,19024904,19049145,19063575))
-names(conceptDefinition) = c('ndCCB', 'dCCB','ACEI', 'ARB', 'Thiazide', 'BB')
+conceptDefinition = list(c(1335471,1340128,1341927,1363749,1308216,1310756,1373225,1331235,1334456,1342439),
+                         c(1351557,1346686,1347384,1367500,40226742,1317640,1308842,40235485),
+                         c(1318137,1318853,1319880,1326012,1332418,1353776),
+                         c(1307863,1328165),
+                         c(1395058,974166,978555,907013),
+                         c(1307046,1314002,1314577,1319998,1322081,1327978,1338005,
+                           1345858,1346823,1353766,1386957, 1313200))
+names(conceptDefinition) = c('ACEI','ARB','dCCB','ndCCB','Thiazide','BB')
 
 
 ## Create multiple cohorts using the function and concept sets
@@ -188,4 +186,4 @@ colnames(cohortDefinition) = c('cohortId', 'cohortName', 'json', 'sql')
 
 ## Save the result
 
-write.csv(cohortDefinition, file.path(workDir, 'cohortDefinition.csv'), row.names = F)
+write.csv(cohortDefinition, file.path(workDir, '/inst/cohortDefinition.csv'), row.names = F)
