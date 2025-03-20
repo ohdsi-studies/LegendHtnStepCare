@@ -185,6 +185,33 @@ for(i in 1:nrow(cohortDefinition)){
 cohortDefinition = cohortDefinition %>% select(-First, -Second)
 colnames(cohortDefinition) = c('cohortId', 'cohortName', 'json', 'sql')
 
-## Save the result
 
-write.csv(cohortDefinition, file.path(workDir, '/inst/cohortDefinition.csv'), row.names = F)
+## Optional -- add concept names using voca tables in the database
+  connectionDetails <- createConnectionDetails(dbms = 'my_dbms',
+                                               server = 'my_server')
+  
+  connection = connect(connectionDetails)
+  cdm_database_schema = 'my_cdm'
+
+  
+  for (i in 1:nrow(cohortDefinition)){
+    cohortDefinitionJson = cohortDefinition$json[i] %>% jsonlite::fromJSON()
+    for(j in 1:length(cohortDefinitionJson$ConceptSets$expression$items)){
+      sql = 'select concept_id, concept_name, concept_code, domain_id, vocabulary_id, concept_class_id, standard_concept, invalid_reason from @vocabulary_database_schema.concept where concept_id in (@concept_ids) order by concept_id'
+      sql = SqlRender::render(sql, 
+                              vocabulary_database_schema = cdm_database_schema,
+                              concept_ids = cohortDefinitionJson$ConceptSets$expression$items[[j]]$concept$CONCEPT_ID)
+      
+      conceptName = querySql(connection, sql, snakeCaseToCamelCase = F)
+      cohortDefinitionJson$ConceptSets$expression$items[[j]]$concept = merge(cohortDefinitionJson$ConceptSets$expression$items[[j]]$concept %>% select(CONCEPT_ID), conceptName, by = 'CONCEPT_ID', all.x = T)
+    }
+    cohortDefinition$json[i] = jsonlite::toJSON(cohortDefinitionJson, pretty = T, auto_unbox = T)
+  }
+    
+## Save the result
+write.csv(cohortDefinition, file.path(workDir, '/inst/cohort/cohortDefinition.csv'), row.names = F)
+  
+  
+### Age groups
+### Sex groups
+### 
