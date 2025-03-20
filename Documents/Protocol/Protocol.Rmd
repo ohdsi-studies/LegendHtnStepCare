@@ -1,6 +1,6 @@
 ---
 title: "| RESEARCH PROTOCOL\n| \n| Large-scale evidence generation and evaluation
-  across a network of databases for hypertension stepped-care treatment\n"
+  across a network of databases for hypertension stepped-care treatment\n | (LEGEND-HtnStepCare) \n|"
 fontsize: 12pt
 geometry: margin=1in
 output:
@@ -58,7 +58,7 @@ csl: bmj.csl
 ---
 
 ```{r setup, include=FALSE}
-# library(LegendHtnStepCare)
+library(LegendHtnStepCare)
 knitr::opts_chunk$set(echo = TRUE, warning=FALSE)
 options(kableExtra.latex.load_packages = FALSE)
 library(kableExtra)

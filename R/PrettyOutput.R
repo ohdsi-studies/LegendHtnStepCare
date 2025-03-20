@@ -1,6 +1,6 @@
 # Copyright 2021 Observational Health Data Sciences and Informatics
 #
-# This file is part of LegendT2dm
+# This file is part of LegendHtnStepCare
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -155,6 +155,30 @@ printCohortDefinition <- function(info) {
   printCohortDefinitionFromNameAndJson(info$name, json)
 }
 
+#' Print primary criteria
+#'
+#' @description
+#' Outputs primary criteria into human-readable \code{markdown}
+#'
+#' @param obj                   Cohort object outputted from \code{CirceR} to be printed
+#'                              in which case \code{json} is used.
+#' @param removeDescription           Currently not used (TODO fix)
+#'
+#' @export
+printPrimaryCriteria <- function(obj, removeDescription = FALSE) {
+  
+  markdown <- CirceR::cohortPrintFriendly(obj)
+  markdown <- sub(".*### Cohort Entry Events", "", markdown)
+  markdown <- sub("### Inclusion Criteria.*", "", markdown)
+  markdown <- gsub("### \\d+.", "##", markdown)
+  
+  rows <- unlist(strsplit(markdown, "\\r\\n"))
+  rows <- gsub("^   ", "", rows)
+  markdown <- paste(rows, collapse = "\n")
+  
+  writeLines(markdown)
+}
+
 #' Print inclusion criteria
 #'
 #' @description
@@ -172,11 +196,11 @@ printInclusionCriteria <- function(obj, removeDescription = FALSE) {
   markdown <- sub("### Cohort Exit.*", "", markdown)
   markdown <- gsub("### \\d+.", "##", markdown)
   markdown <- gsub("criteria:\\r\\n ", "criteria:\\\r\\\n\\\r\\\n ", markdown)
-
+  
   rows <- unlist(strsplit(markdown, "\\r\\n"))
   rows <- gsub("^   ", "", rows)
   markdown <- paste(rows, collapse = "\n")
-
+  
   writeLines(markdown)
 }
 
