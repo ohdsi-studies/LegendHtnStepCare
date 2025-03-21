@@ -194,7 +194,7 @@ printInclusionCriteria <- function(obj, removeDescription = FALSE) {
   markdown <- CirceR::cohortPrintFriendly(obj)
   markdown <- sub(".*### Inclusion Criteria", "", markdown)
   markdown <- sub("### Cohort Exit.*", "", markdown)
-  markdown <- gsub("### \\d+.", "##", markdown)
+  markdown <- gsub("#### \\d+.", "", markdown)
   markdown <- gsub("criteria:\\r\\n ", "criteria:\\\r\\\n\\\r\\\n ", markdown)
   
   rows <- unlist(strsplit(markdown, "\\r\\n"))

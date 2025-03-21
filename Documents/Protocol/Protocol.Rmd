@@ -1,6 +1,6 @@
 ---
 title: "| RESEARCH PROTOCOL\n| \n| Large-scale evidence generation and evaluation
-  across a network of databases for hypertension stepped-care treatment\n | (LEGEND-HtnStepCare) \n|"
+  across a network of databases for hypertension stepped-care treatment\n (LEGEND-HtnStepCare) \n"
 fontsize: 12pt
 geometry: margin=1in
 output:

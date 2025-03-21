@@ -3,14 +3,21 @@
 ```{r base-cohort, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 allCohorts <- read.csv(system.file("cohorts", "cohortDefinition.csv", package = "LegendHtnStepCare"))
 baseCohortJson <- allCohorts %>% filter(cohortId == 1000001)
-baseCohort <- RJSONIO::fromJSON(baseCohortJson$json)
-baseCohortJson <- RJSONIO::toJSON(baseCohort, digits = 50)
 
-LegendHtnStepCare:::printCohortDefinitionFromNameAndJson(name = "Class-vs-Class Exposure (ACEI after Thiazide) Cohort / OT1 {#class-cohort}", json = baseCohortJson)
+LegendHtnStepCare:::printCohortDefinitionFromNameAndJson(name = "Class-vs-Class Exposure (ACEI after Thiazide) Cohort / OT1 {#class-cohort}", json = baseCohortJson$json)
+```
+
+## Escalation Exit Criteria (On-treatment 2) {#escalation-cohort}
+
+```{r escalation-cohort, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+o2Cohorts <- read.csv(system.file("cohorts", "cohortDefinitionOT2.csv", package = "LegendHtnStepCare"))
+ot2Json <- o2Cohorts %>% filter(cohortId == 2000001)
+ot2Cohort <- CirceR::cohortExpressionFromJson(ot2Json$json)
+printExitCriteria(ot2Cohort)
 ```
 
 ## Heterogenity Study Inclusion Criteria {#atlas-subgroups}
-### Younger age subgroup
+### Young age subgroup
 ```{r heterogenity-cohort1, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 youngerJson <- allCohorts %>% filter(cohortId == 1100001)
 youngerCohort <- CirceR::cohortExpressionFromJson(youngerJson$json)
@@ -24,7 +31,7 @@ middleCohort <- CirceR::cohortExpressionFromJson(middleJson$json)
 printPrimaryCriteria(middleCohort)
 ```
 
-### Older age subgroup
+### Old age subgroup
 ```{r heterogenity-cohort3, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 olderJson <- allCohorts %>% filter(cohortId == 1300001)
 olderCohort <- CirceR::cohortExpressionFromJson(olderJson$json)
@@ -45,7 +52,6 @@ maleJson <- allCohorts %>% filter(cohortId == 1400001)
 maleCohort <- CirceR::cohortExpressionFromJson(maleJson$json)
 printPrimaryCriteria(maleCohort)
 ```
-
 
 ### Black or African American subgroup
 ```{r heterogenity-cohort-race, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
