@@ -11,7 +11,8 @@ library(ShinyAppBuilder)
 library(OhdsiShinyModules)
 library(DatabaseConnector)
 
-workingDir <- getwd()
+workingDir <- file.path(getwd(), 'output')
+if(!file.exist(workingDir)) dir.create(workingDir, recursive = T)
 
 ## Please fill below with your own database information
 connectionDetails <- DatabaseConnector::createConnectionDetails(
@@ -59,11 +60,11 @@ analysisSpecifications <- Strategus::createEmptyAnalysisSpecificiations() %>%
 
 ParallelLogger::saveSettingsToJson(
   analysisSpecifications,
-  file.path(workingDir, 'inst', 'studySpecification.json')
+  file.path(workingDir, 'studySpecification.json')
 )
 
 analysisSpecifications <- ParallelLogger::loadSettingsFromJson(
-  file.path(workingDir, 'inst','studySpecification.json')
+  file.path(workingDir, 'studySpecification.json')
 )
 
 
@@ -94,7 +95,7 @@ resultsConnectionDetails <- DatabaseConnector::createConnectionDetails(
 )
 
 analysisSpecifications <- ParallelLogger::loadSettingsFromJson(
-  file.path(workingDir, 'inst', 'studySpecification.json')
+  file.path(workingDir, 'studySpecification.json')
 )
 
 resultsDataModelSettings <- Strategus::createResultsDataModelSettings(
