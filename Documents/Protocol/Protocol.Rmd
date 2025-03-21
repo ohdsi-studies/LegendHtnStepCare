@@ -1,6 +1,6 @@
 ---
 title: "| RESEARCH PROTOCOL\n| \n| Large-scale evidence generation and evaluation
-  across a network of databases for hypertension stepped-care treatment\n"
+  across a network of databases for hypertension stepped-care treatment\n (LEGEND-HtnStepCare) \n"
 fontsize: 12pt
 geometry: margin=1in
 output:
@@ -50,15 +50,15 @@ longtable: yes
 mainfont: Arial
 bibliography: Protocol.bib
 params:
-  date: '11-May-2024'
-  version: 1.1.0
+  date: '17-Mar-2025'
+  version: 0.0.2
 subtitle: 'Version: `r params$version`'
 link-citations: yes
 csl: bmj.csl
 ---
 
 ```{r setup, include=FALSE}
-# library(LegendHtnStepCare)
+library(LegendHtnStepCare)
 knitr::opts_chunk$set(echo = TRUE, warning=FALSE)
 options(kableExtra.latex.load_packages = FALSE)
 library(kableExtra)
@@ -107,13 +107,13 @@ latex_table_font_size <- 8
 ```{r parties, echo=FALSE}
 parties <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE, file = "
   Investigator; Institution/Affiliation
-  Chungsoo Kim; Department of Internal Medicine, Yale University, New Haven, CT, USA
-  Rohan Khera; Department of Internal Medicine, Yale University, New Haven, CT, USA
+  Chungsoo Kim; Section of Cardiovascular Medicine, Yale School of Medicine, New Haven, CT, USA
+  Rohan Khera; Section of Cardiovascular Medicine, Yale School of Medicine, New Haven, CT, USA
   George Hripcsak; Department of Biomedical Informatics, Columbia University, New York, NY, USA
   Patrick B. Ryan; Observational Health Data Analytics, Janssen Research and Development, Titusville, NJ, USA
-  Harlan M. Krumholz; Department of Internal Medicine, Yale University, New Haven, CT, USA
+  Harlan M. Krumholz; Section of Cardiovascular Medicine, Yale School of Medicine, New Haven, CT, USA
   Marc A. Suchard; Department of Biostatistics, University of California, Los Angeles, Los Angeles, CA, USA
-  Yuan Lu *; Department of Internal Medicine, Yale University, New Haven, CT, USA
+  Yuan Lu*; Section of Cardiovascular Medicine, Yale School of Medicine, New Haven, CT, USA
 ", show_col_types = FALSE)
 
 tab <- kable(parties, booktabs = TRUE, linesep = "") %>%
@@ -149,6 +149,7 @@ if (knitr::is_latex_output()) {
 amendments <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE, file = "
   Number; Date; Section of study protocol; Amendment or update; Reason
   1; 14-Apr-2024; All; Update; Initial draft
+  2; 15-Feb-2025; All; Update; Protocol refinement
 ", show_col_types = FALSE)
 
 tab <- kable(amendments, booktabs = TRUE, linesep = "")
@@ -165,7 +166,7 @@ if (knitr::is_latex_output()) {
 ```{r dates, echo=FALSE}
 dates <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE, file = "
   Milestone; Planned / actual date
-  Protocol online release;
+  Protocol online release; 31-Mar-2025 /
   Protocol registration; 
   Collecting data partners;
   Start of analysis; 
@@ -197,6 +198,5 @@ if (knitr::is_latex_output()) {
 
 # (APPENDIX) Appendix {-}
 
-(This section has been intentionally left blank.)
-
-# Trigger push
+```{r child = "Appendix.Rmd"}
+```

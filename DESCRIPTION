@@ -1,0 +1,10 @@
+Package: LegendHtnStepCare
+Title: LegendHtnStepCare
+Version: 0.0.0.9
+Authors@R: 
+    person("Chungsoo", "Kim", , "chungsoo@ohdsi.org", role = c("aut", "cre"))
+Description: Large-scale Evidence Generation and Evaluation across a Network of Databases for Hypertension Stepped-care Treatment.
+License: `use_mit_license()`
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2

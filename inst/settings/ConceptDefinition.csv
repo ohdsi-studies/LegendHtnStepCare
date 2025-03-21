@@ -1,0 +1,658 @@
+"CONCEPT_ID","group","CONCEPT_NAME","CONCEPT_CODE","DOMAIN_ID","VOCABULARY_ID","CONCEPT_CLASS_ID","STANDARD_CONCEPT","INVALID_REASON"
+314666,"Old MI","Old myocardial infarction","1755008","Condition","SNOMED","Clinical Finding","S",NA
+315295,"Rheumatic HF","Congestive rheumatic heart failure","82523003","Condition","SNOMED","Clinical Finding","S",NA
+316139,"Heart Failure","Heart failure","84114007","Condition","SNOMED","Clinical Finding","S",NA
+320128,"Hypertension","Essential hypertension","59621000","Condition","SNOMED","Clinical Finding","S",NA
+372924,"Other Stroke","Cerebral artery occlusion","20059004","Condition","SNOMED","Clinical Finding","S",NA
+375557,"Other Stroke","Cerebral embolism","75543006","Condition","SNOMED","Clinical Finding","S",NA
+376713,"Other Stroke","Cerebral hemorrhage","274100004","Condition","SNOMED","Clinical Finding","S",NA
+432923,"Other Stroke","Subarachnoid hemorrhage","21454007","Condition","SNOMED","Clinical Finding","S",NA
+439847,"Other Stroke","Intracranial hemorrhage","1386000","Condition","SNOMED","Clinical Finding","S",NA
+441874,"Other Stroke","Cerebral thrombosis","71444005","Condition","SNOMED","Clinical Finding","S",NA
+443454,"Cerebral Infarction","Cerebral infarction","432504007","Condition","SNOMED","Clinical Finding","S",NA
+904542,"Antihypertensive","triamterene","10763","Drug","RxNorm","Ingredient","S",NA
+907013,"Antihypertensive","metolazone","6916","Drug","RxNorm","Ingredient","S",NA
+907013,"Thiazide","metolazone","6916","Drug","RxNorm","Ingredient","S",NA
+932745,"Antihypertensive","bumetanide","1808","Drug","RxNorm","Ingredient","S",NA
+942350,"Antihypertensive","torsemide","38413","Drug","RxNorm","Ingredient","S",NA
+956874,"Antihypertensive","furosemide","4603","Drug","RxNorm","Ingredient","S",NA
+970250,"Antihypertensive","spironolactone","9997","Drug","RxNorm","Ingredient","S",NA
+974166,"Antihypertensive","hydrochlorothiazide","5487","Drug","RxNorm","Ingredient","S",NA
+974166,"Thiazide","hydrochlorothiazide","5487","Drug","RxNorm","Ingredient","S",NA
+978555,"Thiazide","indapamide","5764","Drug","RxNorm","Ingredient","S",NA
+978555,"Antihypertensive","indapamide","5764","Drug","RxNorm","Ingredient","S",NA
+991382,"Antihypertensive","amiloride","644","Drug","RxNorm","Ingredient","S",NA
+1305447,"Antihypertensive","methyldopa","6876","Drug","RxNorm","Ingredient","S",NA
+1307046,"Antihypertensive","metoprolol","6918","Drug","RxNorm","Ingredient","S",NA
+1307046,"BB","metoprolol","6918","Drug","RxNorm","Ingredient","S",NA
+1307863,"Antihypertensive","verapamil","11170","Drug","RxNorm","Ingredient","S",NA
+1307863,"ndCCB","verapamil","11170","Drug","RxNorm","Ingredient","S",NA
+1308216,"ACEI","lisinopril","29046","Drug","RxNorm","Ingredient","S",NA
+1308216,"Antihypertensive","lisinopril","29046","Drug","RxNorm","Ingredient","S",NA
+1308842,"Antihypertensive","valsartan","69749","Drug","RxNorm","Ingredient","S",NA
+1308842,"ARB","valsartan","69749","Drug","RxNorm","Ingredient","S",NA
+1309068,"Antihypertensive","minoxidil","6984","Drug","RxNorm","Ingredient","S",NA
+1309799,"Antihypertensive","eplerenone","298869","Drug","RxNorm","Ingredient","S",NA
+1310756,"ACEI","moexipril","30131","Drug","RxNorm","Ingredient","S",NA
+1310756,"Antihypertensive","moexipril","30131","Drug","RxNorm","Ingredient","S",NA
+1313200,"Antihypertensive","nadolol","7226","Drug","RxNorm","Ingredient","S",NA
+1313200,"BB","nadolol","7226","Drug","RxNorm","Ingredient","S",NA
+1314002,"BB","atenolol","1202","Drug","RxNorm","Ingredient","S",NA
+1314002,"Antihypertensive","atenolol","1202","Drug","RxNorm","Ingredient","S",NA
+1314577,"Antihypertensive","nebivolol","31555","Drug","RxNorm","Ingredient","S",NA
+1314577,"BB","nebivolol","31555","Drug","RxNorm","Ingredient","S",NA
+1317640,"Antihypertensive","telmisartan","73494","Drug","RxNorm","Ingredient","S",NA
+1317640,"ARB","telmisartan","73494","Drug","RxNorm","Ingredient","S",NA
+1317967,"Antihypertensive","aliskiren","325646","Drug","RxNorm","Ingredient","S",NA
+1318137,"dCCB","nicardipine","7396","Drug","RxNorm","Ingredient","S",NA
+1318137,"Antihypertensive","nicardipine","7396","Drug","RxNorm","Ingredient","S",NA
+1318853,"Antihypertensive","nifedipine","7417","Drug","RxNorm","Ingredient","S",NA
+1318853,"dCCB","nifedipine","7417","Drug","RxNorm","Ingredient","S",NA
+1319880,"Antihypertensive","nisoldipine","7435","Drug","RxNorm","Ingredient","S",NA
+1319880,"dCCB","nisoldipine","7435","Drug","RxNorm","Ingredient","S",NA
+1319998,"Antihypertensive","acebutolol","149","Drug","RxNorm","Ingredient","S",NA
+1319998,"BB","acebutolol","149","Drug","RxNorm","Ingredient","S",NA
+1322081,"Antihypertensive","betaxolol","1520","Drug","RxNorm","Ingredient","S",NA
+1322081,"BB","betaxolol","1520","Drug","RxNorm","Ingredient","S",NA
+1326012,"dCCB","isradipine","33910","Drug","RxNorm","Ingredient","S",NA
+1326012,"Antihypertensive","isradipine","33910","Drug","RxNorm","Ingredient","S",NA
+1327978,"BB","penbutolol","7973","Drug","RxNorm","Ingredient","S",NA
+1327978,"Antihypertensive","penbutolol","7973","Drug","RxNorm","Ingredient","S",NA
+1328165,"Antihypertensive","diltiazem","3443","Drug","RxNorm","Ingredient","S",NA
+1328165,"ndCCB","diltiazem","3443","Drug","RxNorm","Ingredient","S",NA
+1331235,"Antihypertensive","quinapril","35208","Drug","RxNorm","Ingredient","S",NA
+1331235,"ACEI","quinapril","35208","Drug","RxNorm","Ingredient","S",NA
+1332418,"dCCB","amlodipine","17767","Drug","RxNorm","Ingredient","S",NA
+1332418,"Antihypertensive","amlodipine","17767","Drug","RxNorm","Ingredient","S",NA
+1334456,"Antihypertensive","ramipril","35296","Drug","RxNorm","Ingredient","S",NA
+1334456,"ACEI","ramipril","35296","Drug","RxNorm","Ingredient","S",NA
+1335471,"ACEI","benazepril","18867","Drug","RxNorm","Ingredient","S",NA
+1335471,"Antihypertensive","benazepril","18867","Drug","RxNorm","Ingredient","S",NA
+1338005,"Antihypertensive","bisoprolol","19484","Drug","RxNorm","Ingredient","S",NA
+1338005,"BB","bisoprolol","19484","Drug","RxNorm","Ingredient","S",NA
+1340128,"Antihypertensive","captopril","1998","Drug","RxNorm","Ingredient","S",NA
+1340128,"ACEI","captopril","1998","Drug","RxNorm","Ingredient","S",NA
+1341238,"Antihypertensive","terazosin","37798","Drug","RxNorm","Ingredient","S",NA
+1341927,"ACEI","enalapril","3827","Drug","RxNorm","Ingredient","S",NA
+1341927,"Antihypertensive","enalapril","3827","Drug","RxNorm","Ingredient","S",NA
+1342439,"ACEI","trandolapril","38454","Drug","RxNorm","Ingredient","S",NA
+1342439,"Antihypertensive","trandolapril","38454","Drug","RxNorm","Ingredient","S",NA
+1344965,"Antihypertensive","guanfacine","40114","Drug","RxNorm","Ingredient","S",NA
+1345858,"Antihypertensive","pindolol","8332","Drug","RxNorm","Ingredient","S",NA
+1345858,"BB","pindolol","8332","Drug","RxNorm","Ingredient","S",NA
+1346686,"ARB","eprosartan","83515","Drug","RxNorm","Ingredient","S",NA
+1346686,"Antihypertensive","eprosartan","83515","Drug","RxNorm","Ingredient","S",NA
+1346823,"BB","carvedilol","20352","Drug","RxNorm","Ingredient","S",NA
+1346823,"Antihypertensive","carvedilol","20352","Drug","RxNorm","Ingredient","S",NA
+1347384,"Antihypertensive","irbesartan","83818","Drug","RxNorm","Ingredient","S",NA
+1347384,"ARB","irbesartan","83818","Drug","RxNorm","Ingredient","S",NA
+1350489,"Antihypertensive","prazosin","8629","Drug","RxNorm","Ingredient","S",NA
+1351557,"ARB","candesartan","214354","Drug","RxNorm","Ingredient","S",NA
+1351557,"Antihypertensive","candesartan","214354","Drug","RxNorm","Ingredient","S",NA
+1353766,"BB","propranolol","8787","Drug","RxNorm","Ingredient","S",NA
+1353766,"Antihypertensive","propranolol","8787","Drug","RxNorm","Ingredient","S",NA
+1353776,"Antihypertensive","felodipine","4316","Drug","RxNorm","Ingredient","S",NA
+1353776,"dCCB","felodipine","4316","Drug","RxNorm","Ingredient","S",NA
+1363053,"Antihypertensive","doxazosin","49276","Drug","RxNorm","Ingredient","S",NA
+1363749,"Antihypertensive","fosinopril","50166","Drug","RxNorm","Ingredient","S",NA
+1363749,"ACEI","fosinopril","50166","Drug","RxNorm","Ingredient","S",NA
+1367500,"Antihypertensive","losartan","52175","Drug","RxNorm","Ingredient","S",NA
+1367500,"ARB","losartan","52175","Drug","RxNorm","Ingredient","S",NA
+1373225,"ACEI","perindopril","54552","Drug","RxNorm","Ingredient","S",NA
+1373225,"Antihypertensive","perindopril","54552","Drug","RxNorm","Ingredient","S",NA
+1373928,"Antihypertensive","hydralazine","5470","Drug","RxNorm","Ingredient","S",NA
+1386957,"Antihypertensive","labetalol","6185","Drug","RxNorm","Ingredient","S",NA
+1386957,"BB","labetalol","6185","Drug","RxNorm","Ingredient","S",NA
+1395058,"Thiazide","chlorthalidone","2409","Drug","RxNorm","Ingredient","S",NA
+1395058,"Antihypertensive","chlorthalidone","2409","Drug","RxNorm","Ingredient","S",NA
+1398937,"Antihypertensive","clonidine","2599","Drug","RxNorm","Ingredient","S",NA
+1510704,"Single Pill Combination","amlodipine / celecoxib Oral Product","2047711","Drug","RxNorm","Clinical Dose Group","C",NA
+1510705,"Single Pill Combination","amlodipine / celecoxib Pill","2047712","Drug","RxNorm","Clinical Dose Group","C",NA
+2064627,"Single Pill Combination","amlodipine / chlorthalidone / telmisartan Oral Tablet","OMOP4965915","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+4034031,"Hypertension Exclude","Benign essential hypertension complicating AND/OR reason for care during pregnancy","23717007","Condition","SNOMED","Clinical Finding","S",NA
+4083723,"Hypertension Exclude","Essential hypertension complicating AND/OR reason for care during childbirth","18416000","Condition","SNOMED","Clinical Finding","S",NA
+4215640,"Hypertension Exclude","Benign essential hypertension complicating AND/OR reason for care during childbirth","71874008","Condition","SNOMED","Clinical Finding","S",NA
+4302591,"Hypertension Exclude","Essential hypertension complicating AND/OR reason for care during pregnancy","78808002","Condition","SNOMED","Clinical Finding","S",NA
+4329847,"Myocardial Infarction","Myocardial infarction","22298006","Condition","SNOMED","Clinical Finding","S",NA
+21035025,"Single Pill Combination","Amiloride / Furosemide Oral Solution","OMOP402978","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+21052206,"Single Pill Combination","Chlorothiazide / Spironolactone Oral Solution","OMOP358547","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+21071954,"Single Pill Combination","Chlorothiazide / Spironolactone Oral Capsule","OMOP358549","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+21071955,"Single Pill Combination","Chlorothiazide / Spironolactone Injectable Solution","OMOP358550","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+21130571,"Single Pill Combination","Chlorothiazide / Spironolactone Oral Suspension","OMOP358548","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+21132694,"Single Pill Combination","Atenolol / Chlorthalidone Oral Solution","OMOP395909","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+21152528,"Single Pill Combination","Atenolol / Chlorthalidone Oral Suspension","OMOP395911","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+21152932,"Single Pill Combination","Amiloride / Furosemide Oral Suspension","OMOP402980","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+35146103,"Single Pill Combination","irbesartan / Trichlormethiazide Oral Tablet","OMOP4803186","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+35150194,"Single Pill Combination","Amlodipine / irbesartan Oral Tablet","OMOP4807246","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+35406763,"Single Pill Combination","Amlodipine / Indapamide / Perindopril Delayed Release Oral Tablet","OMOP1140348","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+35408893,"Single Pill Combination","Bisoprolol / Perindopril Delayed Release Oral Tablet","OMOP1142478","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+36212160,"Single Pill Combination","betaxolol / pilocarpine Ophthalmic Product","1153805","Drug","RxNorm","Clinical Dose Group","C",NA
+36212261,"Single Pill Combination","captopril / hydrochlorothiazide Oral Product","1155750","Drug","RxNorm","Clinical Dose Group","C",NA
+36212262,"Single Pill Combination","captopril / hydrochlorothiazide Pill","1155751","Drug","RxNorm","Clinical Dose Group","C",NA
+36212293,"Single Pill Combination","chlorthalidone / clonidine Oral Product","1155783","Drug","RxNorm","Clinical Dose Group","C",NA
+36212294,"Single Pill Combination","chlorthalidone / clonidine Pill","1155784","Drug","RxNorm","Clinical Dose Group","C",NA
+36212295,"Single Pill Combination","chlorthalidone / hydralazine / oxprenolol Oral Product","1155785","Drug","RxNorm","Clinical Dose Group","C",NA
+36212296,"Single Pill Combination","chlorthalidone / hydralazine / oxprenolol Pill","1155786","Drug","RxNorm","Clinical Dose Group","C",NA
+36212297,"Single Pill Combination","chlorthalidone / metoprolol Oral Product","1155787","Drug","RxNorm","Clinical Dose Group","C",NA
+36212298,"Single Pill Combination","chlorthalidone / metoprolol Pill","1155788","Drug","RxNorm","Clinical Dose Group","C",NA
+36212299,"Single Pill Combination","chlorthalidone / oxprenolol Oral Product","1155789","Drug","RxNorm","Clinical Dose Group","C",NA
+36212300,"Single Pill Combination","chlorthalidone / oxprenolol Pill","1155790","Drug","RxNorm","Clinical Dose Group","C",NA
+36212301,"Single Pill Combination","chlorthalidone / reserpine Oral Product","1155791","Drug","RxNorm","Clinical Dose Group","C",NA
+36212302,"Single Pill Combination","chlorthalidone / reserpine Pill","1155792","Drug","RxNorm","Clinical Dose Group","C",NA
+36212303,"Single Pill Combination","chlorthalidone / triamterene Oral Product","1155793","Drug","RxNorm","Clinical Dose Group","C",NA
+36212304,"Single Pill Combination","chlorthalidone / triamterene Pill","1155794","Drug","RxNorm","Clinical Dose Group","C",NA
+36212400,"Single Pill Combination","chlorothiazide / methyldopa Oral Product","1153863","Drug","RxNorm","Clinical Dose Group","C",NA
+36212401,"Single Pill Combination","chlorothiazide / methyldopa Pill","1153864","Drug","RxNorm","Clinical Dose Group","C",NA
+36212440,"Single Pill Combination","clopamide / pindolol Oral Product","1153903","Drug","RxNorm","Clinical Dose Group","C",NA
+36212441,"Single Pill Combination","clopamide / pindolol Pill","1153904","Drug","RxNorm","Clinical Dose Group","C",NA
+36213274,"Single Pill Combination","bendroflumethiazide / clonidine Oral Product","1156019","Drug","RxNorm","Clinical Dose Group","C",NA
+36213275,"Single Pill Combination","bendroflumethiazide / clonidine Pill","1156020","Drug","RxNorm","Clinical Dose Group","C",NA
+36213278,"Single Pill Combination","bendroflumethiazide / nadolol Oral Product","1156023","Drug","RxNorm","Clinical Dose Group","C",NA
+36213279,"Single Pill Combination","bendroflumethiazide / nadolol Pill","1156024","Drug","RxNorm","Clinical Dose Group","C",NA
+36214315,"Single Pill Combination","indapamide / perindopril Oral Product","1156300","Drug","RxNorm","Clinical Dose Group","C",NA
+36214316,"Single Pill Combination","indapamide / perindopril Pill","1156301","Drug","RxNorm","Clinical Dose Group","C",NA
+36214477,"Single Pill Combination","atenolol / bendroflumethiazide Oral Product","1154366","Drug","RxNorm","Clinical Dose Group","C",NA
+36214478,"Single Pill Combination","atenolol / bendroflumethiazide Pill","1154367","Drug","RxNorm","Clinical Dose Group","C",NA
+36214479,"Single Pill Combination","atenolol / chlorthalidone / hydralazine Oral Product","1154368","Drug","RxNorm","Clinical Dose Group","C",NA
+36214480,"Single Pill Combination","atenolol / chlorthalidone / hydralazine Pill","1154369","Drug","RxNorm","Clinical Dose Group","C",NA
+36214481,"Single Pill Combination","atenolol / chlorthalidone Oral Product","1154370","Drug","RxNorm","Clinical Dose Group","C",NA
+36214482,"Single Pill Combination","atenolol / chlorthalidone Pill","1154371","Drug","RxNorm","Clinical Dose Group","C",NA
+36214483,"Single Pill Combination","atenolol / nifedipine Oral Product","1154374","Drug","RxNorm","Clinical Dose Group","C",NA
+36214484,"Single Pill Combination","atenolol / nifedipine Pill","1154375","Drug","RxNorm","Clinical Dose Group","C",NA
+36215127,"Single Pill Combination","althiazide / spironolactone Oral Product","1156535","Drug","RxNorm","Clinical Dose Group","C",NA
+36215128,"Single Pill Combination","althiazide / spironolactone Pill","1156536","Drug","RxNorm","Clinical Dose Group","C",NA
+36215209,"Single Pill Combination","dehydrosanol / triamterene Oral Product","1157731","Drug","RxNorm","Clinical Dose Group","C",NA
+36215210,"Single Pill Combination","dehydrosanol / triamterene Pill","1157732","Drug","RxNorm","Clinical Dose Group","C",NA
+36215223,"Single Pill Combination","deserpidine / hydrochlorothiazide Oral Product","1157745","Drug","RxNorm","Clinical Dose Group","C",NA
+36215224,"Single Pill Combination","deserpidine / hydrochlorothiazide Pill","1157746","Drug","RxNorm","Clinical Dose Group","C",NA
+36215393,"Single Pill Combination","candesartan / hydrochlorothiazide Oral Product","1156609","Drug","RxNorm","Clinical Dose Group","C",NA
+36215394,"Single Pill Combination","candesartan / hydrochlorothiazide Pill","1156610","Drug","RxNorm","Clinical Dose Group","C",NA
+36215416,"Single Pill Combination","cyclothiazide / triamterene Oral Product","1156637","Drug","RxNorm","Clinical Dose Group","C",NA
+36215417,"Single Pill Combination","cyclothiazide / triamterene Pill","1156638","Drug","RxNorm","Clinical Dose Group","C",NA
+36215809,"Single Pill Combination","bisoprolol / hydrochlorothiazide Oral Product","1154704","Drug","RxNorm","Clinical Dose Group","C",NA
+36215810,"Single Pill Combination","bisoprolol / hydrochlorothiazide Pill","1154705","Drug","RxNorm","Clinical Dose Group","C",NA
+36216030,"Single Pill Combination","dihydralazine / hydrochlorothiazide / reserpine Oral Product","1151524","Drug","RxNorm","Clinical Dose Group","C",NA
+36216031,"Single Pill Combination","dihydralazine / hydrochlorothiazide / reserpine Pill","1151525","Drug","RxNorm","Clinical Dose Group","C",NA
+36216034,"Single Pill Combination","dihydralazine / propranolol Oral Product","1151528","Drug","RxNorm","Clinical Dose Group","C",NA
+36216035,"Single Pill Combination","dihydralazine / propranolol Pill","1151529","Drug","RxNorm","Clinical Dose Group","C",NA
+36216161,"Single Pill Combination","amiloride / atenolol / hydrochlorothiazide Oral Product","1151590","Drug","RxNorm","Clinical Dose Group","C",NA
+36216162,"Single Pill Combination","amiloride / atenolol / hydrochlorothiazide Pill","1151591","Drug","RxNorm","Clinical Dose Group","C",NA
+36216163,"Single Pill Combination","amiloride / bendroflumethiazide Oral Product","1151592","Drug","RxNorm","Clinical Dose Group","C",NA
+36216164,"Single Pill Combination","amiloride / bendroflumethiazide Pill","1151593","Drug","RxNorm","Clinical Dose Group","C",NA
+36216165,"Single Pill Combination","amiloride / bumetanide Oral Product","1151594","Drug","RxNorm","Clinical Dose Group","C",NA
+36216166,"Single Pill Combination","amiloride / bumetanide Pill","1151595","Drug","RxNorm","Clinical Dose Group","C",NA
+36216167,"Single Pill Combination","amiloride / cyclopenthiazide Oral Product","1151596","Drug","RxNorm","Clinical Dose Group","C",NA
+36216168,"Single Pill Combination","amiloride / cyclopenthiazide Pill","1151597","Drug","RxNorm","Clinical Dose Group","C",NA
+36216169,"Single Pill Combination","amiloride / furosemide / indapamide Oral Product","1151598","Drug","RxNorm","Clinical Dose Group","C",NA
+36216170,"Single Pill Combination","amiloride / furosemide / indapamide Pill","1151599","Drug","RxNorm","Clinical Dose Group","C",NA
+36216171,"Single Pill Combination","amiloride / furosemide Oral Product","1151600","Drug","RxNorm","Clinical Dose Group","C",NA
+36216172,"Single Pill Combination","amiloride / furosemide Pill","1151601","Drug","RxNorm","Clinical Dose Group","C",NA
+36216173,"Single Pill Combination","amiloride / hydrochlorothiazide / methyldopa Oral Product","1151602","Drug","RxNorm","Clinical Dose Group","C",NA
+36216174,"Single Pill Combination","amiloride / hydrochlorothiazide / methyldopa Pill","1151603","Drug","RxNorm","Clinical Dose Group","C",NA
+36216175,"Single Pill Combination","amiloride / hydrochlorothiazide / timolol Oral Product","1151604","Drug","RxNorm","Clinical Dose Group","C",NA
+36216176,"Single Pill Combination","amiloride / hydrochlorothiazide / timolol Pill","1151605","Drug","RxNorm","Clinical Dose Group","C",NA
+36216246,"Single Pill Combination","amiloride / hydrochlorothiazide Oral Liquid Product","1151606","Drug","RxNorm","Clinical Dose Group","C",NA
+36216247,"Single Pill Combination","amiloride / hydrochlorothiazide Oral Product","1151607","Drug","RxNorm","Clinical Dose Group","C",NA
+36216248,"Single Pill Combination","amiloride / hydrochlorothiazide Pill","1151608","Drug","RxNorm","Clinical Dose Group","C",NA
+36216249,"Single Pill Combination","amiloride / metolazone Oral Product","1151609","Drug","RxNorm","Clinical Dose Group","C",NA
+36216250,"Single Pill Combination","amiloride / metolazone Pill","1151610","Drug","RxNorm","Clinical Dose Group","C",NA
+36216251,"Single Pill Combination","amiloride / trichlormethiazide Oral Product","1151611","Drug","RxNorm","Clinical Dose Group","C",NA
+36216252,"Single Pill Combination","amiloride / trichlormethiazide Pill","1151612","Drug","RxNorm","Clinical Dose Group","C",NA
+36216551,"Single Pill Combination","cilazapril / hydrochlorothiazide Oral Product","1151778","Drug","RxNorm","Clinical Dose Group","C",NA
+36216552,"Single Pill Combination","cilazapril / hydrochlorothiazide Pill","1151779","Drug","RxNorm","Clinical Dose Group","C",NA
+36216725,"Single Pill Combination","diltiazem / enalapril Oral Product","1151883","Drug","RxNorm","Clinical Dose Group","C",NA
+36216726,"Single Pill Combination","diltiazem / enalapril Pill","1151884","Drug","RxNorm","Clinical Dose Group","C",NA
+36216727,"Single Pill Combination","diltiazem / hydrochlorothiazide Oral Product","1151885","Drug","RxNorm","Clinical Dose Group","C",NA
+36216728,"Single Pill Combination","diltiazem / hydrochlorothiazide Pill","1151886","Drug","RxNorm","Clinical Dose Group","C",NA
+36216899,"Single Pill Combination","acebutolol / hydrochlorothiazide Oral Product","1153651","Drug","RxNorm","Clinical Dose Group","C",NA
+36216900,"Single Pill Combination","acebutolol / hydrochlorothiazide Pill","1153652","Drug","RxNorm","Clinical Dose Group","C",NA
+36216901,"Single Pill Combination","acebutolol / mefruside Oral Product","1153653","Drug","RxNorm","Clinical Dose Group","C",NA
+36216902,"Single Pill Combination","acebutolol / mefruside Pill","1153654","Drug","RxNorm","Clinical Dose Group","C",NA
+36216903,"Single Pill Combination","acebutolol / nifedipine Oral Product","1153655","Drug","RxNorm","Clinical Dose Group","C",NA
+36216904,"Single Pill Combination","acebutolol / nifedipine Pill","1153656","Drug","RxNorm","Clinical Dose Group","C",NA
+36217137,"Single Pill Combination","clonidine / hydrochlorothiazide / triamterene Oral Product","1153380","Drug","RxNorm","Clinical Dose Group","C",NA
+36217138,"Single Pill Combination","clonidine / hydrochlorothiazide / triamterene Pill","1153381","Drug","RxNorm","Clinical Dose Group","C",NA
+36217139,"Single Pill Combination","clonidine / cyclothiazide Oral Product","1153382","Drug","RxNorm","Clinical Dose Group","C",NA
+36217140,"Single Pill Combination","clonidine / cyclothiazide Pill","1153383","Drug","RxNorm","Clinical Dose Group","C",NA
+36217664,"Single Pill Combination","bendroflumethiazide / propranolol Oral Product","1151296","Drug","RxNorm","Clinical Dose Group","C",NA
+36217665,"Single Pill Combination","bendroflumethiazide / propranolol Pill","1151297","Drug","RxNorm","Clinical Dose Group","C",NA
+36217670,"Single Pill Combination","bendroflumethiazide / spironolactone Oral Product","1151302","Drug","RxNorm","Clinical Dose Group","C",NA
+36217671,"Single Pill Combination","bendroflumethiazide / spironolactone Pill","1151303","Drug","RxNorm","Clinical Dose Group","C",NA
+36217708,"Single Pill Combination","amlodipine / hydrochlorothiazide / olmesartan Oral Product","1152277","Drug","RxNorm","Clinical Dose Group","C",NA
+36217709,"Single Pill Combination","amlodipine / hydrochlorothiazide / olmesartan Pill","1152278","Drug","RxNorm","Clinical Dose Group","C",NA
+36217710,"Single Pill Combination","amlodipine / hydrochlorothiazide / valsartan Oral Product","1152279","Drug","RxNorm","Clinical Dose Group","C",NA
+36217711,"Single Pill Combination","amlodipine / hydrochlorothiazide / valsartan Pill","1152280","Drug","RxNorm","Clinical Dose Group","C",NA
+36217712,"Single Pill Combination","amlodipine / atorvastatin Oral Product","1152281","Drug","RxNorm","Clinical Dose Group","C",NA
+36217713,"Single Pill Combination","amlodipine / atorvastatin Pill","1152282","Drug","RxNorm","Clinical Dose Group","C",NA
+36217714,"Single Pill Combination","amlodipine / benazepril Oral Product","1152283","Drug","RxNorm","Clinical Dose Group","C",NA
+36217715,"Single Pill Combination","amlodipine / benazepril Pill","1152284","Drug","RxNorm","Clinical Dose Group","C",NA
+36217716,"Single Pill Combination","amlodipine / olmesartan Oral Product","1152285","Drug","RxNorm","Clinical Dose Group","C",NA
+36217717,"Single Pill Combination","amlodipine / olmesartan Pill","1152286","Drug","RxNorm","Clinical Dose Group","C",NA
+36217718,"Single Pill Combination","amlodipine / telmisartan Oral Product","1152287","Drug","RxNorm","Clinical Dose Group","C",NA
+36217719,"Single Pill Combination","amlodipine / telmisartan Pill","1152288","Drug","RxNorm","Clinical Dose Group","C",NA
+36217720,"Single Pill Combination","amlodipine / valsartan Oral Product","1152289","Drug","RxNorm","Clinical Dose Group","C",NA
+36217721,"Single Pill Combination","amlodipine / valsartan Pill","1152290","Drug","RxNorm","Clinical Dose Group","C",NA
+36217842,"Single Pill Combination","bumetanide / potassium chloride Oral Product","1151343","Drug","RxNorm","Clinical Dose Group","C",NA
+36217843,"Single Pill Combination","bumetanide / potassium chloride Pill","1151344","Drug","RxNorm","Clinical Dose Group","C",NA
+36217844,"Single Pill Combination","bumetanide / potassium Oral Product","1151345","Drug","RxNorm","Clinical Dose Group","C",NA
+36217845,"Single Pill Combination","bumetanide / potassium Pill","1151346","Drug","RxNorm","Clinical Dose Group","C",NA
+36218311,"Single Pill Combination","hydrochlorothiazide / mepindolol Pill","1162774","Drug","RxNorm","Clinical Dose Group","C",NA
+36218312,"Single Pill Combination","hydrochlorothiazide / moexipril Oral Product","1162775","Drug","RxNorm","Clinical Dose Group","C",NA
+36218313,"Single Pill Combination","hydrochlorothiazide / moexipril Pill","1162776","Drug","RxNorm","Clinical Dose Group","C",NA
+36218314,"Single Pill Combination","hydrochlorothiazide / olmesartan Oral Product","1162777","Drug","RxNorm","Clinical Dose Group","C",NA
+36218315,"Single Pill Combination","hydrochlorothiazide / olmesartan Pill","1162778","Drug","RxNorm","Clinical Dose Group","C",NA
+36218316,"Single Pill Combination","hydrochlorothiazide / quinapril Oral Product","1162779","Drug","RxNorm","Clinical Dose Group","C",NA
+36218317,"Single Pill Combination","hydrochlorothiazide / quinapril Pill","1162780","Drug","RxNorm","Clinical Dose Group","C",NA
+36218318,"Single Pill Combination","hydrochlorothiazide / telmisartan Oral Product","1162781","Drug","RxNorm","Clinical Dose Group","C",NA
+36218319,"Single Pill Combination","hydrochlorothiazide / telmisartan Pill","1162782","Drug","RxNorm","Clinical Dose Group","C",NA
+36218320,"Single Pill Combination","hydrochlorothiazide / valsartan Oral Product","1162783","Drug","RxNorm","Clinical Dose Group","C",NA
+36218321,"Single Pill Combination","hydrochlorothiazide / valsartan Pill","1162784","Drug","RxNorm","Clinical Dose Group","C",NA
+36218404,"Single Pill Combination","hydroflumethiazide / spironolactone Oral Product","1164019","Drug","RxNorm","Clinical Dose Group","C",NA
+36218405,"Single Pill Combination","hydroflumethiazide / spironolactone Pill","1164020","Drug","RxNorm","Clinical Dose Group","C",NA
+36218517,"Single Pill Combination","Hyzaar Oral Product","1166546","Drug","RxNorm","Branded Dose Group","C",NA
+36218518,"Single Pill Combination","Hyzaar Pill","1166549","Drug","RxNorm","Branded Dose Group","C",NA
+36218624,"Single Pill Combination","methyclothiazide / triamterene Oral Product","1162867","Drug","RxNorm","Clinical Dose Group","C",NA
+36218625,"Single Pill Combination","methyclothiazide / triamterene Pill","1162868","Drug","RxNorm","Clinical Dose Group","C",NA
+36219017,"Single Pill Combination","quinidine / verapamil Oral Product","1164182","Drug","RxNorm","Clinical Dose Group","C",NA
+36219018,"Single Pill Combination","quinidine / verapamil Pill","1164183","Drug","RxNorm","Clinical Dose Group","C",NA
+36219590,"Single Pill Combination","aliskiren / amlodipine / hydrochlorothiazide Oral Product","1164294","Drug","RxNorm","Clinical Dose Group","C",NA
+36219628,"Single Pill Combination","buthiazide / spironolactone Oral Product","1164332","Drug","RxNorm","Clinical Dose Group","C",NA
+36220155,"Single Pill Combination","piretanide / ramipril Oral Product","1163266","Drug","RxNorm","Clinical Dose Group","C",NA
+36220156,"Single Pill Combination","piretanide / ramipril Pill","1163267","Drug","RxNorm","Clinical Dose Group","C",NA
+36220835,"Single Pill Combination","hydroxyzine / labetalol Oral Product","1164636","Drug","RxNorm","Clinical Dose Group","C",NA
+36220836,"Single Pill Combination","hydroxyzine / labetalol Pill","1164637","Drug","RxNorm","Clinical Dose Group","C",NA
+36221077,"Single Pill Combination","metolazone / triamterene Oral Product","1163516","Drug","RxNorm","Clinical Dose Group","C",NA
+36221078,"Single Pill Combination","metolazone / triamterene Pill","1163517","Drug","RxNorm","Clinical Dose Group","C",NA
+36221081,"Single Pill Combination","metoprolol / nifedipine Oral Product","1163520","Drug","RxNorm","Clinical Dose Group","C",NA
+36221082,"Single Pill Combination","metoprolol / nifedipine Pill","1163521","Drug","RxNorm","Clinical Dose Group","C",NA
+36221405,"Single Pill Combination","penbutolol / piretanide Oral Product","1164756","Drug","RxNorm","Clinical Dose Group","C",NA
+36221406,"Single Pill Combination","penbutolol / piretanide Pill","1164757","Drug","RxNorm","Clinical Dose Group","C",NA
+36221767,"Single Pill Combination","aliskiren / amlodipine / hydrochlorothiazide Pill","1164880","Drug","RxNorm","Clinical Dose Group","C",NA
+36221768,"Single Pill Combination","aliskiren / amlodipine Oral Product","1164881","Drug","RxNorm","Clinical Dose Group","C",NA
+36221769,"Single Pill Combination","aliskiren / amlodipine Pill","1164882","Drug","RxNorm","Clinical Dose Group","C",NA
+36221770,"Single Pill Combination","aliskiren / hydrochlorothiazide Oral Product","1164883","Drug","RxNorm","Clinical Dose Group","C",NA
+36222006,"Single Pill Combination","aliskiren / hydrochlorothiazide Pill","1164884","Drug","RxNorm","Clinical Dose Group","C",NA
+36222007,"Single Pill Combination","aliskiren / valsartan Oral Product","1164885","Drug","RxNorm","Clinical Dose Group","C",NA
+36222008,"Single Pill Combination","aliskiren / valsartan Pill","1164886","Drug","RxNorm","Clinical Dose Group","C",NA
+36222040,"Single Pill Combination","buthiazide / spironolactone Pill","1164919","Drug","RxNorm","Clinical Dose Group","C",NA
+36223174,"Single Pill Combination","triamterene / xipamide Oral Product","1158232","Drug","RxNorm","Clinical Dose Group","C",NA
+36223175,"Single Pill Combination","triamterene / xipamide Pill","1158233","Drug","RxNorm","Clinical Dose Group","C",NA
+36223654,"Single Pill Combination","benzthiazide / triamterene Oral Product","1160544","Drug","RxNorm","Clinical Dose Group","C",NA
+36223655,"Single Pill Combination","benzthiazide / triamterene Pill","1160545","Drug","RxNorm","Clinical Dose Group","C",NA
+36224289,"Single Pill Combination","hydrochlorothiazide / labetalol Oral Product","1162122","Drug","RxNorm","Clinical Dose Group","C",NA
+36224290,"Single Pill Combination","hydrochlorothiazide / labetalol Pill","1162123","Drug","RxNorm","Clinical Dose Group","C",NA
+36224291,"Single Pill Combination","hydrochlorothiazide / lisinopril Oral Product","1162124","Drug","RxNorm","Clinical Dose Group","C",NA
+36224292,"Single Pill Combination","hydrochlorothiazide / lisinopril Pill","1162125","Drug","RxNorm","Clinical Dose Group","C",NA
+36224293,"Single Pill Combination","hydrochlorothiazide / losartan Oral Product","1162126","Drug","RxNorm","Clinical Dose Group","C",NA
+36224294,"Single Pill Combination","hydrochlorothiazide / losartan Pill","1162127","Drug","RxNorm","Clinical Dose Group","C",NA
+36224295,"Single Pill Combination","hydrochlorothiazide / magnesium chloride / methotrimeprazine Oral Product","1162128","Drug","RxNorm","Clinical Dose Group","C",NA
+36224296,"Single Pill Combination","hydrochlorothiazide / magnesium chloride / methotrimeprazine Pill","1162129","Drug","RxNorm","Clinical Dose Group","C",NA
+36224297,"Single Pill Combination","hydrochlorothiazide / methyldopa Oral Product","1162130","Drug","RxNorm","Clinical Dose Group","C",NA
+36224298,"Single Pill Combination","hydrochlorothiazide / methyldopa Pill","1162131","Drug","RxNorm","Clinical Dose Group","C",NA
+36224299,"Single Pill Combination","hydrochlorothiazide / metoprolol Oral Product","1162132","Drug","RxNorm","Clinical Dose Group","C",NA
+36224300,"Single Pill Combination","hydrochlorothiazide / metoprolol Pill","1162133","Drug","RxNorm","Clinical Dose Group","C",NA
+36224301,"Single Pill Combination","hydrochlorothiazide / pindolol Oral Product","1162134","Drug","RxNorm","Clinical Dose Group","C",NA
+36224302,"Single Pill Combination","hydrochlorothiazide / pindolol Pill","1162135","Drug","RxNorm","Clinical Dose Group","C",NA
+36224303,"Single Pill Combination","hydrochlorothiazide / potassium chloride Oral Product","1162136","Drug","RxNorm","Clinical Dose Group","C",NA
+36224304,"Single Pill Combination","hydrochlorothiazide / potassium chloride Pill","1162137","Drug","RxNorm","Clinical Dose Group","C",NA
+36224305,"Single Pill Combination","hydrochlorothiazide / propranolol Oral Product","1162138","Drug","RxNorm","Clinical Dose Group","C",NA
+36224306,"Single Pill Combination","hydrochlorothiazide / propranolol Pill","1162139","Drug","RxNorm","Clinical Dose Group","C",NA
+36224307,"Single Pill Combination","hydrochlorothiazide / ramipril Oral Product","1162140","Drug","RxNorm","Clinical Dose Group","C",NA
+36224308,"Single Pill Combination","hydrochlorothiazide / ramipril Pill","1162141","Drug","RxNorm","Clinical Dose Group","C",NA
+36224309,"Single Pill Combination","hydrochlorothiazide / reserpine Oral Product","1162142","Drug","RxNorm","Clinical Dose Group","C",NA
+36224310,"Single Pill Combination","hydrochlorothiazide / reserpine Pill","1162143","Drug","RxNorm","Clinical Dose Group","C",NA
+36224311,"Single Pill Combination","hydrochlorothiazide / sotalol Oral Product","1162144","Drug","RxNorm","Clinical Dose Group","C",NA
+36224312,"Single Pill Combination","hydrochlorothiazide / sotalol Pill","1162145","Drug","RxNorm","Clinical Dose Group","C",NA
+36224313,"Single Pill Combination","hydrochlorothiazide / spironolactone Oral Product","1162146","Drug","RxNorm","Clinical Dose Group","C",NA
+36224314,"Single Pill Combination","hydrochlorothiazide / spironolactone Pill","1162147","Drug","RxNorm","Clinical Dose Group","C",NA
+36224315,"Single Pill Combination","hydrochlorothiazide / timolol Oral Product","1162148","Drug","RxNorm","Clinical Dose Group","C",NA
+36224316,"Single Pill Combination","hydrochlorothiazide / timolol Pill","1162149","Drug","RxNorm","Clinical Dose Group","C",NA
+36224317,"Single Pill Combination","hydrochlorothiazide / triamterene / verapamil Oral Product","1162150","Drug","RxNorm","Clinical Dose Group","C",NA
+36224318,"Single Pill Combination","hydrochlorothiazide / triamterene / verapamil Pill","1162151","Drug","RxNorm","Clinical Dose Group","C",NA
+36224319,"Single Pill Combination","hydrochlorothiazide / triamterene Oral Product","1162152","Drug","RxNorm","Clinical Dose Group","C",NA
+36224320,"Single Pill Combination","hydrochlorothiazide / triamterene Pill","1162153","Drug","RxNorm","Clinical Dose Group","C",NA
+36224449,"Single Pill Combination","guanethidine / hydrochlorothiazide Oral Product","1159708","Drug","RxNorm","Clinical Dose Group","C",NA
+36224450,"Single Pill Combination","guanethidine / hydrochlorothiazide Pill","1159709","Drug","RxNorm","Clinical Dose Group","C",NA
+36224573,"Single Pill Combination","enalapril / felodipine Oral Product","1162647","Drug","RxNorm","Clinical Dose Group","C",NA
+36224574,"Single Pill Combination","enalapril / felodipine Pill","1162648","Drug","RxNorm","Clinical Dose Group","C",NA
+36224575,"Single Pill Combination","enalapril / hydrochlorothiazide Oral Product","1162649","Drug","RxNorm","Clinical Dose Group","C",NA
+36224576,"Single Pill Combination","enalapril / hydrochlorothiazide Pill","1162650","Drug","RxNorm","Clinical Dose Group","C",NA
+36224600,"Single Pill Combination","fosinopril / hydrochlorothiazide Oral Product","1162674","Drug","RxNorm","Clinical Dose Group","C",NA
+36224601,"Single Pill Combination","fosinopril / hydrochlorothiazide Pill","1162675","Drug","RxNorm","Clinical Dose Group","C",NA
+36224690,"Single Pill Combination","nicardipine / pyrithioxin Oral Product","1158667","Drug","RxNorm","Clinical Dose Group","C",NA
+36224691,"Single Pill Combination","nicardipine / pyrithioxin Pill","1158668","Drug","RxNorm","Clinical Dose Group","C",NA
+36224719,"Single Pill Combination","isosorbide dinitrate / verapamil Oral Product","1159751","Drug","RxNorm","Clinical Dose Group","C",NA
+36224720,"Single Pill Combination","isosorbide dinitrate / verapamil Pill","1159752","Drug","RxNorm","Clinical Dose Group","C",NA
+36225134,"Single Pill Combination","hydrochlorothiazide / verapamil Oral Product","1162154","Drug","RxNorm","Clinical Dose Group","C",NA
+36225135,"Single Pill Combination","hydrochlorothiazide / verapamil Pill","1162155","Drug","RxNorm","Clinical Dose Group","C",NA
+36225136,"Single Pill Combination","hydrochlorothiazide / irbesartan Oral Product","1162156","Drug","RxNorm","Clinical Dose Group","C",NA
+36225137,"Single Pill Combination","hydrochlorothiazide / irbesartan Pill","1162157","Drug","RxNorm","Clinical Dose Group","C",NA
+36225138,"Single Pill Combination","hydrochlorothiazide / mepindolol Oral Product","1162158","Drug","RxNorm","Clinical Dose Group","C",NA
+36225434,"Single Pill Combination","furosemide / penbutolol Oral Product","1162702","Drug","RxNorm","Clinical Dose Group","C",NA
+36225435,"Single Pill Combination","furosemide / penbutolol Pill","1162703","Drug","RxNorm","Clinical Dose Group","C",NA
+36225436,"Single Pill Combination","furosemide / potassium chloride Oral Product","1162704","Drug","RxNorm","Clinical Dose Group","C",NA
+36225437,"Single Pill Combination","furosemide / potassium chloride Pill","1162705","Drug","RxNorm","Clinical Dose Group","C",NA
+36225438,"Single Pill Combination","furosemide / potassium Oral Product","1162706","Drug","RxNorm","Clinical Dose Group","C",NA
+36225439,"Single Pill Combination","furosemide / potassium Pill","1162707","Drug","RxNorm","Clinical Dose Group","C",NA
+36225440,"Single Pill Combination","furosemide / spironolactone Oral Product","1162708","Drug","RxNorm","Clinical Dose Group","C",NA
+36225441,"Single Pill Combination","furosemide / spironolactone Pill","1162709","Drug","RxNorm","Clinical Dose Group","C",NA
+36225442,"Single Pill Combination","furosemide / triamterene Oral Product","1162710","Drug","RxNorm","Clinical Dose Group","C",NA
+36225443,"Single Pill Combination","furosemide / triamterene Pill","1162711","Drug","RxNorm","Clinical Dose Group","C",NA
+36225488,"Single Pill Combination","trandolapril / verapamil Oral Product","1162756","Drug","RxNorm","Clinical Dose Group","C",NA
+36225489,"Single Pill Combination","trandolapril / verapamil Pill","1162757","Drug","RxNorm","Clinical Dose Group","C",NA
+36225635,"Single Pill Combination","benazepril / hydrochlorothiazide Oral Product","1160005","Drug","RxNorm","Clinical Dose Group","C",NA
+36225636,"Single Pill Combination","benazepril / hydrochlorothiazide Pill","1160006","Drug","RxNorm","Clinical Dose Group","C",NA
+36225790,"Single Pill Combination","eprosartan / hydrochlorothiazide Oral Product","1161918","Drug","RxNorm","Clinical Dose Group","C",NA
+36225791,"Single Pill Combination","eprosartan / hydrochlorothiazide Pill","1161919","Drug","RxNorm","Clinical Dose Group","C",NA
+36226052,"Single Pill Combination","ergoloid mesylates, USP / nifedipine Oral Product","1162494","Drug","RxNorm","Clinical Dose Group","C",NA
+36226053,"Single Pill Combination","ergoloid mesylates, USP / nifedipine Pill","1162495","Drug","RxNorm","Clinical Dose Group","C",NA
+36226137,"Single Pill Combination","felodipine / metoprolol Oral Product","1159024","Drug","RxNorm","Clinical Dose Group","C",NA
+36226138,"Single Pill Combination","felodipine / metoprolol Pill","1159025","Drug","RxNorm","Clinical Dose Group","C",NA
+36226139,"Single Pill Combination","felodipine / ramipril Oral Product","1159026","Drug","RxNorm","Clinical Dose Group","C",NA
+36226140,"Single Pill Combination","felodipine / ramipril Pill","1159027","Drug","RxNorm","Clinical Dose Group","C",NA
+36226883,"Single Pill Combination","pentaerythritol / propranolol Oral Product","1161389","Drug","RxNorm","Clinical Dose Group","C",NA
+36226884,"Single Pill Combination","pentaerythritol / propranolol Pill","1161390","Drug","RxNorm","Clinical Dose Group","C",NA
+36226979,"Single Pill Combination","mefruside / methyldopa Oral Product","1159202","Drug","RxNorm","Clinical Dose Group","C",NA
+36226980,"Single Pill Combination","mefruside / methyldopa Pill","1159203","Drug","RxNorm","Clinical Dose Group","C",NA
+36226981,"Single Pill Combination","mefruside / nifedipine Oral Product","1159204","Drug","RxNorm","Clinical Dose Group","C",NA
+36226982,"Single Pill Combination","mefruside / nifedipine Pill","1159205","Drug","RxNorm","Clinical Dose Group","C",NA
+36227399,"Single Pill Combination","polythiazide / prazosin Oral Product","1160457","Drug","RxNorm","Clinical Dose Group","C",NA
+36227400,"Single Pill Combination","polythiazide / prazosin Pill","1160458","Drug","RxNorm","Clinical Dose Group","C",NA
+36227481,"Single Pill Combination","hydralazine / hydrochlorothiazide / metoprolol Oral Product","1161545","Drug","RxNorm","Clinical Dose Group","C",NA
+36227482,"Single Pill Combination","hydralazine / hydrochlorothiazide / metoprolol Pill","1161546","Drug","RxNorm","Clinical Dose Group","C",NA
+36227483,"Single Pill Combination","hydralazine / hydrochlorothiazide / reserpine Oral Product","1161547","Drug","RxNorm","Clinical Dose Group","C",NA
+36227484,"Single Pill Combination","hydralazine / hydrochlorothiazide / reserpine Pill","1161548","Drug","RxNorm","Clinical Dose Group","C",NA
+36227485,"Single Pill Combination","hydralazine / hydrochlorothiazide Oral Product","1161549","Drug","RxNorm","Clinical Dose Group","C",NA
+36227486,"Single Pill Combination","hydralazine / hydrochlorothiazide Pill","1161550","Drug","RxNorm","Clinical Dose Group","C",NA
+36227487,"Single Pill Combination","hydralazine / isosorbide dinitrate Oral Product","1161551","Drug","RxNorm","Clinical Dose Group","C",NA
+36227488,"Single Pill Combination","hydralazine / isosorbide dinitrate Pill","1161552","Drug","RxNorm","Clinical Dose Group","C",NA
+36227489,"Single Pill Combination","hydralazine / reserpine Oral Product","1161553","Drug","RxNorm","Clinical Dose Group","C",NA
+36227490,"Single Pill Combination","hydralazine / reserpine Pill","1161554","Drug","RxNorm","Clinical Dose Group","C",NA
+36227929,"Single Pill Combination","Totaretic Oral Product","1178598","Drug","RxNorm","Branded Dose Group","C",NA
+36227930,"Single Pill Combination","Totaretic Pill","1178599","Drug","RxNorm","Branded Dose Group","C",NA
+36228123,"Single Pill Combination","Emcor LS Oral Product","1175298","Drug","RxNorm","Branded Dose Group","C",NA
+36228124,"Single Pill Combination","Emcor LS Pill","1175299","Drug","RxNorm","Branded Dose Group","C",NA
+36228734,"Single Pill Combination","Hydropres Oral Product","1175471","Drug","RxNorm","Branded Dose Group","C",NA
+36228735,"Single Pill Combination","Hydropres Pill","1175472","Drug","RxNorm","Branded Dose Group","C",NA
+36228737,"Single Pill Combination","Hydroserp Oral Product","1175476","Drug","RxNorm","Branded Dose Group","C",NA
+36228738,"Single Pill Combination","Hydroserp Pill","1175477","Drug","RxNorm","Branded Dose Group","C",NA
+36228739,"Single Pill Combination","Hydroserpine Oral Product","1175478","Drug","RxNorm","Branded Dose Group","C",NA
+36228740,"Single Pill Combination","Hydroserpine Pill","1175479","Drug","RxNorm","Branded Dose Group","C",NA
+36228868,"Single Pill Combination","Prinzide Oral Product","1178914","Drug","RxNorm","Branded Dose Group","C",NA
+36228869,"Single Pill Combination","Prinzide Pill","1178915","Drug","RxNorm","Branded Dose Group","C",NA
+36229025,"Single Pill Combination","Serpazide Oral Product","1180769","Drug","RxNorm","Branded Dose Group","C",NA
+36229026,"Single Pill Combination","Serpazide Pill","1180770","Drug","RxNorm","Branded Dose Group","C",NA
+36229027,"Single Pill Combination","Serpex Oral Product","1180771","Drug","RxNorm","Branded Dose Group","C",NA
+36229028,"Single Pill Combination","Serpex Pill","1180772","Drug","RxNorm","Branded Dose Group","C",NA
+36229222,"Single Pill Combination","Tarka Pill","1179047","Drug","RxNorm","Branded Dose Group","C",NA
+36229223,"Single Pill Combination","Tarka Oral Product","1179052","Drug","RxNorm","Branded Dose Group","C",NA
+36229579,"Single Pill Combination","Trandide Oral Product","1179179","Drug","RxNorm","Branded Dose Group","C",NA
+36229633,"Single Pill Combination","Tenoret Oral Product","1181453","Drug","RxNorm","Branded Dose Group","C",NA
+36230422,"Single Pill Combination","HHR Oral Product","1176066","Drug","RxNorm","Branded Dose Group","C",NA
+36230423,"Single Pill Combination","HHR Pill","1176067","Drug","RxNorm","Branded Dose Group","C",NA
+36230655,"Single Pill Combination","Teczem Oral Product","1180847","Drug","RxNorm","Branded Dose Group","C",NA
+36230656,"Single Pill Combination","Teczem Pill","1180848","Drug","RxNorm","Branded Dose Group","C",NA
+36230668,"Single Pill Combination","Tekamlo Oral Product","1180862","Drug","RxNorm","Branded Dose Group","C",NA
+36230669,"Single Pill Combination","Tekamlo Pill","1180865","Drug","RxNorm","Branded Dose Group","C",NA
+36230802,"Single Pill Combination","Tiamate Oral Product","1177910","Drug","RxNorm","Branded Dose Group","C",NA
+36231207,"Single Pill Combination","Tri-Hydroserpine Oral Product","1179709","Drug","RxNorm","Branded Dose Group","C",NA
+36231208,"Single Pill Combination","Tri-Hydroserpine Pill","1179710","Drug","RxNorm","Branded Dose Group","C",NA
+36231237,"Single Pill Combination","Mallopress Oral Product","1179744","Drug","RxNorm","Branded Dose Group","C",NA
+36231238,"Single Pill Combination","Mallopress Pill","1179745","Drug","RxNorm","Branded Dose Group","C",NA
+36231600,"Single Pill Combination","Lotrel Oral Product","1180906","Drug","RxNorm","Branded Dose Group","C",NA
+36231601,"Single Pill Combination","Lotrel Pill","1180909","Drug","RxNorm","Branded Dose Group","C",NA
+36231925,"Single Pill Combination","Moduret Oral Product","1181621","Drug","RxNorm","Branded Dose Group","C",NA
+36231926,"Single Pill Combination","Moduret Pill","1181622","Drug","RxNorm","Branded Dose Group","C",NA
+36231927,"Single Pill Combination","Moduretic Oral Product","1181623","Drug","RxNorm","Branded Dose Group","C",NA
+36231928,"Single Pill Combination","Moduretic Pill","1181624","Drug","RxNorm","Branded Dose Group","C",NA
+36232208,"Single Pill Combination","Regroton Oral Product","1180071","Drug","RxNorm","Branded Dose Group","C",NA
+36232209,"Single Pill Combination","Regroton Pill","1180072","Drug","RxNorm","Branded Dose Group","C",NA
+36232387,"Single Pill Combination","Hypolar Retard 20 Oral Product","1176719","Drug","RxNorm","Branded Dose Group","C",NA
+36232388,"Single Pill Combination","Hypolar Retard 20 Pill","1176720","Drug","RxNorm","Branded Dose Group","C",NA
+36232453,"Single Pill Combination","Tiamate Pill","1178487","Drug","RxNorm","Branded Dose Group","C",NA
+36232483,"Single Pill Combination","Timolide Oral Product","1178526","Drug","RxNorm","Branded Dose Group","C",NA
+36232484,"Single Pill Combination","Timolide Pill","1178527","Drug","RxNorm","Branded Dose Group","C",NA
+36232516,"Single Pill Combination","Ser-Ap-Es Oral Product","1180173","Drug","RxNorm","Branded Dose Group","C",NA
+36232517,"Single Pill Combination","Ser-Ap-Es Pill","1180174","Drug","RxNorm","Branded Dose Group","C",NA
+36232520,"Single Pill Combination","Serathide Oral Product","1180179","Drug","RxNorm","Branded Dose Group","C",NA
+36232521,"Single Pill Combination","Serathide Pill","1180180","Drug","RxNorm","Branded Dose Group","C",NA
+36232591,"Single Pill Combination","Marpres Oral Product","1181022","Drug","RxNorm","Branded Dose Group","C",NA
+36232592,"Single Pill Combination","Marpres Pill","1181023","Drug","RxNorm","Branded Dose Group","C",NA
+36233813,"Single Pill Combination","Inderide Oral Product","1172018","Drug","RxNorm","Branded Dose Group","C",NA
+36233814,"Single Pill Combination","Inderide Pill","1172027","Drug","RxNorm","Branded Dose Group","C",NA
+36234200,"Single Pill Combination","Atacand HCT Pill","1172182","Drug","RxNorm","Branded Dose Group","C",NA
+36234201,"Single Pill Combination","Atacand HCT Oral Product","1172183","Drug","RxNorm","Branded Dose Group","C",NA
+36234454,"Single Pill Combination","Benicar HCT Oral Product","1170817","Drug","RxNorm","Branded Dose Group","C",NA
+36234455,"Single Pill Combination","Benicar HCT Pill","1170818","Drug","RxNorm","Branded Dose Group","C",NA
+36234627,"Single Pill Combination","Labrocol Oral Product","1174956","Drug","RxNorm","Branded Dose Group","C",NA
+36234628,"Single Pill Combination","Labrocol Pill","1174957","Drug","RxNorm","Branded Dose Group","C",NA
+36235144,"Single Pill Combination","Demi-Regroton Oral Product","1172430","Drug","RxNorm","Branded Dose Group","C",NA
+36235145,"Single Pill Combination","Demi-Regroton Pill","1172431","Drug","RxNorm","Branded Dose Group","C",NA
+36236948,"Single Pill Combination","Aquazide H Oral Product","1170086","Drug","RxNorm","Branded Dose Group","C",NA
+36236949,"Single Pill Combination","Aquazide H Pill","1170087","Drug","RxNorm","Branded Dose Group","C",NA
+36237230,"Single Pill Combination","HydroDIURIL Oral Product","1174811","Drug","RxNorm","Branded Dose Group","C",NA
+36237231,"Single Pill Combination","HydroDIURIL Pill","1174812","Drug","RxNorm","Branded Dose Group","C",NA
+36237459,"Single Pill Combination","Diuretic Ap-Es Oral Product","1173148","Drug","RxNorm","Branded Dose Group","C",NA
+36237460,"Single Pill Combination","Diuretic Ap-Es Pill","1173149","Drug","RxNorm","Branded Dose Group","C",NA
+36237783,"Single Pill Combination","Exforge HCT Oral Product","1173249","Drug","RxNorm","Branded Dose Group","C",NA
+36237784,"Single Pill Combination","Exforge HCT Pill","1173250","Drug","RxNorm","Branded Dose Group","C",NA
+36237852,"Single Pill Combination","Hydrap-ES Oral Product","1174064","Drug","RxNorm","Branded Dose Group","C",NA
+36237853,"Single Pill Combination","Hydrap-ES Pill","1174065","Drug","RxNorm","Branded Dose Group","C",NA
+36237869,"Single Pill Combination","Hydro-Reserp Oral Product","1174092","Drug","RxNorm","Branded Dose Group","C",NA
+36237870,"Single Pill Combination","Hydro-Reserp Pill","1174093","Drug","RxNorm","Branded Dose Group","C",NA
+36238273,"Single Pill Combination","azilsartan / chlorthalidone Oral Product","1235140","Drug","RxNorm","Clinical Dose Group","C",NA
+36238274,"Single Pill Combination","azilsartan / chlorthalidone Pill","1235141","Drug","RxNorm","Clinical Dose Group","C",NA
+36238510,"Single Pill Combination","Tribenzor Pill","1182147","Drug","RxNorm","Branded Dose Group","C",NA
+36238819,"Single Pill Combination","Monopril-HCT Pill","1182235","Drug","RxNorm","Branded Dose Group","C",NA
+36238820,"Single Pill Combination","Monopril-HCT Oral Product","1182236","Drug","RxNorm","Branded Dose Group","C",NA
+36239006,"Single Pill Combination","Zestoretic Oral Product","1187277","Drug","RxNorm","Branded Dose Group","C",NA
+36239007,"Single Pill Combination","Zestoretic Pill","1187278","Drug","RxNorm","Branded Dose Group","C",NA
+36239102,"Single Pill Combination","Tribenzor Oral Product","1182686","Drug","RxNorm","Branded Dose Group","C",NA
+36239296,"Single Pill Combination","Valturna Oral Product","1187346","Drug","RxNorm","Branded Dose Group","C",NA
+36239297,"Single Pill Combination","Valturna Pill","1187347","Drug","RxNorm","Branded Dose Group","C",NA
+36239382,"Single Pill Combination","Maxzide Oral Product","1182741","Drug","RxNorm","Branded Dose Group","C",NA
+36239383,"Single Pill Combination","Maxzide Pill","1182742","Drug","RxNorm","Branded Dose Group","C",NA
+36239638,"Single Pill Combination","Ziac Pill","1187449","Drug","RxNorm","Branded Dose Group","C",NA
+36239639,"Single Pill Combination","Ziac Oral Product","1187450","Drug","RxNorm","Branded Dose Group","C",NA
+36239650,"Single Pill Combination","Zida-Co Oral Product","1187471","Drug","RxNorm","Branded Dose Group","C",NA
+36239651,"Single Pill Combination","Zida-Co Pill","1187472","Drug","RxNorm","Branded Dose Group","C",NA
+36239801,"Single Pill Combination","Mepranix Oral Product","1184390","Drug","RxNorm","Branded Dose Group","C",NA
+36239802,"Single Pill Combination","Mepranix Pill","1184391","Drug","RxNorm","Branded Dose Group","C",NA
+36239983,"Single Pill Combination","Vaseretic Oral Product","1187581","Drug","RxNorm","Branded Dose Group","C",NA
+36239984,"Single Pill Combination","Vaseretic Pill","1187582","Drug","RxNorm","Branded Dose Group","C",NA
+36240204,"Single Pill Combination","Quinaretic Oral Product","1185902","Drug","RxNorm","Branded Dose Group","C",NA
+36240205,"Single Pill Combination","Quinaretic Pill","1185903","Drug","RxNorm","Branded Dose Group","C",NA
+36241084,"Single Pill Combination","Unipres Oral Product","1186281","Drug","RxNorm","Branded Dose Group","C",NA
+36241085,"Single Pill Combination","Unipres Pill","1186282","Drug","RxNorm","Branded Dose Group","C",NA
+36241087,"Single Pill Combination","Uniretic Oral Product","1186288","Drug","RxNorm","Branded Dose Group","C",NA
+36241088,"Single Pill Combination","Uniretic Pill","1186289","Drug","RxNorm","Branded Dose Group","C",NA
+36241277,"Single Pill Combination","Teveten HCT Oral Product","1184922","Drug","RxNorm","Branded Dose Group","C",NA
+36241278,"Single Pill Combination","Teveten HCT Pill","1184923","Drug","RxNorm","Branded Dose Group","C",NA
+36242838,"Single Pill Combination","Twynsta Pill","1186904","Drug","RxNorm","Branded Dose Group","C",NA
+36242839,"Single Pill Combination","Twynsta Oral Product","1186905","Drug","RxNorm","Branded Dose Group","C",NA
+36243159,"Single Pill Combination","Uni Serp Oral Product","1187843","Drug","RxNorm","Branded Dose Group","C",NA
+36243160,"Single Pill Combination","Uni Serp Pill","1187844","Drug","RxNorm","Branded Dose Group","C",NA
+36243282,"Single Pill Combination","Tenoret Pill","1182012","Drug","RxNorm","Branded Dose Group","C",NA
+36243283,"Single Pill Combination","Tenoretic Oral Product","1182013","Drug","RxNorm","Branded Dose Group","C",NA
+36243284,"Single Pill Combination","Tenoretic Pill","1182014","Drug","RxNorm","Branded Dose Group","C",NA
+36247927,"Single Pill Combination","Tekturna HCT Oral Product","1430140","Drug","RxNorm","Branded Dose Group","C",NA
+36247928,"Single Pill Combination","Tekturna HCT Pill","1430141","Drug","RxNorm","Branded Dose Group","C",NA
+36248677,"Single Pill Combination","sacubitril / valsartan Oral Product","1656336","Drug","RxNorm","Clinical Dose Group","C",NA
+36248678,"Single Pill Combination","sacubitril / valsartan Pill","1656337","Drug","RxNorm","Clinical Dose Group","C",NA
+36248703,"Single Pill Combination","amlodipine / perindopril Oral Product","1600713","Drug","RxNorm","Clinical Dose Group","C",NA
+36248704,"Single Pill Combination","amlodipine / perindopril Pill","1600714","Drug","RxNorm","Clinical Dose Group","C",NA
+36248705,"Single Pill Combination","Prestalia Oral Product","1600720","Drug","RxNorm","Branded Dose Group","C",NA
+36248706,"Single Pill Combination","Prestalia Pill","1600721","Drug","RxNorm","Branded Dose Group","C",NA
+36250179,"Single Pill Combination","nebivolol / valsartan Oral Product","1798277","Drug","RxNorm","Clinical Dose Group","C",NA
+36250180,"Single Pill Combination","nebivolol / valsartan Pill","1798278","Drug","RxNorm","Clinical Dose Group","C",NA
+36259265,"Single Pill Combination","Amlodipine / Indapamide / Perindopril Oral Tablet","OMOP3110140","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+36264366,"Single Pill Combination","Hydrochlorothiazide / Metoprolol Extended Release Oral Capsule","OMOP3115241","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+36264394,"Single Pill Combination","Bisoprolol / Hydrochlorothiazide Oral Capsule","OMOP3115269","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+36266935,"Single Pill Combination","Bisoprolol / Perindopril Oral Tablet","OMOP3117810","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+36269479,"Single Pill Combination","Hydrochlorothiazide / Losartan Oral Capsule","OMOP3120354","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+36272027,"Single Pill Combination","Hydrochlorothiazide / nebivolol Oral Tablet","OMOP3122902","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+36272030,"Single Pill Combination","Felodipine / Ramipril Extended Release Oral Capsule","OMOP3122905","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+36274581,"Single Pill Combination","Felodipine / Metoprolol Extended Release Oral Capsule","OMOP3125456","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+36274595,"Single Pill Combination","Chlorthalidone / Metoprolol Extended Release Oral Capsule","OMOP3125470","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+36784817,"Single Pill Combination","Bisoprolol / Hydrochlorothiazide Extended Release Oral Tablet","OMOP4773102","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+36786066,"Single Pill Combination","Cilazapril / Hydrochlorothiazide Delayed Release Oral Tablet","OMOP4774342","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+36787123,"Single Pill Combination","Amlodipine / Hydrochlorothiazide / olmesartan Delayed Release Oral Tablet","OMOP4775385","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+36787465,"Single Pill Combination","eprosartan / Hydrochlorothiazide Delayed Release Oral Tablet","OMOP4775731","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+36881813,"Single Pill Combination","Chlorthalidone / Metoprolol Delayed Release Oral Tablet","OMOP993857","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+36889540,"Single Pill Combination","Chlorthalidone / Oxprenolol Delayed Release Oral Tablet","OMOP1004099","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+40003426,"Single Pill Combination","acebutolol / nifedipine Oral Tablet","446671","Drug","RxNorm","Clinical Drug Form","S",NA
+40007368,"Single Pill Combination","amiloride / atenolol / hydrochlorothiazide Oral Capsule","379257","Drug","RxNorm","Clinical Drug Form","S",NA
+40007369,"Single Pill Combination","amiloride / atenolol / hydrochlorothiazide Oral Tablet","437781","Drug","RxNorm","Clinical Drug Form","S",NA
+40007373,"Single Pill Combination","amiloride / furosemide / indapamide Oral Tablet","437571","Drug","RxNorm","Clinical Drug Form","S",NA
+40007374,"Single Pill Combination","amiloride / furosemide Oral Tablet","370847","Drug","RxNorm","Clinical Drug Form","S",NA
+40007377,"Single Pill Combination","amiloride / hydrochlorothiazide / methyldopa Oral Tablet","446454","Drug","RxNorm","Clinical Drug Form","S",NA
+40007378,"Single Pill Combination","amiloride / hydrochlorothiazide / timolol Oral Tablet","379256","Drug","RxNorm","Clinical Drug Form","S",NA
+40007379,"Single Pill Combination","amiloride / hydrochlorothiazide Oral Solution","370848","Drug","RxNorm","Clinical Drug Form","S",NA
+40007380,"Single Pill Combination","amiloride / hydrochlorothiazide Oral Tablet","370638","Drug","RxNorm","Clinical Drug Form","S",NA
+40010558,"Single Pill Combination","atenolol / bendroflumethiazide Oral Capsule","385565","Drug","RxNorm","Clinical Drug Form","S",NA
+40010559,"Single Pill Combination","atenolol / chlorthalidone / hydralazine Oral Tablet","440424","Drug","RxNorm","Clinical Drug Form","S",NA
+40010560,"Single Pill Combination","atenolol / chlorthalidone Oral Capsule","370958","Drug","RxNorm","Clinical Drug Form","S",NA
+40010561,"Single Pill Combination","atenolol / chlorthalidone Oral Tablet","370620","Drug","RxNorm","Clinical Drug Form","S",NA
+40010567,"Single Pill Combination","atenolol / nifedipine Extended Release Oral Capsule","393276","Drug","RxNorm","Clinical Drug Form","S",NA
+40010568,"Single Pill Combination","atenolol / nifedipine Oral Capsule","370961","Drug","RxNorm","Clinical Drug Form","S",NA
+40010569,"Single Pill Combination","atenolol / nifedipine Oral Tablet","376172","Drug","RxNorm","Clinical Drug Form","S",NA
+40011854,"Single Pill Combination","bendroflumethiazide / propranolol Extended Release Oral Capsule","373656","Drug","RxNorm","Clinical Drug Form","S",NA
+40011855,"Single Pill Combination","bendroflumethiazide / propranolol Oral Capsule","373655","Drug","RxNorm","Clinical Drug Form","S",NA
+40011856,"Single Pill Combination","bendroflumethiazide / propranolol Oral Tablet","373657","Drug","RxNorm","Clinical Drug Form","S",NA
+40011860,"Single Pill Combination","bendroflumethiazide / timolol Oral Tablet","374136","Drug","RxNorm","Clinical Drug Form","S",NA
+40015092,"Single Pill Combination","bisoprolol / hydrochlorothiazide Oral Tablet","371103","Drug","RxNorm","Clinical Drug Form","S",NA
+40020436,"Single Pill Combination","chlorothiazide / methyldopa Oral Tablet [Aldoclor]","368245","Drug","RxNorm","Branded Drug Form","S",NA
+40026132,"Single Pill Combination","clonidine / hydrochlorothiazide / triamterene Oral Tablet","438743","Drug","RxNorm","Clinical Drug Form","S",NA
+40027598,"Single Pill Combination","cilazapril / hydrochlorothiazide Oral Tablet","371507","Drug","RxNorm","Clinical Drug Form","S",NA
+40028109,"Single Pill Combination","cyclopenthiazide / oxprenolol Extended Release Oral Tablet","373186","Drug","RxNorm","Clinical Drug Form","S",NA
+40028110,"Single Pill Combination","cyclopenthiazide / oxprenolol Oral Tablet","373185","Drug","RxNorm","Clinical Drug Form","S",NA
+40030840,"Single Pill Combination","chlorthalidone / hydralazine / oxprenolol Oral Tablet","440427","Drug","RxNorm","Clinical Drug Form","S",NA
+40030842,"Single Pill Combination","chlorthalidone / metoprolol Extended Release Oral Tablet","446468","Drug","RxNorm","Clinical Drug Form","S",NA
+40030843,"Single Pill Combination","chlorthalidone / metoprolol Oral Tablet","379254","Drug","RxNorm","Clinical Drug Form","S",NA
+40030844,"Single Pill Combination","chlorthalidone / oxprenolol Extended Release Oral Tablet","373182","Drug","RxNorm","Clinical Drug Form","S",NA
+40030845,"Single Pill Combination","chlorthalidone / oxprenolol Oral Tablet","373181","Drug","RxNorm","Clinical Drug Form","S",NA
+40033922,"Single Pill Combination","dihydralazine / propranolol Oral Tablet","439011","Drug","RxNorm","Clinical Drug Form","S",NA
+40034892,"Single Pill Combination","diltiazem / hydrochlorothiazide Extended Release Oral Capsule","385943","Drug","RxNorm","Clinical Drug Form","S",NA
+40037280,"Single Pill Combination","felodipine / metoprolol Extended Release Oral Tablet","439560","Drug","RxNorm","Clinical Drug Form","S",NA
+40037281,"Single Pill Combination","felodipine / ramipril Oral Tablet","393440","Drug","RxNorm","Clinical Drug Form","S",NA
+40039294,"Single Pill Combination","ergoloid mesylates, USP / nifedipine Oral Tablet","439288","Drug","RxNorm","Clinical Drug Form","S",NA
+40039680,"Single Pill Combination","furosemide / spironolactone Oral Capsule","373944","Drug","RxNorm","Clinical Drug Form","S",NA
+40039681,"Single Pill Combination","furosemide / spironolactone Oral Tablet","451932","Drug","RxNorm","Clinical Drug Form","S",NA
+40039682,"Single Pill Combination","furosemide / triamterene Extended Release Oral Capsule","452294","Drug","RxNorm","Clinical Drug Form","S",NA
+40039683,"Single Pill Combination","furosemide / triamterene Oral Tablet","374196","Drug","RxNorm","Clinical Drug Form","S",NA
+40044449,"Single Pill Combination","hydralazine / hydrochlorothiazide / metoprolol Oral Tablet","440425","Drug","RxNorm","Clinical Drug Form","S",NA
+40044821,"Single Pill Combination","hydrochlorothiazide / losartan Oral Tablet","372650","Drug","RxNorm","Clinical Drug Form","S",NA
+40044824,"Single Pill Combination","hydrochlorothiazide / magnesium chloride / methotrimeprazine Oral Tablet","440593","Drug","RxNorm","Clinical Drug Form","S",NA
+40044831,"Single Pill Combination","hydrochlorothiazide / metoprolol Extended Release Oral Tablet","372890","Drug","RxNorm","Clinical Drug Form","S",NA
+40044832,"Single Pill Combination","hydrochlorothiazide / metoprolol Oral Tablet","372889","Drug","RxNorm","Clinical Drug Form","S",NA
+40044834,"Single Pill Combination","hydrochlorothiazide / olmesartan Oral Tablet","406041","Drug","RxNorm","Clinical Drug Form","S",NA
+40044837,"Single Pill Combination","hydrochlorothiazide / potassium chloride Oral Tablet","376241","Drug","RxNorm","Clinical Drug Form","S",NA
+40044838,"Single Pill Combination","hydrochlorothiazide / propranolol Extended Release Oral Capsule","373650","Drug","RxNorm","Clinical Drug Form","S",NA
+40044839,"Single Pill Combination","hydrochlorothiazide / propranolol Oral Tablet","373651","Drug","RxNorm","Clinical Drug Form","S",NA
+40044851,"Single Pill Combination","hydrochlorothiazide / spironolactone Oral Tablet","370639","Drug","RxNorm","Clinical Drug Form","S",NA
+40044854,"Single Pill Combination","hydrochlorothiazide / timolol Oral Tablet","374419","Drug","RxNorm","Clinical Drug Form","S",NA
+40044856,"Single Pill Combination","hydrochlorothiazide / triamterene / verapamil Oral Tablet","452537","Drug","RxNorm","Clinical Drug Form","S",NA
+40044857,"Single Pill Combination","hydrochlorothiazide / triamterene Oral Capsule","370640","Drug","RxNorm","Clinical Drug Form","S",NA
+40045116,"Single Pill Combination","hydrochlorothiazide / triamterene Oral Tablet","374192","Drug","RxNorm","Clinical Drug Form","S",NA
+40045118,"Single Pill Combination","hydrochlorothiazide / verapamil Extended Release Oral Capsule","452536","Drug","RxNorm","Clinical Drug Form","S",NA
+40045119,"Single Pill Combination","hydrochlorothiazide / irbesartan Oral Tablet","370705","Drug","RxNorm","Clinical Drug Form","S",NA
+40045121,"Single Pill Combination","hydrochlorothiazide / mepindolol Oral Tablet","446301","Drug","RxNorm","Clinical Drug Form","S",NA
+40045124,"Single Pill Combination","hydrochlorothiazide / quinapril Oral Tablet","373732","Drug","RxNorm","Clinical Drug Form","S",NA
+40045126,"Single Pill Combination","hydrochlorothiazide / telmisartan Oral Tablet","378921","Drug","RxNorm","Clinical Drug Form","S",NA
+40045128,"Single Pill Combination","hydrochlorothiazide / valsartan Oral Tablet","374280","Drug","RxNorm","Clinical Drug Form","S",NA
+40049453,"Single Pill Combination","indapamide / perindopril Oral Tablet","393357","Drug","RxNorm","Clinical Drug Form","S",NA
+40054917,"Single Pill Combination","dehydrosanol / triamterene Oral Capsule","452289","Drug","RxNorm","Clinical Drug Form","S",NA
+40054918,"Single Pill Combination","dehydrosanol / triamterene Oral Tablet","452285","Drug","RxNorm","Clinical Drug Form","S",NA
+40059139,"Single Pill Combination","eprosartan / hydrochlorothiazide Oral Tablet","378735","Drug","RxNorm","Clinical Drug Form","S",NA
+40060227,"Single Pill Combination","cyclothiazide / triamterene Oral Tablet","452292","Drug","RxNorm","Clinical Drug Form","S",NA
+40061782,"Single Pill Combination","metoprolol / nifedipine Extended Release Oral Capsule","446677","Drug","RxNorm","Clinical Drug Form","S",NA
+40065740,"Single Pill Combination","methyclothiazide / triamterene Oral Tablet","452299","Drug","RxNorm","Clinical Drug Form","S",NA
+40085584,"Single Pill Combination","triamterene / xipamide Oral Tablet","452302","Drug","RxNorm","Clinical Drug Form","S",NA
+40095410,"Single Pill Combination","candesartan / hydrochlorothiazide Oral Tablet","374934","Drug","RxNorm","Clinical Drug Form","S",NA
+40096153,"Single Pill Combination","benazepril / hydrochlorothiazide Oral Tablet","371000","Drug","RxNorm","Clinical Drug Form","S",NA
+40096806,"Single Pill Combination","benzthiazide / triamterene Oral Capsule","374195","Drug","RxNorm","Clinical Drug Form","S",NA
+40099414,"Single Pill Combination","trandolapril / verapamil Extended Release Oral Capsule","379582","Drug","RxNorm","Clinical Drug Form","S",NA
+40099416,"Single Pill Combination","trandolapril / verapamil Extended Release Oral Tablet","374178","Drug","RxNorm","Clinical Drug Form","S",NA
+40137849,"Single Pill Combination","hydrochlorothiazide / methyldopa Oral Tablet [Aldoril]","688642","Drug","RxNorm","Branded Drug Form","S",NA
+40140541,"Single Pill Combination","amlodipine / valsartan Oral Tablet","722125","Drug","RxNorm","Clinical Drug Form","S",NA
+40142669,"Single Pill Combination","amlodipine / olmesartan Oral Tablet","730860","Drug","RxNorm","Clinical Drug Form","S",NA
+40147525,"Single Pill Combination","aliskiren / hydrochlorothiazide Oral Tablet","754717","Drug","RxNorm","Clinical Drug Form","S",NA
+40160338,"Single Pill Combination","amlodipine / hydrochlorothiazide / valsartan Oral Tablet","848130","Drug","RxNorm","Clinical Drug Form","S",NA
+40167838,"Single Pill Combination","amlodipine / telmisartan Oral Tablet","876513","Drug","RxNorm","Clinical Drug Form","S",NA
+40224153,"Single Pill Combination","amlodipine / hydrochlorothiazide / olmesartan Oral Tablet","999966","Drug","RxNorm","Clinical Drug Form","S",NA
+40226742,"ARB","olmesartan","321064","Drug","RxNorm","Ingredient","S",NA
+40226742,"Antihypertensive","olmesartan","321064","Drug","RxNorm","Ingredient","S",NA
+40232328,"Single Pill Combination","aliskiren / amlodipine / hydrochlorothiazide Oral Tablet","1050796","Drug","RxNorm","Clinical Drug Form","S",NA
+40235485,"ARB","azilsartan","1091643","Drug","RxNorm","Ingredient","S",NA
+40235485,"Antihypertensive","azilsartan","1091643","Drug","RxNorm","Ingredient","S",NA
+40749849,"Single Pill Combination","Chlorothiazide / Spironolactone Oral Powder","OMOP4707410","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+40830512,"Single Pill Combination","Hydrochlorothiazide / Reserpine / Triamterene Oral Tablet","OMOP2028474","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+40830513,"Single Pill Combination","european olive pollen extract / Hydrochlorothiazide / Potassium Oral Tablet","OMOP2028475","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+40893011,"Single Pill Combination","Dihydralazine / Hydrochlorothiazide / Potassium / Reserpine Oral Tablet","OMOP2090973","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+40924218,"Single Pill Combination","Canrenoic Acid / Furosemide / Phosphoric acid Injectable Solution","OMOP2122180","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+40924457,"Single Pill Combination","Amiloride / Timolol Oral Tablet","OMOP2122419","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+40955187,"Single Pill Combination","Hydrochlorothiazide / Potassium / Rauwolfia preparation / rescinnamine / Reserpine / Vitamin A / Vitamin E Oral Tablet","OMOP2153149","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+40955683,"Single Pill Combination","Alprenolol / Hydrochlorothiazide Oral Tablet","OMOP2153645","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+40986248,"Single Pill Combination","Propranolol / Valeriana officinalis whole extract Oral Capsule","OMOP2184210","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+40986369,"Single Pill Combination","Hydrochlorothiazide / Propranolol / Triamterene Oral Capsule","OMOP2184331","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+40986688,"Single Pill Combination","Bunitrolol / Hydrochlorothiazide / Triamterene Extended Release Oral Capsule","OMOP2184650","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+41017227,"Single Pill Combination","trandolapril / Verapamil Oral Tablet","OMOP2215189","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+41048702,"Single Pill Combination","Hydrochlorothiazide / Oxprenolol Oral Tablet","OMOP2246664","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+41080575,"Single Pill Combination","Amlodipine / Losartan Oral Tablet","OMOP2278537","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+41111670,"Single Pill Combination","Canrenoic Acid / Furosemide Injectable Solution","OMOP2309632","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+41143011,"Single Pill Combination","Felodipine / Metoprolol Oral Tablet","OMOP2340973","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+41143341,"Single Pill Combination","dehydrosanol / Hesperidin / Thiamine / Triamterene Oral Tablet","OMOP2341303","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+41174430,"Single Pill Combination","Amlodipine / Bisoprolol Oral Tablet","OMOP2372392","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+41174481,"Single Pill Combination","Aesculus hippocastanum bark extract / Hydrochlorothiazide / Triamterene Oral Tablet","OMOP2372443","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+41205367,"Single Pill Combination","Propranolol / Spironolactone Oral Tablet","OMOP2403329","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+41205620,"Single Pill Combination","Dihydroergotoxine / Nifedipine Oral Tablet","OMOP2403582","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+41236870,"Single Pill Combination","Amlodipine / candesartan Oral Capsule","OMOP2434832","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+41237790,"Single Pill Combination","Mefruside / Methyldopa Oral Tablet [Sali Presinol]","OMOP2435752","Drug","RxNorm Extension","Branded Drug Form","S",NA
+41238954,"Single Pill Combination","buthiazide / Methyldopa Oral Tablet [Sembrina]","OMOP2436916","Drug","RxNorm Extension","Branded Drug Form","S",NA
+41267737,"Single Pill Combination","Bupranolol / dehydrosanol / Triamterene Oral Tablet","OMOP2465699","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+41298388,"Single Pill Combination","Furosemide / Reserpine Oral Tablet","OMOP2496350","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+41298962,"Single Pill Combination","6-(Diethylaminomethyl)Rutin / CRATAEGUS LAEVIGATA FRUIT / Hexamethonium Hydroxide / Hydrochlorothiazide / Potassium / Rauwolfia preparation / Reserpine Oral Tablet","OMOP2496924","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+41299800,"Single Pill Combination","Mefruside / Methyldopa / Reserpine Oral Tablet [Caprinol]","OMOP2497762","Drug","RxNorm Extension","Branded Drug Form","S",NA
+42479214,"Single Pill Combination","Felodipine / Ramipril Extended Release Oral Tablet","OMOP419678","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+42705336,"Single Pill Combination","azilsartan / chlorthalidone Oral Tablet","1235142","Drug","RxNorm","Clinical Drug Form","S",NA
+42874880,"Single Pill Combination","Felodipine / Ramipril Delayed Release Oral Tablet","OMOP4871998","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+42875928,"Single Pill Combination","Amlodipine / Hydrochlorothiazide / Ramipril Oral Capsule","OMOP4873041","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+42938519,"Single Pill Combination","Amlodipine / Hydrochlorothiazide / telmisartan Oral Tablet","OMOP4665192","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+42948657,"Single Pill Combination","lercanidipine / valsartan Oral Tablet","OMOP4675247","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+42950872,"Single Pill Combination","Amlodipine / Chlorthalidone / Losartan Oral Tablet","OMOP4677445","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+42960011,"Single Pill Combination","Amlodipine / fimasartan potassium Oral Tablet","OMOP4686518","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+42960024,"Single Pill Combination","fimasartan potassium / Hydrochlorothiazide Oral Tablet","OMOP4686530","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+42972643,"Single Pill Combination","atorvastatin / irbesartan Oral Tablet","OMOP4699050","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43022805,"Single Pill Combination","carvedilol / ivabradine Delayed Release Oral Tablet","OMOP4837934","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43134832,"Single Pill Combination","Hydrochlorothiazide / Losartan Delayed Release Oral Tablet","OMOP447236","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43156974,"Single Pill Combination","aliskiren / Hydrochlorothiazide Delayed Release Oral Tablet","OMOP447297","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43157075,"Single Pill Combination","Hydrochlorothiazide / quinapril Delayed Release Oral Tablet","OMOP448040","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43166576,"Single Pill Combination","benazepril / Hydrochlorothiazide Delayed Release Oral Tablet","OMOP485878","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43167787,"Single Pill Combination","Hydrochlorothiazide / olmesartan Delayed Release Oral Tablet","OMOP446318","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43178952,"Single Pill Combination","Hydrochlorothiazide / zofenopril Delayed Release Oral Tablet","OMOP447280","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43188587,"Single Pill Combination","Atenolol / Chlorthalidone Delayed Release Oral Tablet","OMOP488010","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43189757,"Single Pill Combination","Hydrochlorothiazide / irbesartan Delayed Release Oral Tablet","OMOP446394","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43189944,"Single Pill Combination","Hydrochlorothiazide / nebivolol Delayed Release Oral Tablet","OMOP448113","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43193525,"Single Pill Combination","Indapamide / Perindopril Delayed Release Oral Tablet","OMOP480217","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43199873,"Single Pill Combination","Hydrochlorothiazide / valsartan Delayed Release Oral Tablet","OMOP510396","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43199916,"Single Pill Combination","Amlodipine / Hydrochlorothiazide / valsartan Delayed Release Oral Tablet","OMOP514110","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43203499,"Single Pill Combination","Amlodipine / Indapamide Extended Release Oral Tablet","OMOP470511","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43205563,"Single Pill Combination","Enalapril / lercanidipine Delayed Release Oral Tablet","OMOP489591","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43211738,"Single Pill Combination","Bisoprolol / Hydrochlorothiazide Delayed Release Oral Tablet","OMOP447790","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43260913,"Single Pill Combination","Enalapril / lercanidipine Oral Tablet","OMOP530577","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43585468,"Single Pill Combination","ivabradine / Metoprolol Oral Tablet","OMOP954444","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43599922,"Single Pill Combination","dehydrosanol / Triamterene Delayed Release Oral Tablet","OMOP778743","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43636119,"Single Pill Combination","Hydrochlorothiazide / zofenopril Oral Tablet","OMOP789674","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43672256,"Single Pill Combination","Hydrochlorothiazide / Propranolol / Triamterene Oral Tablet","OMOP781184","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43677126,"Single Pill Combination","Amlodipine / Ramipril Oral Capsule","OMOP670769","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43725912,"Single Pill Combination","Bendroflumethiazide / Hydralazine / Propranolol Oral Capsule","OMOP778561","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43748731,"Single Pill Combination","Enalapril / Nitrendipine Oral Tablet","OMOP671132","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43749671,"Single Pill Combination","Amlodipine / candesartan Oral Tablet","OMOP687193","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+43839612,"Single Pill Combination","Amlodipine / Lisinopril Oral Tablet","OMOP682928","Drug","RxNorm Extension","Clinical Drug Form","S",NA
+44031088,"Single Pill Combination","Hydrochlorothiazide / Methyldopa Oral Tablet [Aldoril 25]","OMOP1025719","Drug","RxNorm Extension","Branded Drug Form","S",NA
+44031476,"Single Pill Combination","Chlorothiazide / Methyldopa Oral Tablet [Supres]","OMOP1026107","Drug","RxNorm Extension","Branded Drug Form","S",NA
+44057083,"Single Pill Combination","Hydrochlorothiazide / Methyldopa Oral Tablet [Pms-Dopazide]","OMOP1051714","Drug","RxNorm Extension","Branded Drug Form","S",NA
+44069972,"Single Pill Combination","Hydrochlorothiazide / Methyldopa Oral Tablet [Aldoril 15]","OMOP1064603","Drug","RxNorm Extension","Branded Drug Form","S",NA
+44082841,"Single Pill Combination","Hydrochlorothiazide / Methyldopa Oral Tablet [Novo-Doparil]","OMOP1077472","Drug","RxNorm Extension","Branded Drug Form","S",NA
+44095788,"Single Pill Combination","Hydrochlorothiazide / Methyldopa Oral Tablet [Apo Methazide]","OMOP1090419","Drug","RxNorm Extension","Branded Drug Form","S",NA
+45892980,"Single Pill Combination","amlodipine / perindopril Oral Tablet","1600715","Drug","RxNorm","Clinical Drug Form","S",NA

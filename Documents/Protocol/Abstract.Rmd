@@ -1,7 +1,6 @@
-**Background and Significance**: Hypertension is a major cause of morbidity and mortality globally and is associated with an elevated risk of cardiovascular events. Recommended anti-hypertensive agents can be applied to patients as a single agent (monotherapy) or in combination. In the case of combination, initial combination strategy can be considered, or stepped care strategy using a monotherapy followed by adding other agents use can be considered. 
+**Background and Significance**: Hypertension is a major cause of morbidity and mortality globally and is associated with an elevated risk of cardiovascular events. Recommended antihypertensive agents can be applied to patients as a single agent (monotherapy) or in combination. In the case of combination, initial combination strategy can be considered, or stepped care strategy using a monotherapy followed by adding other agents use can be considered. 
 
-Many patients are unable to reach their target blood pressure with a monotherapy, therefore, they often use two or more medications in combination. Recent European hypertension guidelines recommend initial combination treatment for general patients with hypertension; however, the US guidelines maintain a recommendation of stepped care for most patients with uncontrolled blood pressure. Our team has already generated large-scale evidence comparing the effectiveness of each monotherapy and initial combination therapy for hypertension. Now, we will explore how the choice of step therapy medication affects patients’ cardiovascular and safety outcomes.
-
+Many patients are unable to reach their target blood pressure with a monotherapy, therefore, they often use two or more medications in combination. Recent European hypertension guidelines recommend initial combination treatment for general patients with hypertension[@Mancia2023]; however, the US guidelines maintain a recommendation of stepped care for most patients with uncontrolled blood pressure[@Whelton2018]. Our team has already generated large-scale evidence comparing the effectiveness of each monotherapy[@Suchard2019] and initial combination therapy for hypertension[@You2020-ic]. Now, we will explore how the choice of step therapy medication affects patients’ cardiovascular and safety outcomes.
 
 **Study Aims**: To determine real-world comparative effectiveness and safety of stepped care strategy of hypertension using health information encompassing millions of patients with hypertension, with a focus on individual at comorbidity risk and other key subgroups for treatment heterogeneity.
 
@@ -9,11 +8,15 @@ Many patients are unable to reach their target blood pressure with a monotherapy
 
 * **Population**: Adult, hypertension patients who newly added a secondary antihypertensive agent for their uncontrolled blood pressure by monotherapy
 
-* **Comparators**:
-  - RAS agents: Benazepril, Captopril, Enalapril, Fosinopril, Lisinopril, Moexipril, Perindopril, Quinapril, Ramipril, Trandolapril, Azilsartan, Candesartan, Eprosartan, Irbesartan, Losartan, Olmesartan, Telmisartan, Valsartan
+* **Exposures**: The exposure of interest is a combination of monotherapy with the following drug groups (except BB), followed by an addition of drugs from other groups. For example, patients with dCCB added after ACEI monotherapy.
+  - RAS agents: 
+    - ACEI: Benazepril, Captopril, Enalapril, Fosinopril, Lisinopril, Moexipril, Perindopril, Quinapril, Ramipril, Trandolapril
+    - ARB: Azilsartan, Candesartan, Eprosartan, Irbesartan, Losartan, Olmesartan, Telmisartan, Valsartan
   - THZ: Chlorthalidone, Hydrochlorothiazide, Indapamide, Metolazone
-  - CCB: Amlodipine, Felodipine, Isradipine, Nicardipine, Nifedipine, Nisoldipine, Diltiazem, Verapamil
-  - BB: Atenolol, Acebutolol, Betaxolol, Bisoprolol, Carvedilol, Labetalol, Metoprolol, Nadolol, Nebivolol, Penbutolol, Pindolol, Propranolol
+  - CCB: 
+    - dCCB: Amlodipine, Felodipine, Isradipine, Nicardipine, Nifedipine, Nisoldipine
+    - ndCCB: Diltiazem, Verapamil
+  - BB (second-line only): Atenolol, Acebutolol, Betaxolol, Bisoprolol, Carvedilol, Labetalol, Metoprolol, Nadolol, Nebivolol, Penbutolol, Pindolol, Propranolol
 
 * **Outcomes**:
   - Primary: 3- and 4-point major adverse cardiovascular events

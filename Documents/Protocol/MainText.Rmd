@@ -1,15 +1,15 @@
 # Rationale and Background
 
-Over 100 million US adults have hypertension, a leading cause of mortality and morbidity, and 70% of them cannot achieve adequate blood pressure control with monotherapy alone.(1) 
-Although recent clinical practice guidelines suggest initiating therapy with two drugs,(2-4) more than 50% of people currently treated for hypertension start with a single medication.(5, 6) 
-For these patients, clinical guidelines propose adding a second antihypertensive drug for treatment escalation.(4, 7)
-However, the guidelines provide little guidance on which specific agents to add for which patients. There are no large randomized controlled trials (RCT) to guide recommendations about the choice of the second drug.(4) 
+Over 100 million US adults have hypertension, a leading cause of mortality and morbidity, and 70% of them cannot achieve adequate blood pressure control with monotherapy alone[@RN26]. 
+Although recent clinical practice guidelines suggest initiating therapy with two drugs[@Mancia2023; @Unger2020; @Whelton2018], more than 50% of people currently treated for hypertension start with a single medication [@Hripcsak2016; @Lu2022].
+For these patients, clinical guidelines propose adding a second antihypertensive drug for treatment escalation[@Whelton2018; @Hripcsak2016; @Lu2022; @James2014].
+However, the guidelines provide little guidance on which specific agents to add for which patients. There are no large randomized controlled trials (RCT) to guide recommendations about the choice of the second drug[@Whelton2018;]. 
 RCTs comparing antihypertensive drugs are not only expensive and time-consuming, but also cannot possibly test all the relevant drug combinations recommended by the guidelines. 
 Given the abundance of potential strategies, there is a critical need to generate real-world evidence to guide the choice of comparators in future RCTs and to support guideline recommendations. 
 Advances in observational research design using real-world data provides an opportunity to produce high-quality evidence through strategies that support causal inference, enhance generalizability, and minimize bias. 
-While this evidence will not supersede RCT evidence, it can identify promising directions for trials and provide Level of Evidence B for guideline recommendations.(8) 
+While this evidence will not supersede RCT evidence, it can identify promising directions for trials and provide Level of Evidence B for guideline recommendations[@Sheldrick2023]. 
 Such research can be purposeful, pre-specified, and have strategies to prevent publication bias, p-hacking, and findings due to chance. 
-In our prior work, we have successfully demonstrated how these methods can be applied to evaluate the effectiveness and safety of first-line antihypertensive monotherapies.(9-13) 
+In our prior work, we have successfully demonstrated how these methods can be applied to evaluate the effectiveness and safety of first-line antihypertensive monotherapies[@Anand2024; @You2021; @Chen2021; @Hripcsak2020; @Suchard2019]. 
 This will be the first study that applies these massive real-world datasets and reproducible methods to comprehensively evaluate the effectiveness and safety of the second antihypertensive agents added to monotherapy as a hypertension stepped care.
 
 
@@ -18,7 +18,7 @@ This will be the first study that applies these massive real-world datasets and 
 Our long-term goal is to produce real-world evidence to inform decisions about RCTs for hypertension treatment escalation and to provide the highest quality non-randomized evidence to support guideline recommendations. 
 The approach is distinctive because of the breadth and depth of data, and the use of state-of-the-art observational research methods to produce high-quality evidence. 
 The overall objective in this protocol is to determine the comparative effectiveness and safety of the stepped care strategy in real-world settings. The central hypothesis is that there is heterogeneity in the effectiveness and safety of the secondary antihypertensive agent, and the optimal choice depends on patient characteristics and the initial therapy. 
-Our preliminary data demonstrate a large variation in prescription patterns of the second agents added to monotherapy,(6) providing ample opportunity to leverage practice variation to test our hypothesis. The following three specific aims are proposed:
+Our preliminary data demonstrate a large variation in prescription patterns of the second agents added to monotherapy[@Lu2022], providing ample opportunity to leverage practice variation to test our hypothesis. The following three specific aims are proposed:
 
 1. To determine the comparative effectiveness of the stepped-care strategy on major cardiovascular outcomes (e.g., myocardial infarction, stroke, heart failure). 
 2. To determine the comparative risk of the second antihypertensive agents on potential drug-related adverse events (e.g., acute renal failure, angioedema, gastrointestinal bleeding, hyperkalemia). 
@@ -33,10 +33,9 @@ LEGEND-HTNStepCare will execute three systematic, large-scale observational stud
 2.	The **Drug-vs-Drug Study** will furnish head-to-head pairwise comparisons between individual agents within and across class in stepped care combination (both Objectives 1 and 2); and
 3.	The **Heterogeneity Study** will refine these comparisons for hypertension patients for important subgroups (Objective 3). 
 
-In contrast to a single comparison approach, LEGEND-HTNStepCare will provide a comprehensive view of the findings and their consistency across populations, drugs, and outcomes. We will model each study on our successful collaborative research evaluating the comparative effectiveness of antihypertensives monotherapy previously published in The Lancet.(13)
+In contrast to a single comparison approach, LEGEND-HTNStepCare will provide a comprehensive view of the findings and their consistency across populations, drugs, and outcomes. We will model each study on our successful collaborative research evaluating the comparative effectiveness of antihypertensives monotherapy previously published in The Lancet [@Suchard2019].
 
 Table \@ref(tab:drug-table) list the four major classes of antihypertensive agents and those ingredients lisenced in the U.S. within each class.
-We will examine all ${4 \choose 2} = 6$ class-wise comparisons and all ${5 + 6 + 4 + 7 \choose 2} = 231$ ingredient-wise comparisons.
 
 For each comparison, we are interested in the relative risk of each of the cardiovascular and safety outcomes described in Section \@ref(outcomes).
 <!-- listed in Table \@ref(tab:outcome-table). -->
@@ -63,7 +62,7 @@ For each comparison, we are interested in the relative risk of each of the cardi
 <!-- Progression of albuminuria (an efficacy outcome based on labs other than renal function) -->
 
 ```{r drug-table, echo=FALSE}
-exposures <- read.csv(system.file("settings/ExposuresOfInterest.csv", package = "LegendT2dm"))
+exposures <- read.csv(system.file("settings/ExposuresOfInterest.csv", package = "LegendHtnStepCare"))
 classes <- exposures %>% filter(type == "Drug") %>% select(class) %>% pull() %>% unique()
 tmp <- sapply(classes, function(single_class) {
   as.vector(exposures %>% filter(type == "Drug", class == single_class) %>% select(name) %>% pull())
@@ -72,11 +71,11 @@ tmp <- sapply(classes, function(single_class) {
 n.obs <- sapply(tmp, length)
 seq.max <- seq_len(max(n.obs))
 drugs_by_class <- data.frame(sapply(tmp, "[", i = seq.max))
-names(drugs_by_class) <- c("DPP4 inhibitors", "GLP1 receptor antagonists", "SGLT2 inhibitors", "Sulfonylureas")
+names(drugs_by_class) <- c("ACEI", "ARB", "dCCB", "ndCCB", "Thiazide", "BB")
 
 tab <- kable(drugs_by_class, booktabs = TRUE, linesep = "",
-             caption = "T2DM drug classes and individual agents within each class") %>%
-  kable_styling(bootstrap_options = "striped", latex_options = c("striped","hold_position"))
+             caption = "Antihypertensive drug classes and individual agents within each class") %>%
+  kableExtra::kable_styling(bootstrap_options = "striped", latex_options = c("striped","hold_position"))
 
 if (knitr::is_latex_output()) {
   tab %>%
@@ -100,12 +99,8 @@ Excluding prevalent users as those without a sufficient washout period prior to 
 Our systematic framework across studies further will address residual confounding, publication bias, and p-hacking using data-driven, large-scale propensity adjustment for measured confounding, a large set of negative control outcome experiments to address unmeasured and systematic bias, and full disclosure of hypotheses tested. 
 Figure 8.1 illustrates our design for all studies that the following sections describe in more detail.
 
-```{r study-schematic, echo=FALSE, message=FALSE, fig.align='center', fig.cap='Schematic of LEGEND-T2DM new-user cohort design for the Class-vs-Class, Drug-vs-Drug and Heterogeneity studies.', fig.pos='H'}
-if (knitr::is_latex_output()) {
-  knitr::include_graphics("StudySchematic.pdf")
-} else {
-  knitr::include_graphics("StudySchematic.png")
-}
+```{r study-schematic, echo=FALSE, message=FALSE, fig.align='center', fig.cap='Schematic of LEGEND-HtnStepCare new-user cohort design for the Class-vs-Class, Drug-vs-Drug and Heterogeneity studies.', fig.pos='H'}
+if (knitr::is_latex_output()) knitr::include_graphics("figure1.pdf")
 ```
 
 ## Data Sources
@@ -114,7 +109,7 @@ We will execute LEGEND-HTNStepCare as a series of OHDSI network studies.
 All data partners within OHDSI are encouraged to participate voluntarily and can do so conveniently, because of the community’s shared Observational Medical Outcome Partnership (OMOP) common data model (CDM) and OHDSI tool-stack. 
 Many OHDSI community data partners have already committed to participate and we will recruit further data partners through OHDSI’s standard recruitment process, which includes protocol publication on OHDSI’s GitHub, an announcement in OHDSI’s research forum, presentation at the weekly OHDSI all-hands-on meeting and direct requests to data holders.
 
-In Table 8.2, we report a brief description and size of the population it represents and its patient capture process and start date. While the earliest patient capture begins in 2000 (VA), the vast majority come from the 2010s to today, providing a decade of HTN treatment coverage. US population include those publicly insured, enriched for older individuals (VA) and racially diverse (VA, Sentara). The US data sources may capture the same patients across multiple sources. Different views of the same patients are an advantage in capturing the diversity of real-world health events that patients experience. All data sources will receive institutional review board approval or exemption for their participation before executing LEGEND-HTNStepCare.
+In Table 8.2, we report a brief description of already committed databases and their size of the population it represents and its patient capture process and start date. While the earliest patient capture begins in 2000 (VA), the vast majority come from the 2010s to today, providing a decade of HTN treatment coverage. The US population include those publicly insured, enriched for older individuals (VA) and racially diverse (VA, Sentara). The US data sources may capture the same patients across multiple sources. Different views of the same patients are an advantage in capturing the diversity of real-world health events that patients experience. All data sources will receive institutional review board approval or exemption for their participation before executing LEGEND-HTNStepCare.
 
 ```{r data-sources, echo=FALSE, warning=FALSE}
 data_sources <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE, file = "
@@ -122,14 +117,14 @@ data_sources <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE,
   Yale New Haven Health System (YNHHS) ; Academic medical center patients ; 2M ; 2013 -- ; General practice, specialists and inpatient hospital services from the YNHHS in Connecticut.
   Sentara Healthcare (Sentara) ; Patients in a non-profit integrated healthacare system, all ages, racially diverse ; 7.8M ; 2010 -- ; The largest integrated health system in Northern Virginia with 12 hostpials and 556 outpatient sites. Sentara Healthcare serves the Hampton Roads region of Virginia, an area with 1.7 million residents, of which 31% are African American and 8% are Hispanic.
   Department of Veterans Affairs (VA) ; Veterans, older, racially diverse ; 12M ; 2000 -- ; National VA health care system, the largest integrated provider of medical services in the US, provided at 170 VA medical centers and 1,063 outpatient sites.
-  Columbia University Irving Medical Center (CIUMC) ; Academic medical center patients, racially diverse ; 6M ; 1989 -- ; General practice, specialists and inpatient hospital services from the New York-Presbyterian hospital and affiliated academic physician practices in New York.
+  Columbia University Irving Medical Center (CUIMC) ; Academic medical center patients, racially diverse ; 6M ; 1989 -- ; General practice, specialists and inpatient hospital services from the New York-Presbyterian hospital and affiliated academic physician practices in New York.
   Optum Electronic Health Records (PanTher) ; US general Population, all ages ; 93M ; 2006 -- ; Clinical information, prescriptions, lab results, vital signs, body measurements, diagnoses and procedures derived from clinical notes using natural language processing.
 ", show_col_types = FALSE)
 tab <- kable(data_sources, booktabs = TRUE, linesep = "",
       caption = "Committed LEGEND-HtnStepCare data sources and the populations they cover.") %>%
   kable_styling(bootstrap_options = "striped", latex_options = "striped") %>%
-  pack_rows("Administrative claims", 1, 3, latex_align = "c", indent = FALSE) %>%
-  pack_rows("Electronic health records (EHRs)", 4, 5, latex_align = "c", indent = FALSE)
+  # pack_rows("Administrative claims", 1, 3, latex_align = "c", indent = FALSE) %>%
+  pack_rows("Electronic health records (EHRs)", 1, 5, latex_align = "c", indent = FALSE)
 
 if (knitr::is_latex_output()) {
   tab %>%
@@ -176,7 +171,7 @@ The ACC/AHA guidelines advise escalating to add a second agent when average BP i
 We will conduct sensitivity analyses involving available BP measurements to demonstrate their balance between exposure cohorts (described later in Section 9).
 In the unlikely event that balance is not met, we will consider an inclusion criterion of BP > 130/80 (or 140/90) mmHg within 6 months before the index. 
 
-For each data source, we will then execute all 12 pairwise major class comparisons for which the data source yields  1,000 patients in each arm (Appendix A. 1. 1).
+For each data source, we will then execute all 12 pairwise major class comparisons for which the data source yields $\ge$ 1,000 patients in each arm (Appendix A. 1. 1).
 Appendix A. 1. 2 reports the complete OHDSI ATLAS cohort description for new-users of thiazide or thiazide-like diuretics with the first line RAS acting agent. 
 This description lists complete specification of cohort entry events, additional inclusion criteria, cohort exit events, and all associate standard OMOP CDM concept code sets used in the definition. 
 ATLAS automatically translates these definitions into network-deployable SQL source code. 
@@ -250,7 +245,7 @@ We will employ the same level of systematic rigor in studying outcomes regardles
 
 ```{r outcome-prep, echo=FALSE, warning=FALSE}
 outcomes <- read.csv(system.file("settings/OutcomesOfInterest.csv",
-                                 package = "LegendT2dm")) %>%
+                                 package = "LegendHtnStepCare")) %>%
   select(atlasName,description,cite,hyperlink)
 
 stripCitation <- function(cite) {
@@ -267,7 +262,6 @@ stripCitation <- function(cite) {
 citeList <- unlist(sapply(outcomes$cite, stripCitation))
 names(citeList) <- NULL
 citeList <- unique(citeList)
-
 citeList <- paste("[",
                   paste(citeList, collapse = ";")
                   ,"]", collapse = "")
@@ -355,8 +349,8 @@ We will prefer stratification over matching if both sufficiently balance patient
 We will execute each comparison using three different TAR definitions, reflecting different and important causal contrasts:
 
 * Intent-to-treat (TAR: index + 1 → end of observation) captures both direct treatment effects and (long-term) behavioral/treatment changes that initial assignment triggers [@Hernan2012-kz];
-* On-treatment-1 (TAR: index + 1 → treatment discontinuation) is more patient-centered [@Murray2018-zf] and captures direct treatment effect while allowing for escalation with additional T2DM agents; and
-* On-treatment-2 (TAR: index + 1 → discontinuation or escalation with T2DM agents) carries the least possible confounding with other concurrent T2DM agents.
+* On-treatment-1 (TAR: index + 1 → treatment discontinuation) is more patient-centered [@Murray2018-zf] and captures direct treatment effect while allowing for escalation with additional antihypertensive agents; and
+* On-treatment-2 (TAR: index + 1 → discontinuation or escalation with T2DM agents) carries the least possible confounding with other concurrent antihypertensive agents.
 
 Our “on-treatment” is often called “per-protocol”. Systematically executing with multiple causal contrasts enables us to identify potential biases that missing prescription data, treatment escalation and behavioral changes introduce, while preserving the ease of intent-to-treat interpretation and power if the data demonstrate them as unbiased. 
 Appendix A.3 reports the modified cohort exit rule for the on-treatment-2 TAR.
@@ -398,7 +392,7 @@ Blinded to effect estimates, investigators and stakeholders will evaluate extens
 These diagnostics will include
 
 1. Minimum detectable risk ratio (MDRR) as a typical proxy for power,
-2. Preference score distributions to evaluate empirical equipoise10 and population generalizability,
+2. Preference score distributions to evaluate empirical equipoise [@Walker2013-za] and population generalizability,
 3. Extensive patient characteristics to evaluate cohort balance before and after PS-adjustment,
 4. Negative control calibration plots to assess residual bias, and
 5. Kaplan-Meier plots to examine hazard ratio proportionality assumptions.
@@ -440,12 +434,12 @@ LEGEND-HTNStepCare does not involve human subject research.
 The project does, however, use human data collected during routine healthcare provision.
 Most often the data are de-identified within data source.
 All data partners executing the LEGEND-T2DM studies within their data sources will have received institutional review board (IRB) approval or waiver for participation in accordance to their institutional governance prior to execution (see Table \@ref(tab:irb)).
-LEGEND-T2DM executes across a federated and distributed data network, where analysis code is sent to participating data partners and only aggregate summary statistics are returned, with no sharing of patient-level data between organizations.
+LEGEND-HTNStepCare executes across a federated and distributed data network, where analysis code is sent to participating data partners and only aggregate summary statistics are returned, with no sharing of patient-level data between organizations.
 
 ```{r irb, echo=FALSE}
 data_sources <- readr::read_delim(col_names = TRUE, delim = "&", trim_ws = TRUE, file = "
 Data source & Statement
-Yale New Haven Health System (YNHHS) & Use of the YNHHS EHR data source was approved by the Yale University Institutional Review Board as an OHDSI network study (IRB\\# pending).
+Yale New Haven Health System (YNHHS) & Use of the YNHHS EHR data source was approved by the Yale University Institutional Review Board as an OHDSI network study (IRB\\#2000026013).
 Sentara Healthcare System (Sentara) & Use of the Sentara EHR data source was approved by the Senatara Health Institutional Review Board as an OHDSI network study (IRB\\# pending).
 Department of Veterans Affairs (VA) & Use of the VA EHR data source was approved by the Department of Veterans Affairs Central Institutional Review Board and was determined to meet the criteria for exemption under Exemption category4(3) and approved the request for Waiver of HIPAA Authorization (IRB\\# pending).
 
@@ -496,11 +490,11 @@ Open access to this app will be through a general public facing LEGEND-HtnStepCa
 
 ## Scientific meetings and publications
 
-We will deliver multiple presentations annually at scientific venues including the annual meetings of the American Diabetes Association, American College of Cardiology, American Heart Association and American Medical Informatics Association.
+We will deliver multiple presentations annually at scientific venues including the annual meetings of the American College of Cardiology, American Heart Association and American Medical Informatics Association.
 We will also prepare multiple scientific publications for clinical, informatics and statistical journals.
 
 ## General public
 
 We believe in sharing our findings that will guide clinical care with the general public.
-LEGEND-HtnStepCare will use social-media (Twitter) to facilitate this.
-With dedicated support from the OHDSI communications specialist, we will deliver regular press releases at key project stages, distributed via the extensive media networks of UCLA, Columbia and Yale.
+LEGEND-HtnStepCare will use social-media (e.g., X and LinkedIn) to facilitate this.
+With dedicated support from the OHDSI communications specialist, we will deliver regular press releases at key project stages, distributed via the extensive media networks of Yale, UCLA, and Columbia.
