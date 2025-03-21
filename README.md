@@ -6,8 +6,8 @@ Large-scale Evidence Generation and Evaluation across a Network of Databases for
 - Analytics use case(s): **Population-Level Estimation**
 - Study type: **Clinical Application**
 - Tags: **-**
-- Study lead: **Yuan Lu**
-- Study lead forums tag: **[Yuan_Lu](https://forums.ohdsi.org/u/yuan_lu)**
+- Study lead: **Yuan Lu, Chungsoo Kim**
+- Study lead forums tag: **[Yuan_Lu](https://forums.ohdsi.org/u/yuan_lu), [Chungsoo_Kim](https://forums.ohdsi.org/u/chungsoo_kim/summary)**
 - Study start date: **1 May 2024**
 - Study end date: **-**
 - Protocol: **[HTML document](https://ohdsi-studies.github.io/LegendHtnStepCare/Protocol.html)**
