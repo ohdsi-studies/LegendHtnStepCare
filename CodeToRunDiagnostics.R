@@ -25,7 +25,7 @@ connectionDetails <- DatabaseConnector::createConnectionDetails(
 
 # Read cohort definitions
 
-cohortDefinitionSet <- read.csv(file.path(workingDir, 'inst', 'cohortDefinition.csv'))
+cohortDefinitionSet <- read.csv(system.file("cohorts", "cohortDefinition.csv", package = "LegendHtnStepCare"))
 
 # Shared resources - Cohort Generator
 
