@@ -123,7 +123,7 @@
 		},
 		{
 			"id" : 3,
-			"name" : "[LEGEND-T2DM] Stroke (ischemic or hemorrhagic)",
+			"name" : "[LEGEND-HtnStepCare] Stroke (ischemic or hemorrhagic)",
 			"expression" : {
 				"items" : [
 					{

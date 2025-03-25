@@ -17,7 +17,7 @@ workDir = file.path(getwd())
 conceptDefinition = read.csv(file.path(workDir, 'inst/settings/ConceptDefinition.csv'), stringsAsFactors = F)
 
 ## Create Capr concept sets
-createConceptSets <- function(cs1, cs2) {
+createConceptSets <- function(conceptDefinition, cs1, cs2) {
   cs_antihypertensive <- cs(descendants(conceptDefinition %>%
                                           filter(group == 'Antihypertensive') %>%
                                           select(CONCEPT_ID) %>% pull()),
@@ -70,26 +70,54 @@ createConceptSets <- function(cs1, cs2) {
 ## Create multiple cohorts using the function and concept sets
 
 createCohortDefinition = function(connection, cdm_database_schema, idConvention = 1000000,
-                                  cohortNameTag = '', createFunction = createCohortDefinitionMain, OT2 = F){
-  primary = c('ACEI', 'ARB', 'ndCCB', 'dCCB', 'Thiazide')
-  secondary = c('ACEI', 'ARB', 'BB', 'ndCCB', 'dCCB', 'Thiazide')
-  cohortDefinition = primary %>% merge(secondary, all = T) %>% filter(x != y) %>% mutate(combi = paste(y, 'after', x))
-  cohortDefinition = cohortDefinition %>% filter(combi != 'ACEI after ARB' & combi != 'ARB after ACEI') %>% arrange(combi) %>% mutate(combi = paste(combi, cohortNameTag))
-  cohortDefinition$cohort_id = seq(1:nrow(cohortDefinition)) + idConvention
-  cohortDefinition$json = NA
-  cohortDefinition$sql = NA
-  cohortDefinition = cohortDefinition %>% select(cohort_id, x, y, combi, json, sql)
-  colnames(cohortDefinition) = c('cohortId', 'First', 'Second', 'Combi', 'json', 'sql')
+                                  conceptDefinition,
+                                  cohortNameTag = '', createFunction = createCohortDefinitionMain, drugLevel = F, OT2 = F){
   
-  for(i in 1:nrow(cohortDefinition)){
-    result = createFunction(cs1 = conceptDefinition %>% filter(group == cohortDefinition$First[i]) %>% select(CONCEPT_ID) %>% pull(),
-                            cs2 = conceptDefinition %>% filter(group == cohortDefinition$Second[i]) %>% select(CONCEPT_ID) %>% pull(),
-                            OT2 = OT2)
-    cohortDefinition$json[i] = result$json
-    cohortDefinition$sql[i] = result$sql
-    rm(result)
+  if(drugLevel){
+    primary = conceptDefinition %>% filter(group %in% c('ACEI', 'ARB', 'ndCCB', 'dCCB', 'Thiazide')) %>% select(CONCEPT_NAME) %>% unique() %>% pull()
+    secondary = conceptDefinition %>% filter(group %in% c('ACEI', 'ARB', 'BB', 'ndCCB', 'dCCB', 'Thiazide')) %>% select(CONCEPT_NAME) %>% unique() %>% pull()
+    cohortDefinition = primary %>% merge(secondary, all = T) %>% filter(x != y) %>% mutate(combi = paste('First', x, 'adding', y))
+    pattern = "pril.*artan|artan.*pril"
+    cohortDefinition = cohortDefinition %>% filter(!grepl(pattern, combi)) %>% arrange(combi) %>% mutate(combi = paste(combi, cohortNameTag))
+    cohortDefinition$cohort_id = seq(1:nrow(cohortDefinition)) + idConvention
+    cohortDefinition$json = NA
+    cohortDefinition$sql = NA
+    cohortDefinition = cohortDefinition %>% select(cohort_id, x, y, combi, json, sql)
+    colnames(cohortDefinition) = c('cohortId', 'First', 'Second', 'Combi', 'json', 'sql')
+    
+    for(i in 1:nrow(cohortDefinition)){
+      result = createFunction(conceptDefinition = conceptDefinition,
+        cs1 = conceptDefinition %>% filter(group != 'Antihypertensive' & CONCEPT_NAME == cohortDefinition$First[i]) %>% unique() %>% select(CONCEPT_ID) %>% pull(),
+        cs2 = conceptDefinition %>% filter(group != 'Antihypertensive' & CONCEPT_NAME == cohortDefinition$Second[i]) %>% unique() %>% select(CONCEPT_ID) %>% pull(),
+        OT2 = OT2)
+      cohortDefinition$json[i] = result$json
+      cohortDefinition$sql[i] = result$sql
+      rm(result)
+    }
+    
+  }else{
+    primary = c('ACEI', 'ARB', 'ndCCB', 'dCCB', 'Thiazide')
+    secondary = c('ACEI', 'ARB', 'BB', 'ndCCB', 'dCCB', 'Thiazide')
+    cohortDefinition = primary %>% merge(secondary, all = T) %>% filter(x != y) %>% mutate(combi = paste('First', x, 'adding', y))
+    cohortDefinition = cohortDefinition %>% filter(combi != 'First ACEI adding ARB' & combi != 'First ARB adding ACEI') %>% arrange(combi) %>% mutate(combi = paste(combi, cohortNameTag))
+    cohortDefinition$cohort_id = seq(1:nrow(cohortDefinition)) + idConvention
+    cohortDefinition$json = NA
+    cohortDefinition$sql = NA
+    cohortDefinition = cohortDefinition %>% select(cohort_id, x, y, combi, json, sql)
+    colnames(cohortDefinition) = c('cohortId', 'First', 'Second', 'Combi', 'json', 'sql')
+    
+    for(i in 1:nrow(cohortDefinition)){
+      result = createFunction(conceptDefinition = conceptDefinition,
+        cs1 = conceptDefinition %>% filter(group == cohortDefinition$First[i]) %>% unique() %>% select(CONCEPT_ID) %>% pull(),
+        cs2 = conceptDefinition %>% filter(group == cohortDefinition$Second[i]) %>% unique() %>% select(CONCEPT_ID) %>% pull(),
+        OT2 = OT2)
+      cohortDefinition$json[i] = result$json
+      cohortDefinition$sql[i] = result$sql
+      rm(result)
+    }
+    
   }
-  
+
   cohortDefinition = cohortDefinition %>% select(-First, -Second)
   colnames(cohortDefinition) = c('cohortId', 'cohortName', 'json', 'sql')
   
@@ -150,9 +178,9 @@ addSecondDrugExitSql <- function(cohortJson){
 }
 
 ## Skeleton for the main definition
-createCohortDefinitionMain <- function(cs1, cs2, OT2 = F){
+createCohortDefinitionMain <- function(conceptDefinition, cs1, cs2, OT2 = F){
   
-  conceptSet <- createConceptSets(cs1, cs2)
+  conceptSet <- createConceptSets(conceptDefinition, cs1, cs2)
   
   cd <- cohort(
     entry = entry(drugExposure(conceptSet[['cs_second']], age(gte(18)), firstOccurrence()),
@@ -180,8 +208,8 @@ createCohortDefinitionMain <- function(cs1, cs2, OT2 = F){
 
 
 ### Age groups (18-44 / 45-64 / 65+)
-createCohortDefinitionAgeSubgroup1 <- function(cs1, cs2, OT2){
-  conceptSet <- createConceptSets(cs1, cs2)
+createCohortDefinitionAgeSubgroup1 <- function(conceptDefinition, cs1, cs2, OT2){
+  conceptSet <- createConceptSets(conceptDefinition, cs1, cs2)
   cd <- cohort(
     entry = entry(drugExposure(conceptSet[['cs_second']], age(bt(18, 44)), firstOccurrence()),
                   observationWindow = continuousObservation(priorDays = 365),
@@ -205,8 +233,8 @@ createCohortDefinitionAgeSubgroup1 <- function(cs1, cs2, OT2){
   result = data.frame(json = cohortJson, sql = sql)
   return(result)
 }
-createCohortDefinitionAgeSubgroup2 <- function(cs1, cs2, OT2){
-  conceptSet <- createConceptSets(cs1, cs2)
+createCohortDefinitionAgeSubgroup2 <- function(conceptDefinition, cs1, cs2, OT2){
+  conceptSet <- createConceptSets(conceptDefinition, cs1, cs2)
   cd <- cohort(
     entry = entry(drugExposure(conceptSet[['cs_second']], age(bt(45, 64)), firstOccurrence()),
                   observationWindow = continuousObservation(priorDays = 365),
@@ -230,8 +258,8 @@ createCohortDefinitionAgeSubgroup2 <- function(cs1, cs2, OT2){
   result = data.frame(json = cohortJson, sql = sql)
   return(result)
 }
-createCohortDefinitionAgeSubgroup3 <- function(cs1, cs2, OT2){
-  conceptSet <- createConceptSets(cs1, cs2)
+createCohortDefinitionAgeSubgroup3 <- function(conceptDefinition, cs1, cs2, OT2){
+  conceptSet <- createConceptSets(conceptDefinition, cs1, cs2)
   cd <- cohort(
     entry = entry(drugExposure(conceptSet[['cs_second']], age(gte(65)), firstOccurrence()),
                   observationWindow = continuousObservation(priorDays = 365),
@@ -256,8 +284,8 @@ createCohortDefinitionAgeSubgroup3 <- function(cs1, cs2, OT2){
   return(result)
 }
 ### Sex groups (Female/male)
-createCohortDefinitionMaleSubgroup <- function(cs1, cs2, OT2){
-  conceptSet <- createConceptSets(cs1, cs2)
+createCohortDefinitionMaleSubgroup <- function(conceptDefinition, cs1, cs2, OT2){
+  conceptSet <- createConceptSets(conceptDefinition, cs1, cs2)
   cd <- cohort(
     entry = entry(drugExposure(conceptSet[['cs_second']], age(gte(18)), male(), firstOccurrence()),
                   observationWindow = continuousObservation(priorDays = 365),
@@ -281,8 +309,8 @@ createCohortDefinitionMaleSubgroup <- function(cs1, cs2, OT2){
   result = data.frame(json = cohortJson, sql = sql)
   return(result)
 }
-createCohortDefinitionFemaleSubgroup <- function(cs1, cs2, OT2){
-  conceptSet <- createConceptSets(cs1, cs2)
+createCohortDefinitionFemaleSubgroup <- function(conceptDefinition, cs1, cs2, OT2){
+  conceptSet <- createConceptSets(conceptDefinition, cs1, cs2)
   cd <- cohort(
     entry = entry(drugExposure(conceptSet[['cs_second']], age(gte(18)), female(), firstOccurrence()),
                   observationWindow = continuousObservation(priorDays = 365),
@@ -307,8 +335,8 @@ createCohortDefinitionFemaleSubgroup <- function(cs1, cs2, OT2){
   return(result)
 }
 ### Race and ethnicity (White, Black, Hispanic)
-createCohortDefinitionWhiteSubgroup <- function(cs1, cs2, OT2){
-  conceptSet <- createConceptSets(cs1, cs2)
+createCohortDefinitionWhiteSubgroup <- function(conceptDefinition, cs1, cs2, OT2){
+  conceptSet <- createConceptSets(conceptDefinition, cs1, cs2)
   cd <- cohort(
     entry = entry(drugExposure(conceptSet[['cs_second']], age(gte(18)), firstOccurrence()),
                   observationWindow = continuousObservation(priorDays = 365),
@@ -349,8 +377,8 @@ createCohortDefinitionWhiteSubgroup <- function(cs1, cs2, OT2){
   result = data.frame(json = cohortJson, sql = sql)
   return(result)
 }
-createCohortDefinitionBlackSubgroup <- function(cs1, cs2, OT2){
-  conceptSet <- createConceptSets(cs1, cs2)
+createCohortDefinitionBlackSubgroup <- function(conceptDefinition, cs1, cs2, OT2){
+  conceptSet <- createConceptSets(conceptDefinition, cs1, cs2)
   cd <- cohort(
     entry = entry(drugExposure(conceptSet[['cs_second']], age(gte(18)), firstOccurrence()),
                   observationWindow = continuousObservation(priorDays = 365),
@@ -396,8 +424,8 @@ createCohortDefinitionBlackSubgroup <- function(cs1, cs2, OT2){
   result = data.frame(json = cohortJson, sql = sql)
   return(result)
 }
-createCohortDefinitionHispanicSubgroup <- function(cs1, cs2, OT2){
-  conceptSet <- createConceptSets(cs1, cs2)
+createCohortDefinitionHispanicSubgroup <- function(conceptDefinition, cs1, cs2, OT2){
+  conceptSet <- createConceptSets(conceptDefinition, cs1, cs2)
   cd <- cohort(
     entry = entry(drugExposure(conceptSet[['cs_second']], age(gte(18)), firstOccurrence()),
                   observationWindow = continuousObservation(priorDays = 365),
@@ -445,15 +473,33 @@ createCohortDefinitionHispanicSubgroup <- function(cs1, cs2, OT2){
 
 
 ## Main setting (On-treatment 1): no additional censoring
-cohortDefinitionMain = createCohortDefinition(connection, cdm_database_schema, idConvention = 1000000, cohortNameTag = '', createFunction = createCohortDefinitionMain, OT = F)
-cohortDefinitionAgeSubgroup1 = createCohortDefinition(connection, cdm_database_schema, idConvention = 1100000, cohortNameTag = 'young age group', createFunction = createCohortDefinitionAgeSubgroup1, OT = F)
-cohortDefinitionAgeSubgroup2 = createCohortDefinition(connection, cdm_database_schema, idConvention = 1200000, cohortNameTag = 'middle age group', createFunction = createCohortDefinitionAgeSubgroup2, OT = F)
-cohortDefinitionAgeSubgroup3 = createCohortDefinition(connection, cdm_database_schema, idConvention = 1300000, cohortNameTag = 'old age group', createFunction = createCohortDefinitionAgeSubgroup3, OT = F)
-cohortDefinitionMaleSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 1400000, cohortNameTag = 'male group', createFunction = createCohortDefinitionMaleSubgroup, OT = F)
-cohortDefinitionFemaleSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 1500000, cohortNameTag = 'female group', createFunction = createCohortDefinitionFemaleSubgroup, OT = F)
-cohortDefinitionWhiteSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 1600000, cohortNameTag = 'white group', createFunction = createCohortDefinitionWhiteSubgroup, OT = F)
-cohortDefinitionBlackSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 1700000, cohortNameTag = 'black group', createFunction = createCohortDefinitionBlackSubgroup, OT = F)
-cohortDefinitionHispanicSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 1800000, cohortNameTag = 'hispanic group', createFunction = createCohortDefinitionHispanicSubgroup, OT = F)
+cohortDefinitionMain = createCohortDefinition(connection, cdm_database_schema, idConvention = 1000000, drugLevel = F,
+                                              conceptDefinition = conceptDefinition,
+                                              cohortNameTag = '', createFunction = createCohortDefinitionMain, OT = F)
+cohortDefinitionAgeSubgroup1 = createCohortDefinition(connection, cdm_database_schema, idConvention = 1100000, drugLevel = F, 
+                                                      conceptDefinition = conceptDefinition,
+                                                      cohortNameTag = 'young age group', createFunction = createCohortDefinitionAgeSubgroup1, OT = F)
+cohortDefinitionAgeSubgroup2 = createCohortDefinition(connection, cdm_database_schema, idConvention = 1200000, drugLevel = F, 
+                                                      conceptDefinition = conceptDefinition,
+                                                      cohortNameTag = 'middle age group', createFunction = createCohortDefinitionAgeSubgroup2, OT = F)
+cohortDefinitionAgeSubgroup3 = createCohortDefinition(connection, cdm_database_schema, idConvention = 1300000, drugLevel = F, 
+                                                      conceptDefinition = conceptDefinition,
+                                                      cohortNameTag = 'old age group', createFunction = createCohortDefinitionAgeSubgroup3, OT = F)
+cohortDefinitionMaleSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 1400000, drugLevel = F, 
+                                                      conceptDefinition = conceptDefinition,
+                                                      cohortNameTag = 'male group', createFunction = createCohortDefinitionMaleSubgroup, OT = F)
+cohortDefinitionFemaleSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 1500000, drugLevel = F, 
+                                                        conceptDefinition = conceptDefinition,
+                                                        cohortNameTag = 'female group', createFunction = createCohortDefinitionFemaleSubgroup, OT = F)
+cohortDefinitionWhiteSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 1600000, drugLevel = F, 
+                                                       conceptDefinition = conceptDefinition,
+                                                       cohortNameTag = 'white group', createFunction = createCohortDefinitionWhiteSubgroup, OT = F)
+cohortDefinitionBlackSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 1700000, drugLevel = F, 
+                                                       conceptDefinition = conceptDefinition,
+                                                       cohortNameTag = 'black group', createFunction = createCohortDefinitionBlackSubgroup, OT = F)
+cohortDefinitionHispanicSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 1800000, drugLevel = F, 
+                                                          conceptDefinition = conceptDefinition,
+                                                          cohortNameTag = 'hispanic group', createFunction = createCohortDefinitionHispanicSubgroup, OT = F)
 
 cohortDefinitionFinal = rbind(cohortDefinitionMain,
                               cohortDefinitionAgeSubgroup1,
@@ -480,15 +526,25 @@ write.csv(cohortDefinitionFinal, file.path(workDir, 'inst/cohorts/cohortDefiniti
 
 
 ## On-treatment 2: additional censoring when other antihypertensive added during follow-up
-cohortDefinitionMain = createCohortDefinition(connection, cdm_database_schema, idConvention = 2000000, cohortNameTag = 'OT2', createFunction = createCohortDefinitionMain, OT = T)
-cohortDefinitionAgeSubgroup1 = createCohortDefinition(connection, cdm_database_schema, idConvention = 2100000, cohortNameTag = 'OT2 young age group', createFunction = createCohortDefinitionAgeSubgroup1, OT = T)
-cohortDefinitionAgeSubgroup2 = createCohortDefinition(connection, cdm_database_schema, idConvention = 2200000, cohortNameTag = 'OT2 middle age group', createFunction = createCohortDefinitionAgeSubgroup2, OT = T)
-cohortDefinitionAgeSubgroup3 = createCohortDefinition(connection, cdm_database_schema, idConvention = 2300000, cohortNameTag = 'OT2 old age group', createFunction = createCohortDefinitionAgeSubgroup3, OT = T)
-cohortDefinitionMaleSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 2400000, cohortNameTag = 'OT2 male group', createFunction = createCohortDefinitionMaleSubgroup, OT = T)
-cohortDefinitionFemaleSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 2500000, cohortNameTag = 'OT2 female group', createFunction = createCohortDefinitionFemaleSubgroup, OT = T)
-cohortDefinitionWhiteSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 2600000, cohortNameTag = 'OT2 white group', createFunction = createCohortDefinitionWhiteSubgroup, OT = T)
-cohortDefinitionBlackSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 2700000, cohortNameTag = 'OT2 black group', createFunction = createCohortDefinitionBlackSubgroup, OT = T)
-cohortDefinitionHispanicSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 2800000, cohortNameTag = 'OT2 hispanic group', createFunction = createCohortDefinitionHispanicSubgroup, OT = T)
+cohortDefinitionMain = createCohortDefinition(connection, cdm_database_schema, idConvention = 2000000, 
+                                              conceptDefinition = conceptDefinition,
+                                              cohortNameTag = 'OT2', createFunction = createCohortDefinitionMain, OT = T)
+cohortDefinitionAgeSubgroup1 = createCohortDefinition(connection, cdm_database_schema, idConvention = 2100000, conceptDefinition = conceptDefinition,
+                                                      cohortNameTag = 'OT2 young age group', createFunction = createCohortDefinitionAgeSubgroup1, OT = T)
+cohortDefinitionAgeSubgroup2 = createCohortDefinition(connection, cdm_database_schema, idConvention = 2200000,conceptDefinition = conceptDefinition,
+                                                      cohortNameTag = 'OT2 middle age group', createFunction = createCohortDefinitionAgeSubgroup2, OT = T)
+cohortDefinitionAgeSubgroup3 = createCohortDefinition(connection, cdm_database_schema, idConvention = 2300000,conceptDefinition = conceptDefinition,
+                                                      cohortNameTag = 'OT2 old age group', createFunction = createCohortDefinitionAgeSubgroup3, OT = T)
+cohortDefinitionMaleSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 2400000,conceptDefinition = conceptDefinition,
+                                                      cohortNameTag = 'OT2 male group', createFunction = createCohortDefinitionMaleSubgroup, OT = T)
+cohortDefinitionFemaleSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 2500000,conceptDefinition = conceptDefinition,
+                                                        cohortNameTag = 'OT2 female group', createFunction = createCohortDefinitionFemaleSubgroup, OT = T)
+cohortDefinitionWhiteSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 2600000,conceptDefinition = conceptDefinition,
+                                                       cohortNameTag = 'OT2 white group', createFunction = createCohortDefinitionWhiteSubgroup, OT = T)
+cohortDefinitionBlackSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 2700000, conceptDefinition = conceptDefinition,
+                                                       cohortNameTag = 'OT2 black group', createFunction = createCohortDefinitionBlackSubgroup, OT = T)
+cohortDefinitionHispanicSubgroup = createCohortDefinition(connection, cdm_database_schema, idConvention = 2800000, conceptDefinition = conceptDefinition,
+                                                          cohortNameTag = 'OT2 hispanic group', createFunction = createCohortDefinitionHispanicSubgroup, OT = T)
 
 cohortDefinitionFinal = rbind(cohortDefinitionMain,
                               cohortDefinitionAgeSubgroup1,
@@ -512,3 +568,18 @@ rm(cohortDefinitionMain,
 
 ## Save the result
 write.csv(cohortDefinitionFinal, file.path(workDir, 'inst/cohorts/cohortDefinitionOT2.csv'), row.names = F)
+
+
+### Drug level 
+cohortDefinitionDrugLevelMain = createCohortDefinition(connection, cdm_database_schema, idConvention = 3000000, drugLevel = T,
+                                              conceptDefinition = conceptDefinition,
+                                              cohortNameTag = '', createFunction = createCohortDefinitionMain, OT = F)
+
+n = nrow(cohortDefinitionDrugLevelMain)
+file = 20
+rowsPerFile = ceiling(n/file)
+for(i in 1:file){
+  start = (i-1)*rowsPerFile + 1
+  end = min(i*rowsPerFile, n)
+  write.csv(cohortDefinitionDrugLevelMain[start:end,], file.path(workDir, paste0('inst/cohorts/drugLevel/cohortDefinitionDrugLevel_', i, '.csv')), row.names = F)
+}

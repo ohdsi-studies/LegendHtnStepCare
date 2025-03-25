@@ -4,7 +4,7 @@
 allCohorts <- read.csv(system.file("cohorts", "cohortDefinition.csv", package = "LegendHtnStepCare"))
 baseCohortJson <- allCohorts %>% filter(cohortId == 1000001)
 
-LegendHtnStepCare:::printCohortDefinitionFromNameAndJson(name = "Class-vs-Class Exposure (ACEI after Thiazide) Cohort / OT1 {#class-cohort}", json = baseCohortJson$json)
+LegendHtnStepCare:::printCohortDefinitionFromNameAndJson(name = "Class-vs-Class Exposure (First ACEI adding Thiazide) Cohort", json = baseCohortJson$json)
 ```
 
 ## Escalation Exit Criteria (On-treatment 2) {#escalation-cohort}
@@ -17,7 +17,7 @@ printExitCriteria(ot2Cohort)
 ```
 
 ## Heterogenity Study Inclusion Criteria {#atlas-subgroups}
-### Young age subgroup
+### Young age subgroup 
 ```{r heterogenity-cohort1, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
 youngerJson <- allCohorts %>% filter(cohortId == 1100001)
 youngerCohort <- CirceR::cohortExpressionFromJson(youngerJson$json)
@@ -69,6 +69,14 @@ removeInclusionRules <- function(json) {
 blackJson <- allCohorts %>% filter(cohortId == 1700001)
 blackCohort <- CirceR::cohortExpressionFromJson(removeInclusionRules(blackJson$json))
 printInclusionCriteria(blackCohort)
+```
+
+```{r drug-cohort, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+allCohorts <- read.csv(system.file("cohorts", "drugLevel", "cohortDefinitionDrugLevel_1.csv", package = "LegendHtnStepCare"))
+baseCohortJson <- allCohorts %>% filter(cohortId == 3000001)
+
+LegendHtnStepCare:::printCohortDefinitionFromNameAndJson(name = "Drug-vs-Drug Exposure (First amlodipine adding acebutolol 
+) Cohort", json = baseCohortJson$json)
 ```
 
 # Outcome Cohort Definitions
