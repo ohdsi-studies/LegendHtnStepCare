@@ -3898,7 +3898,7 @@ A majority of outcome definitions have been previously implemented and validated
 <p>To assess across-source consistency and general clinical validity, we will characterize outcome incidence, stratified by age, sex and index year for each data source.</p>
 <!-- While we list many patient-centered outcomes as "exploratory" in the table, we use this term to highlight those that are less likely to achieve high statistical power across all data sources due to lower event rates. -->
 <p>We will employ the same level of systematic rigor in studying outcomes regardless of their primary or secondary label.</p>
-<p>A majority of outcome definitions have been previously implemented and validated in our own work <span class="citation">[<a href="#ref-Suchard2019-gq">17</a>–<a href="#ref-Yuan2018-am">22</a>]</span> based heavily on prior development by others (see references in Table <a href="#tab:outcome-table">8.3</a> <span class="citation">[<a href="#ref-You_undated-fz">18</a>,<a href="#ref-Ryan2018-ci">19</a>,<a href="#ref-Weinstein2020-ic">21</a>–<a href="#ref-Floyd2016-ch">24</a>,<a href="#ref-Floyd2016-ch">24</a>–<a href="#ref-Singh2018-jg">26</a>,<a href="#ref-Singh2018-jg">26</a>,<a href="#ref-Wahl2010-ii">27</a>,<a href="#ref-Wahl2010-ii">27</a>–<a href="#ref-Andrade2012-sp">29</a>,<a href="#ref-Andrade2012-sp">29</a>,<a href="#ref-Park2016-wa">30</a>,<a href="#ref-Park2016-wa">30</a>,<a href="#ref-Gon2017-rp">31</a>,<a href="#ref-Gon2017-rp">31</a>,<a href="#ref-Sung2016-xi">32</a>,<a href="#ref-Sung2016-xi">32</a>,<a href="#ref-Tu2013-qv">33</a>,<a href="#ref-Tu2013-qv">33</a>,<a href="#ref-Yuan2017-wm">34</a>,<a href="#ref-Yuan2017-wm">34</a>–<a href="#ref-Muntner2015">84</a>,<a href="#ref-Muntner2015">84</a>–<a href="#ref-Ammann2018b">172</a>,<a href="#ref-Koo2016">173</a> ]</span>).
+<p>A majority of outcome definitions have been previously implemented and validated in our own work <span class="citation">[<a href="#ref-Suchard2019-gq">17</a>–<a href="#ref-Yuan2018-am">22</a>]</span> based heavily on prior development by others (see references in Table <a href="#tab:outcome-table">8.3</a> <span class="citation">[<a href="#ref-You_undated-fz">18</a>,<a href="#ref-Ryan2018-ci">19</a>,<a href="#ref-Weinstein2020-ic">21</a>–<a href="#ref-Floyd2016-ch">24</a>,<a href="#ref-Floyd2016-ch">24</a>–<a href="#ref-Singh2018-jg">26</a>,<a href="#ref-Singh2018-jg">26</a>,<a href="#ref-Wahl2010-ii">27</a>,<a href="#ref-Wahl2010-ii">27</a>–<a href="#ref-Andrade2012-sp">29</a>,<a href="#ref-Andrade2012-sp">29</a>,<a href="#ref-Park2016-wa">30</a>,<a href="#ref-Park2016-wa">30</a>,<a href="#ref-Gon2017-rp">31</a>,<a href="#ref-Gon2017-rp">31</a>,<a href="#ref-Sung2016-xi">32</a>,<a href="#ref-Sung2016-xi">32</a>,<a href="#ref-Tu2013-qv">33</a>,<a href="#ref-Tu2013-qv">33</a>,<a href="#ref-Yuan2017-wm">34</a>,<a href="#ref-Yuan2017-wm">34</a>–<a href="#ref-Muntner2015">84</a>,<a href="#ref-Muntner2015">84</a>–<a href="#ref-Ammann2018b">174</a>,<a href="#ref-Koo2016">175</a> ]</span>).
 To assess across-source consistency and general clinical validity, we will characterize outcome incidence, stratified by age, sex and index year for each data source.</p>
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <caption>
@@ -4553,13 +4553,24 @@ The first condition record of Type 2 Diabetes Mellitus, which is followed by ano
 </tr>
 <tr>
 <td style="text-align:left;">
+Vasculitis
+</td>
+<td style="text-align:left;">
+The first condition record of vasculitis, which is followed by another vasculitis condition record or drug to treat vasculiits
+</td>
+<td style="text-align:left;">
+<span class="citation">[<a href="#ref-Thorpe2018">169</a>,<a href="#ref-England2017">170</a>]</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 Venous thromboembolism
 </td>
 <td style="text-align:left;">
 Venous thromboembolism condition record of any type; successive records with &gt; 180 day gap are considered independent episodes
 </td>
 <td style="text-align:left;">
-<span class="citation">[<a href="#ref-Tamariz2012b">169</a>–<a href="#ref-Ammann2018b">172</a>]</span>
+<span class="citation">[<a href="#ref-Tamariz2012b">171</a>–<a href="#ref-Ammann2018b">174</a>]</span>
 </td>
 </tr>
 <tr>
@@ -4570,7 +4581,7 @@ Vertigo
 The first condition record of vertigo
 </td>
 <td style="text-align:left;">
-<span class="citation">[<a href="#ref-Koo2016">173</a>]</span>
+<span class="citation">[<a href="#ref-Koo2016">175</a>]</span>
 </td>
 </tr>
 <tr>
@@ -4621,8 +4632,8 @@ The regression will condition on the PS strata/matching-unit with treatment allo
 We will prefer stratification over matching if both sufficiently balance patients (see Section <a href="#sample-size">9</a>), as the former optimizes patient inclusions and thus generalizability.</p>
 <p>We will execute each comparison using three different TAR definitions, reflecting different and important causal contrasts:</p>
 <ul>
-<li>Intent-to-treat (TAR: index + 1 → end of observation) captures both direct treatment effects and (long-term) behavioral/treatment changes that initial assignment triggers <span class="citation">[<a href="#ref-Hernan2012-kz">174</a>]</span>;</li>
-<li>On-treatment-1 (TAR: index + 1 → treatment discontinuation) is more patient-centered <span class="citation">[<a href="#ref-Murray2018-zf">175</a>]</span> and captures direct treatment effect while allowing for escalation with additional antihypertensive agents; and</li>
+<li>Intent-to-treat (TAR: index + 1 → end of observation) captures both direct treatment effects and (long-term) behavioral/treatment changes that initial assignment triggers <span class="citation">[<a href="#ref-Hernan2012-kz">176</a>]</span>;</li>
+<li>On-treatment-1 (TAR: index + 1 → treatment discontinuation) is more patient-centered <span class="citation">[<a href="#ref-Murray2018-zf">177</a>]</span> and captures direct treatment effect while allowing for escalation with additional antihypertensive agents; and</li>
 <li>On-treatment-2 (TAR: index + 1 → discontinuation or escalation with other antihypertensive agents) carries the least possible confounding with other concurrent antihypertensive agents.</li>
 </ul>
 <p>Our “on-treatment” is often called “per-protocol”. Systematically executing with multiple causal contrasts enables us to identify potential biases that missing prescription data, treatment escalation and behavioral changes introduce, while preserving the ease of intent-to-treat interpretation and power if the data demonstrate them as unbiased.
@@ -4650,7 +4661,7 @@ Doubly robust procedures do exist for hazard differences, and we will validate t
 In practice, however, neither the outcome nor PS model is correctly specified, leading to systematic error in the observational setting.</p>
 <p>Missing data of potential concern are patient demographics (gender, age, race) for our inclusion criteria.
 We will include only individuals whose baseline eligibility can be characterized that will most notably influence race subgroup assessments in the <strong>Heterogeneity Study</strong>.
-No further missing data can arise in our large-scale PS models because all features, with the exception of demographics, simply indicate the presence or absence of health records in a given time-period. Finally, we limit the impact of missing data, such as prescription information, relating to exposure time-at-risk by entertaining multiple definitions <span class="citation">[<a href="#ref-Schneeweiss2007-am">176</a>]</span>.
+No further missing data can arise in our large-scale PS models because all features, with the exception of demographics, simply indicate the presence or absence of health records in a given time-period. Finally, we limit the impact of missing data, such as prescription information, relating to exposure time-at-risk by entertaining multiple definitions <span class="citation">[<a href="#ref-Schneeweiss2007-am">178</a>]</span>.
 In all reports, we will clearly tabulate numbers of missing observations and patient attrition.</p>
 </div>
 </div>
@@ -4658,16 +4669,16 @@ In all reports, we will clearly tabulate numbers of missing observations and pat
 <div id="sample-size" class="section level1" number="9">
 <h1><span class="header-section-number">9</span> Sample Size and Study Power</h1>
 <p>Within each data source, we will execute all comparisons with <span class="math inline">\(\ge\)</span> 1,000 eligible patients per arm.
-Blinded to effect estimates, investigators and stakeholders will evaluate extensive study diagnostics for each comparison to assess reliability and generalizability, and only report risk estimates that pass <span class="citation">[<a href="#ref-Schuemie2018-zi">177</a>,<a href="#ref-Schuemie2020-wx">178</a>]</span>.
+Blinded to effect estimates, investigators and stakeholders will evaluate extensive study diagnostics for each comparison to assess reliability and generalizability, and only report risk estimates that pass <span class="citation">[<a href="#ref-Schuemie2018-zi">179</a>,<a href="#ref-Schuemie2020-wx">180</a>]</span>.
 These diagnostics will include</p>
 <ol style="list-style-type: decimal">
 <li>Minimum detectable risk ratio (MDRR) as a typical proxy for power,</li>
-<li>Preference score distributions to evaluate empirical equipoise <span class="citation">[<a href="#ref-Walker2013-za">179</a>]</span> and population generalizability,</li>
+<li>Preference score distributions to evaluate empirical equipoise <span class="citation">[<a href="#ref-Walker2013-za">181</a>]</span> and population generalizability,</li>
 <li>Extensive patient characteristics to evaluate cohort balance before and after PS-adjustment,</li>
 <li>Negative control calibration plots to assess residual bias, and</li>
 <li>Kaplan-Meier plots to examine hazard ratio proportionality assumptions.</li>
 </ol>
-<p>We will define cohorts to stand in empirical equipoise if the majority of patients carry preference scores between 0.3 and 0.7 and to achieve balance if all after-adjustment characteristics return absolute standardized mean differences <span class="math inline">\(&lt;\)</span> 0.1 <span class="citation">[<a href="#ref-Austin2009-af">180</a>]</span>.</p>
+<p>We will define cohorts to stand in empirical equipoise if the majority of patients carry preference scores between 0.3 and 0.7 and to achieve balance if all after-adjustment characteristics return absolute standardized mean differences <span class="math inline">\(&lt;\)</span> 0.1 <span class="citation">[<a href="#ref-Austin2009-af">182</a>]</span>.</p>
 </div>
 <div id="strengths-limitations" class="section level1" number="10">
 <h1><span class="header-section-number">10</span> Strengths and Limitations</h1>
@@ -4752,7 +4763,7 @@ The study results will be assessed for medically important findings.</p>
 </div>
 <div id="plans-for-disseminating-and-communicating-study-results" class="section level1" number="13">
 <h1><span class="header-section-number">13</span> Plans for Disseminating and Communicating Study Results</h1>
-<p>Open science aims to make scientific research, including its data process and software, and its dissemination, through publication and presentation, accessible to all levels of an inquiring society, amateur or professional <span class="citation">[<a href="#ref-Woelfle2011-ss">181</a>]</span> and is a governing principle of LEGEND-HtnStepCare.
+<p>Open science aims to make scientific research, including its data process and software, and its dissemination, through publication and presentation, accessible to all levels of an inquiring society, amateur or professional <span class="citation">[<a href="#ref-Woelfle2011-ss">183</a>]</span> and is a governing principle of LEGEND-HtnStepCare.
 Open science delivers reproducible, transparent and reliable evidence.
 All aspects of LEGEND-HtnStepCare (except private patient data) will be open and we will actively encourage other interested researchers, clinicians and patients to participate.
 This differs fundamentally from traditional studies that rarely open their analytic tools or share all result artifacts, and inform the community about hard-to-verify conclusions at completion.</p>
@@ -4760,13 +4771,13 @@ This differs fundamentally from traditional studies that rarely open their analy
 <h2><span class="header-section-number">13.1</span> Transparent and re-usable research tools</h2>
 <p>We will publicly register this protocol and announce its availability for feedback from stakeholders, the OHDSI community and within clinical professional societies.
 This protocol will link to open source code for all steps to generating diagnostics, effect estimates, figures and tables.
-Such transparency is possible because we will construct our studies on top of the OHDSI toolstack of open source software tools that are community developed and rigorously tested <span class="citation">[<a href="#ref-Schuemie2020-wx">178</a>]</span>.
+Such transparency is possible because we will construct our studies on top of the OHDSI toolstack of open source software tools that are community developed and rigorously tested <span class="citation">[<a href="#ref-Schuemie2020-wx">180</a>]</span>.
 We will publicly host LEGEND-HtnStepCare source code at (<a href="https://github.com/ohdsi-studies/LegendHtnStepCare" class="uri">https://github.com/ohdsi-studies/LegendHtnStepCare</a>), allowing public contribution and review, and free re-use for anyone’s future research.</p>
 </div>
 <div id="continuous-sharing-of-results" class="section level2" number="13.2">
 <h2><span class="header-section-number">13.2</span> Continuous sharing of results</h2>
 <p>LEGEND-HtnStepCare embodies a new approach to generating evidence from healthcare data that overcome weaknesses in the current process of answering and publishing (or not) one question at a time.
-Generating evidence for thousands of research and control questions using a systematic process enables us to not only evaluate that process and the coherence and consistency of the evidence, but also to avoid <span class="math inline">\(p\)</span>-hacking and publication bias <span class="citation">[<a href="#ref-Schuemie2018-zi">177</a>]</span>.
+Generating evidence for thousands of research and control questions using a systematic process enables us to not only evaluate that process and the coherence and consistency of the evidence, but also to avoid <span class="math inline">\(p\)</span>-hacking and publication bias <span class="citation">[<a href="#ref-Schuemie2018-zi">179</a>]</span>.
 We will store and openly communicate all of these results as they become available using a user-friendly web-based app that serves up all descriptive statistics, study diagnostics and effect estimates for each cohort comparison and outcome.
 Open access to this app will be through a general public facing LEGEND-HtnStepCare webpage.</p>
 </div>
@@ -5289,44 +5300,50 @@ With dedicated support from the OHDSI communications specialist, we will deliver
 <div id="ref-Chen2010" class="csl-entry">
 <div class="csl-left-margin">168 </div><div class="csl-right-inline">Chen G, Khan N, Walker R, <em>et al.</em> Validating ICD coding algorithms for diabetes mellitus from administrative data. <em>Diabetes Res Clin Pract</em> 2010;<strong>89</strong>:189–95. doi:<a href="https://doi.org/10.1016/j.diabres.2010.03.007">10.1016/j.diabres.2010.03.007</a></div>
 </div>
+<div id="ref-Thorpe2018" class="csl-entry">
+<div class="csl-left-margin">169 </div><div class="csl-right-inline">Thorpe CT, Thorpe JM, Jiang T, <em>et al.</em> Healthcare utilization and expenditures for united states medicare beneficiaries with systemic vasculitis. <em>Semin Arthritis Rheum</em> 2018;<strong>47</strong>:507–19. doi:<a href="https://doi.org/10.1016/j.semarthrit.2017.08.005">10.1016/j.semarthrit.2017.08.005</a></div>
+</div>
+<div id="ref-England2017" class="csl-entry">
+<div class="csl-left-margin">170 </div><div class="csl-right-inline">England BR, Mikuls TR, Xie F, <em>et al.</em> Herpes zoster as a risk factor for incident giant cell arteritis. <em>Arthritis &amp; Rheumatology</em> 2017;<strong>69</strong>:2351–8. doi:<a href="https://doi.org/10.1002/art.40236">https://doi.org/10.1002/art.40236</a></div>
+</div>
 <div id="ref-Tamariz2012b" class="csl-entry">
-<div class="csl-left-margin">169 </div><div class="csl-right-inline">Tamariz L, Harkins T, Nair V. A systematic review of validated methods for identifying venous thromboembolism using administrative and claims data. <em>Pharmacoepidemiol Drug Saf</em> 2012;<strong>21</strong>:154–62. doi: 10.1002/pds.2341.</div>
+<div class="csl-left-margin">171 </div><div class="csl-right-inline">Tamariz L, Harkins T, Nair V. A systematic review of validated methods for identifying venous thromboembolism using administrative and claims data. <em>Pharmacoepidemiol Drug Saf</em> 2012;<strong>21</strong>:154–62. doi: 10.1002/pds.2341.</div>
 </div>
 <div id="ref-Burwen2017" class="csl-entry">
-<div class="csl-left-margin">170 </div><div class="csl-right-inline">Burwen DR, Wu C, Cirillo D, <em>et al.</em> Venous thromboembolism incidence, recurrence, and mortality based on women’s health initiative data and medicare claims. <em>Thromb Res</em> 2017;<strong>150:78-85.</strong>:10.1016/j.thromres.2016.11.015. Epub 2016 Nov 15.</div>
+<div class="csl-left-margin">172 </div><div class="csl-right-inline">Burwen DR, Wu C, Cirillo D, <em>et al.</em> Venous thromboembolism incidence, recurrence, and mortality based on women’s health initiative data and medicare claims. <em>Thromb Res</em> 2017;<strong>150:78-85.</strong>:10.1016/j.thromres.2016.11.015. Epub 2016 Nov 15.</div>
 </div>
 <div id="ref-Coleman2016" class="csl-entry">
-<div class="csl-left-margin">171 </div><div class="csl-right-inline">Coleman CI, Peacock WF, Fermann GJ, <em>et al.</em> External validation of a multivariable claims-based rule for predicting in-hospital mortality and 30-day post-pulmonary embolism complications. <em>BMC Health Serv Res</em> 2016;<strong>16</strong>:610. doi: 10.1186/s12913-016-1855-y.</div>
+<div class="csl-left-margin">173 </div><div class="csl-right-inline">Coleman CI, Peacock WF, Fermann GJ, <em>et al.</em> External validation of a multivariable claims-based rule for predicting in-hospital mortality and 30-day post-pulmonary embolism complications. <em>BMC Health Serv Res</em> 2016;<strong>16</strong>:610. doi: 10.1186/s12913-016-1855-y.</div>
 </div>
 <div id="ref-Ammann2018b" class="csl-entry">
-<div class="csl-left-margin">172 </div><div class="csl-right-inline">Ammann EM, Cuker A, Carnahan RM, <em>et al.</em> Chart validation of inpatient international classification of diseases, ninth revision, clinical modification (<span>ICD-9-CM</span>) administrative diagnosis codes for venous thromboembolism (<span>VTE</span>) among intravenous immune globulin (<span>IGIV</span>) users in the sentinel distributed database. <em>Medicine</em> 2018;<strong>97</strong>:e9960. doi: 10.1097/MD.0000000000009960.</div>
+<div class="csl-left-margin">174 </div><div class="csl-right-inline">Ammann EM, Cuker A, Carnahan RM, <em>et al.</em> Chart validation of inpatient international classification of diseases, ninth revision, clinical modification (<span>ICD-9-CM</span>) administrative diagnosis codes for venous thromboembolism (<span>VTE</span>) among intravenous immune globulin (<span>IGIV</span>) users in the sentinel distributed database. <em>Medicine</em> 2018;<strong>97</strong>:e9960. doi: 10.1097/MD.0000000000009960.</div>
 </div>
 <div id="ref-Koo2016" class="csl-entry">
-<div class="csl-left-margin">173 </div><div class="csl-right-inline">Koo M, Chen JC, Hwang JH. Risk of peripheral artery occlusive disease in patients with vertigo, tinnitus, or sudden deafness: A secondary case-control analysis of a nationwide, population-based health claims database. <em>PLoS One</em> 2016;<strong>11</strong>:e0162629. doi:<a href="https://doi.org/10.1371/journal.pone.0162629">10.1371/journal.pone.0162629</a></div>
+<div class="csl-left-margin">175 </div><div class="csl-right-inline">Koo M, Chen JC, Hwang JH. Risk of peripheral artery occlusive disease in patients with vertigo, tinnitus, or sudden deafness: A secondary case-control analysis of a nationwide, population-based health claims database. <em>PLoS One</em> 2016;<strong>11</strong>:e0162629. doi:<a href="https://doi.org/10.1371/journal.pone.0162629">10.1371/journal.pone.0162629</a></div>
 </div>
 <div id="ref-Hernan2012-kz" class="csl-entry">
-<div class="csl-left-margin">174 </div><div class="csl-right-inline">Hernán MA, Hernández-Dı́az S. Beyond the intention-to-treat in comparative effectiveness research. <em>Clinical Trials</em> 2012;<strong>9</strong>:48–55.</div>
+<div class="csl-left-margin">176 </div><div class="csl-right-inline">Hernán MA, Hernández-Dı́az S. Beyond the intention-to-treat in comparative effectiveness research. <em>Clinical Trials</em> 2012;<strong>9</strong>:48–55.</div>
 </div>
 <div id="ref-Murray2018-zf" class="csl-entry">
-<div class="csl-left-margin">175 </div><div class="csl-right-inline">Murray EJ, Caniglia EC, Swanson SA, <em>et al.</em> Patients and investigators prefer measures of absolute risk in subgroups for pragmatic randomized trials. <em>Journal of Clinical Epidemiology</em> 2018;<strong>103</strong>:10–21.</div>
+<div class="csl-left-margin">177 </div><div class="csl-right-inline">Murray EJ, Caniglia EC, Swanson SA, <em>et al.</em> Patients and investigators prefer measures of absolute risk in subgroups for pragmatic randomized trials. <em>Journal of Clinical Epidemiology</em> 2018;<strong>103</strong>:10–21.</div>
 </div>
 <div id="ref-Schneeweiss2007-am" class="csl-entry">
-<div class="csl-left-margin">176 </div><div class="csl-right-inline">Schneeweiss S, Patrick AR, Stürmer T, <em>et al.</em> Increasing levels of restriction in pharmacoepidemiologic database studies of elderly and comparison with randomized trial results. <em>Medical Care</em> 2007;<strong>45</strong>:S131–42.</div>
+<div class="csl-left-margin">178 </div><div class="csl-right-inline">Schneeweiss S, Patrick AR, Stürmer T, <em>et al.</em> Increasing levels of restriction in pharmacoepidemiologic database studies of elderly and comparison with randomized trial results. <em>Medical Care</em> 2007;<strong>45</strong>:S131–42.</div>
 </div>
 <div id="ref-Schuemie2018-zi" class="csl-entry">
-<div class="csl-left-margin">177 </div><div class="csl-right-inline">Schuemie MJ, Ryan PB, Hripcsak G, <em>et al.</em> Improving reproducibility by using high-throughput observational studies with empirical calibration. <em>Philosophical Transactions Series A, Mathematical, Physical, and Engineering Sciences</em> 2018;<strong>376</strong>.</div>
+<div class="csl-left-margin">179 </div><div class="csl-right-inline">Schuemie MJ, Ryan PB, Hripcsak G, <em>et al.</em> Improving reproducibility by using high-throughput observational studies with empirical calibration. <em>Philosophical Transactions Series A, Mathematical, Physical, and Engineering Sciences</em> 2018;<strong>376</strong>.</div>
 </div>
 <div id="ref-Schuemie2020-wx" class="csl-entry">
-<div class="csl-left-margin">178 </div><div class="csl-right-inline">Schuemie MJ, Cepeda MS, Suchard MA, <em>et al.</em> How confident are we about observational findings in health care: A benchmark study. <em>Harvard Data Science Review</em> 2020;<strong>2</strong>.</div>
+<div class="csl-left-margin">180 </div><div class="csl-right-inline">Schuemie MJ, Cepeda MS, Suchard MA, <em>et al.</em> How confident are we about observational findings in health care: A benchmark study. <em>Harvard Data Science Review</em> 2020;<strong>2</strong>.</div>
 </div>
 <div id="ref-Walker2013-za" class="csl-entry">
-<div class="csl-left-margin">179 </div><div class="csl-right-inline">Walker AM, Patrick AR, Lauer MS, <em>et al.</em> A tool for assessing the feasibility of comparative effectiveness research. <em>Comp Eff Res</em> 2013;<strong>2013</strong>:11–20.</div>
+<div class="csl-left-margin">181 </div><div class="csl-right-inline">Walker AM, Patrick AR, Lauer MS, <em>et al.</em> A tool for assessing the feasibility of comparative effectiveness research. <em>Comp Eff Res</em> 2013;<strong>2013</strong>:11–20.</div>
 </div>
 <div id="ref-Austin2009-af" class="csl-entry">
-<div class="csl-left-margin">180 </div><div class="csl-right-inline">Austin PC. Balance diagnostics for comparing the distribution of baseline covariates between treatment groups in propensity-score matched samples. <em>Statistics in Medicine</em> 2009;<strong>28</strong>:3083–107.</div>
+<div class="csl-left-margin">182 </div><div class="csl-right-inline">Austin PC. Balance diagnostics for comparing the distribution of baseline covariates between treatment groups in propensity-score matched samples. <em>Statistics in Medicine</em> 2009;<strong>28</strong>:3083–107.</div>
 </div>
 <div id="ref-Woelfle2011-ss" class="csl-entry">
-<div class="csl-left-margin">181 </div><div class="csl-right-inline">Woelfle M, Olliaro P, Todd MH. Open science is a research accelerator. <em>Nature Chemistry</em> 2011;<strong>3</strong>:745–8.</div>
+<div class="csl-left-margin">183 </div><div class="csl-right-inline">Woelfle M, Olliaro P, Todd MH. Open science is a research accelerator. <em>Nature Chemistry</em> 2011;<strong>3</strong>:745–8.</div>
 </div>
 </div>
 </div>
@@ -58517,25 +58534,552 @@ NO
 </hr>
 </div>
 </div>
-<div id="venous-thromboembolism" class="section level2" number="15.58">
-<h2><span class="header-section-number">B.58</span> Venous thromboembolism</h2>
+<div id="vasculitis" class="section level2" number="15.58">
+<h2><span class="header-section-number">B.58</span> Vasculitis</h2>
 <div id="cohort-entry-events-59" class="section level3" number="15.58.1">
 <h3><span class="header-section-number">B.58.1</span> Cohort Entry Events</h3>
+<p>People may enter the cohort when observing any of the following:</p>
+<ol style="list-style-type: decimal">
+<li>condition occurrence of ‘[LEGEND HTN] Vasculitis’ for the first time in the person’s history.</li>
+</ol>
+<p>Limit cohort entry events to the earliest event per person.</p>
+<p>Restrict entry events to with any of the following criteria:</p>
+<ol style="list-style-type: decimal">
+<li>having at least 1 condition occurrence of ‘[LEGEND HTN] Vasculitis’, starting 1 days after cohort entry start date.</li>
+<li>having at least 1 drug exposure of ‘[LEGEND HTN] Drugs to treat vasculitis’, starting between 0 days before and 30 days after cohort entry start date.</li>
+</ol>
+</div>
+<div id="cohort-exit-59" class="section level3" number="15.58.2">
+<h3><span class="header-section-number">B.58.2</span> Cohort Exit</h3>
+<p>The person also exists the cohort at the end of continuous observation.</p>
+</div>
+<div id="cohort-eras-59" class="section level3" number="15.58.3">
+<h3><span class="header-section-number">B.58.3</span> Cohort Eras</h3>
+<p>Remaining events will be combined into cohort eras if they are within 0 days of each other.</p>
+</div>
+<div id="concept-legend-htn-vasculitis" class="section level3" number="15.58.4">
+<h3><span class="header-section-number">B.58.4</span> Concept: [LEGEND HTN] Vasculitis</h3>
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Concept ID
+</th>
+<th style="text-align:left;">
+Concept Name
+</th>
+<th style="text-align:left;">
+Code
+</th>
+<th style="text-align:left;">
+Vocabulary
+</th>
+<th style="text-align:left;">
+Excluded
+</th>
+<th style="text-align:left;">
+Descendants
+</th>
+<th style="text-align:left;">
+Mapped
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+314381
+</td>
+<td style="text-align:left;">
+Acute febrile mucocutaneous lymph node syndrome
+</td>
+<td style="text-align:left;">
+75053002
+</td>
+<td style="text-align:left;">
+SNOMED
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+4324395
+</td>
+<td style="text-align:left;">
+Aortitis
+</td>
+<td style="text-align:left;">
+70933002
+</td>
+<td style="text-align:left;">
+SNOMED
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+436642
+</td>
+<td style="text-align:left;">
+Behcet’s syndrome
+</td>
+<td style="text-align:left;">
+310701003
+</td>
+<td style="text-align:left;">
+SNOMED
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+4096220
+</td>
+<td style="text-align:left;">
+Cryoglobulinemic vasculitis
+</td>
+<td style="text-align:left;">
+190815001
+</td>
+<td style="text-align:left;">
+SNOMED
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+314963
+</td>
+<td style="text-align:left;">
+Giant cell arteritis
+</td>
+<td style="text-align:left;">
+414341000
+</td>
+<td style="text-align:left;">
+SNOMED
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+195289
+</td>
+<td style="text-align:left;">
+Goodpasture’s syndrome
+</td>
+<td style="text-align:left;">
+50581000
+</td>
+<td style="text-align:left;">
+SNOMED
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+313223
+</td>
+<td style="text-align:left;">
+Granulomatosis with polyangiitis
+</td>
+<td style="text-align:left;">
+195353004
+</td>
+<td style="text-align:left;">
+SNOMED
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+4101602
+</td>
+<td style="text-align:left;">
+Henoch-Schönlein purpura
+</td>
+<td style="text-align:left;">
+191306005
+</td>
+<td style="text-align:left;">
+SNOMED
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+320749
+</td>
+<td style="text-align:left;">
+Polyarteritis nodosa
+</td>
+<td style="text-align:left;">
+155441006
+</td>
+<td style="text-align:left;">
+SNOMED
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+44783716
+</td>
+<td style="text-align:left;">
+Primary angiitis of central nervous system
+</td>
+<td style="text-align:left;">
+699814001
+</td>
+<td style="text-align:left;">
+SNOMED
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="concept-legend-htn-drugs-to-treat-vasculitis" class="section level3" number="15.58.5">
+<h3><span class="header-section-number">B.58.5</span> Concept: [LEGEND HTN] Drugs to treat vasculitis</h3>
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Concept ID
+</th>
+<th style="text-align:left;">
+Concept Name
+</th>
+<th style="text-align:left;">
+Code
+</th>
+<th style="text-align:left;">
+Vocabulary
+</th>
+<th style="text-align:left;">
+Excluded
+</th>
+<th style="text-align:left;">
+Descendants
+</th>
+<th style="text-align:left;">
+Mapped
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+920458
+</td>
+<td style="text-align:left;">
+Betamethasone
+</td>
+<td style="text-align:left;">
+1514
+</td>
+<td style="text-align:left;">
+RxNorm
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1507705
+</td>
+<td style="text-align:left;">
+Cortisone
+</td>
+<td style="text-align:left;">
+2878
+</td>
+<td style="text-align:left;">
+RxNorm
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1310317
+</td>
+<td style="text-align:left;">
+Cyclophosphamide
+</td>
+<td style="text-align:left;">
+3002
+</td>
+<td style="text-align:left;">
+RxNorm
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1518254
+</td>
+<td style="text-align:left;">
+Dexamethasone
+</td>
+<td style="text-align:left;">
+3264
+</td>
+<td style="text-align:left;">
+RxNorm
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1305058
+</td>
+<td style="text-align:left;">
+Methotrexate
+</td>
+<td style="text-align:left;">
+6851
+</td>
+<td style="text-align:left;">
+RxNorm
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1506270
+</td>
+<td style="text-align:left;">
+Methylprednisolone
+</td>
+<td style="text-align:left;">
+6902
+</td>
+<td style="text-align:left;">
+RxNorm
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1550557
+</td>
+<td style="text-align:left;">
+prednisolone
+</td>
+<td style="text-align:left;">
+8638
+</td>
+<td style="text-align:left;">
+RxNorm
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1551099
+</td>
+<td style="text-align:left;">
+Prednisone
+</td>
+<td style="text-align:left;">
+8640
+</td>
+<td style="text-align:left;">
+RxNorm
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+903963
+</td>
+<td style="text-align:left;">
+Triamcinolone
+</td>
+<td style="text-align:left;">
+10759
+</td>
+<td style="text-align:left;">
+RxNorm
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:left;">
+YES
+</td>
+<td style="text-align:left;">
+NO
+</td>
+</tr>
+</tbody>
+</table>
+<hr style="border:2px solid gray">
+</hr>
+</div>
+</div>
+<div id="venous-thromboembolism" class="section level2" number="15.59">
+<h2><span class="header-section-number">B.59</span> Venous thromboembolism</h2>
+<div id="cohort-entry-events-60" class="section level3" number="15.59.1">
+<h3><span class="header-section-number">B.59.1</span> Cohort Entry Events</h3>
 <p>People enter the cohort when observing any of the following:</p>
 <ol style="list-style-type: decimal">
 <li>condition occurrences of ‘[LEGEND HTN] Venous thromboembolism (pulmonary embolism and deep vein thrombosis)’.</li>
 </ol>
 </div>
-<div id="cohort-exit-59" class="section level3" number="15.58.2">
-<h3><span class="header-section-number">B.58.2</span> Cohort Exit</h3>
+<div id="cohort-exit-60" class="section level3" number="15.59.2">
+<h3><span class="header-section-number">B.59.2</span> Cohort Exit</h3>
 <p>The cohort end date will be offset from index event’s start date plus 1 day.</p>
 </div>
-<div id="cohort-eras-59" class="section level3" number="15.58.3">
-<h3><span class="header-section-number">B.58.3</span> Cohort Eras</h3>
+<div id="cohort-eras-60" class="section level3" number="15.59.3">
+<h3><span class="header-section-number">B.59.3</span> Cohort Eras</h3>
 <p>Remaining events will be combined into cohort eras if they are within 180 days of each other.</p>
 </div>
-<div id="concept-legend-htn-venous-thromboembolism-pulmonary-embolism-and-deep-vein-thrombosis" class="section level3" number="15.58.4">
-<h3><span class="header-section-number">B.58.4</span> Concept: [LEGEND HTN] Venous thromboembolism (pulmonary embolism and deep vein thrombosis)</h3>
+<div id="concept-legend-htn-venous-thromboembolism-pulmonary-embolism-and-deep-vein-thrombosis" class="section level3" number="15.59.4">
+<h3><span class="header-section-number">B.59.4</span> Concept: [LEGEND HTN] Venous thromboembolism (pulmonary embolism and deep vein thrombosis)</h3>
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -58983,26 +59527,26 @@ NO
 </hr>
 </div>
 </div>
-<div id="vertigo" class="section level2" number="15.59">
-<h2><span class="header-section-number">B.59</span> Vertigo</h2>
-<div id="cohort-entry-events-60" class="section level3" number="15.59.1">
-<h3><span class="header-section-number">B.59.1</span> Cohort Entry Events</h3>
+<div id="vertigo" class="section level2" number="15.60">
+<h2><span class="header-section-number">B.60</span> Vertigo</h2>
+<div id="cohort-entry-events-61" class="section level3" number="15.60.1">
+<h3><span class="header-section-number">B.60.1</span> Cohort Entry Events</h3>
 <p>People enter the cohort when observing any of the following:</p>
 <ol style="list-style-type: decimal">
 <li>condition occurrence of ‘[LEGEND HTN] Vertigo’ for the first time in the person’s history.</li>
 </ol>
 <p>Limit cohort entry events to the earliest event per person.</p>
 </div>
-<div id="cohort-exit-60" class="section level3" number="15.59.2">
-<h3><span class="header-section-number">B.59.2</span> Cohort Exit</h3>
+<div id="cohort-exit-61" class="section level3" number="15.60.2">
+<h3><span class="header-section-number">B.60.2</span> Cohort Exit</h3>
 <p>The person also exists the cohort at the end of continuous observation.</p>
 </div>
-<div id="cohort-eras-60" class="section level3" number="15.59.3">
-<h3><span class="header-section-number">B.59.3</span> Cohort Eras</h3>
+<div id="cohort-eras-61" class="section level3" number="15.60.3">
+<h3><span class="header-section-number">B.60.3</span> Cohort Eras</h3>
 <p>Remaining events will be combined into cohort eras if they are within 0 days of each other.</p>
 </div>
-<div id="concept-legend-htn-vertigo" class="section level3" number="15.59.4">
-<h3><span class="header-section-number">B.59.4</span> Concept: [LEGEND HTN] Vertigo</h3>
+<div id="concept-legend-htn-vertigo" class="section level3" number="15.60.4">
+<h3><span class="header-section-number">B.60.4</span> Concept: [LEGEND HTN] Vertigo</h3>
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -59128,25 +59672,25 @@ NO
 </hr>
 </div>
 </div>
-<div id="vomiting" class="section level2" number="15.60">
-<h2><span class="header-section-number">B.60</span> Vomiting</h2>
-<div id="cohort-entry-events-61" class="section level3" number="15.60.1">
-<h3><span class="header-section-number">B.60.1</span> Cohort Entry Events</h3>
+<div id="vomiting" class="section level2" number="15.61">
+<h2><span class="header-section-number">B.61</span> Vomiting</h2>
+<div id="cohort-entry-events-62" class="section level3" number="15.61.1">
+<h3><span class="header-section-number">B.61.1</span> Cohort Entry Events</h3>
 <p>People enter the cohort when observing any of the following:</p>
 <ol style="list-style-type: decimal">
 <li>condition occurrences of ‘[LEGEND HTN] Vomiting’.</li>
 </ol>
 </div>
-<div id="cohort-exit-61" class="section level3" number="15.60.2">
-<h3><span class="header-section-number">B.60.2</span> Cohort Exit</h3>
+<div id="cohort-exit-62" class="section level3" number="15.61.2">
+<h3><span class="header-section-number">B.61.2</span> Cohort Exit</h3>
 <p>The cohort end date will be offset from index event’s start date plus 1 day.</p>
 </div>
-<div id="cohort-eras-61" class="section level3" number="15.60.3">
-<h3><span class="header-section-number">B.60.3</span> Cohort Eras</h3>
+<div id="cohort-eras-62" class="section level3" number="15.61.3">
+<h3><span class="header-section-number">B.61.3</span> Cohort Eras</h3>
 <p>Remaining events will be combined into cohort eras if they are within 30 days of each other.</p>
 </div>
-<div id="concept-legend-htn-vomiting" class="section level3" number="15.60.4">
-<h3><span class="header-section-number">B.60.4</span> Concept: [LEGEND HTN] Vomiting</h3>
+<div id="concept-legend-htn-vomiting" class="section level3" number="15.61.4">
+<h3><span class="header-section-number">B.61.4</span> Concept: [LEGEND HTN] Vomiting</h3>
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
