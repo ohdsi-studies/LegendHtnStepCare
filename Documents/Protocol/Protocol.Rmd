@@ -50,8 +50,8 @@ longtable: yes
 mainfont: Arial
 bibliography: Protocol.bib
 params:
-  date: '17-Mar-2025'
-  version: 0.0.2
+  date: '08-Jul-2025'
+  version: 0.0.4
 subtitle: 'Version: `r params$version`'
 link-citations: yes
 csl: bmj.csl
@@ -150,6 +150,8 @@ amendments <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE, f
   Number; Date; Section of study protocol; Amendment or update; Reason
   1; 14-Apr-2024; All; Update; Initial draft
   2; 15-Feb-2025; All; Update; Protocol refinement
+  3; 25-Jun-2025; Abstract, Milestones, Main text ; Update; Protocol refinement
+  4; 08-Jul-2025; All; Update; Study outcome refinement
 ", show_col_types = FALSE)
 
 tab <- kable(amendments, booktabs = TRUE, linesep = "")
@@ -166,12 +168,13 @@ if (knitr::is_latex_output()) {
 ```{r dates, echo=FALSE}
 dates <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE, file = "
   Milestone; Planned / actual date
-  Protocol online release; 31-Mar-2025 /
-  Protocol registration; 
-  Collecting data partners; 
-  Start of analysis; 
-  End of analysis;
-  Results presentation;
+  Protocol online release; 31-July-2025 /
+  Protocol registration; 31-July-2025 /
+  Analytic package ready; 30-Aug-2025 /
+  Collecting data partners; 30-Sep-2025 /
+  Start of analysis; 01-Oct-2025 / 
+  End of analysis; 31-Dec-2025 /
+  Results presentation; 28-Feb-2026 /
 ", show_col_types = FALSE)
 
 tab <- kable(dates, booktabs = TRUE, linesep = "")

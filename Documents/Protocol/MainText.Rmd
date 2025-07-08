@@ -264,7 +264,7 @@ tab <- kable(outcomes, booktabs = TRUE, linesep = "", escape = FALSE,
       caption = "LEGEND-HtnSteppedCare study outcomes") %>%
   kable_styling(bootstrap_options = "striped", latex_options = "striped") %>%
   pack_rows("Cardiovascular outcomes", 1, 2, latex_align = "c", indent = FALSE)  %>%
-  pack_rows("Patient-centered safety outcomes", 11, 12, latex_align = "c", indent = FALSE)
+  pack_rows("Patient-centered safety outcomes", 12, 13, latex_align = "c", indent = FALSE)
 
 if (knitr::is_latex_output()) {
   tab %>%
