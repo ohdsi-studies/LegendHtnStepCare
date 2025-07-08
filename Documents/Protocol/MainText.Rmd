@@ -3,10 +3,10 @@
 Over 100 million US adults have hypertension, a leading cause of mortality and morbidity, and 70% of them cannot achieve adequate blood pressure control with monotherapy alone[@RN26]. 
 Although recent clinical practice guidelines suggest initiating therapy with two drugs[@Mancia2023; @Unger2020; @Whelton2018], more than 50% of people currently treated for hypertension start with a single medication [@Hripcsak2016; @Lu2022].
 For these patients, clinical guidelines propose adding a second antihypertensive drug for treatment escalation[@Whelton2018; @Hripcsak2016; @Lu2022; @James2014].
-However, the guidelines provide little guidance on which specific agents to add for which patients. There are no large randomized controlled trials (RCT) to guide recommendations about the choice of the second drug[@Whelton2018;]. 
+However, the guidelines provide little guidance on which specific agents to add for which patients. There are no large randomized controlled trials (RCTs) to guide recommendations about the choice of the second drug[@Whelton2018;]. 
 RCTs comparing antihypertensive drugs are not only expensive and time-consuming, but also cannot possibly test all the relevant drug combinations recommended by the guidelines. 
 Given the abundance of potential strategies, there is a critical need to generate real-world evidence to guide the choice of comparators in future RCTs and to support guideline recommendations. 
-Advances in observational research design using real-world data provides an opportunity to produce high-quality evidence through strategies that support causal inference, enhance generalizability, and minimize bias. 
+Advances in observational research design using real-world data provide an opportunity to produce high-quality evidence through strategies that support causal inference, enhance generalizability, and minimize bias. 
 While this evidence will not supersede RCT evidence, it can identify promising directions for trials and provide Level of Evidence B for guideline recommendations[@Sheldrick2023]. 
 Such research can be purposeful, pre-specified, and have strategies to prevent publication bias, p-hacking, and findings due to chance. 
 In our prior work, we have successfully demonstrated how these methods can be applied to evaluate the effectiveness and safety of first-line antihypertensive monotherapies[@Anand2024; @You2021; @Chen2021; @Hripcsak2020; @Suchard2019]. 
@@ -17,7 +17,7 @@ This will be the first study that applies these massive real-world datasets and 
 
 The overall objective in this protocol is to determine the comparative effectiveness and safety of the stepped care strategy in real-world settings. The central hypothesis is that there is heterogeneity in the effectiveness and safety of the secondary antihypertensive agent, and the optimal choice depends on patient characteristics and the initial therapy. 
 Our long-term goal is to produce real-world evidence to inform decisions about RCTs for hypertension treatment escalation and to provide the highest quality non-randomized evidence to support guideline recommendations. 
-The approach is distinctive because of the breadth and depth of data, and the use of state-of-the-art observational research methods to produce high-quality evidence. 
+The approach is distinctive due to breadth and depth of the data and the use of state-of-the-art observational research methods to produce high-quality evidence. 
 Our preliminary data demonstrate a large variation in prescription patterns of the second agents added to monotherapy[@Lu2022], providing ample opportunity to leverage practice variation to test our hypothesis. The following three specific aims are proposed:
 
 1. To determine the comparative effectiveness of the stepped-care strategy on major cardiovascular outcomes (e.g., myocardial infarction, stroke, heart failure). 
@@ -27,15 +27,15 @@ Our preliminary data demonstrate a large variation in prescription patterns of t
 
 # Research Methods
 
-LEGEND-HTNStepCare will execute three systematic, large-scale observational studies of second line antihypertensive agents to estimate the relative risks of cardiovascular effectiveness and safety outcomes.
+LEGEND-HTNStepCare will execute three systematic, large-scale observational studies of second-line antihypertensive agents to estimate the relative risks of cardiovascular effectiveness and safety outcomes.
 
 1. The **Class-vs-Class Study** will provide all pairwise comparisons between the stepped care combination with antihypertensive agent classes to evaluate their comparative effects on cardiovascular risk (Objective 1) and patient-centered safety outcomes (Objective 2);
-2.	The **Drug-vs-Drug Study** will furnish head-to-head pairwise comparisons between individual agents within and across class in stepped care combination (both Objectives 1 and 2); and
+2.	The **Drug-vs-Drug Study** will furnish head-to-head pairwise comparisons between individual agents within and across classes in stepped care combination (both Objectives 1 and 2); and
 3.	The **Heterogeneity Study** will refine these comparisons for hypertension patients for important subgroups (Objective 3). 
 
-In contrast to a single comparison approach, LEGEND-HTNStepCare will provide a comprehensive view of the findings and their consistency across populations, drugs, and outcomes. We will model each study on our successful collaborative research evaluating the comparative effectiveness of antihypertensives monotherapy previously published in The Lancet [@Suchard2019].
+In contrast to a single comparison approach, LEGEND-HTNStepCare will provide a comprehensive view of the findings and their consistency across populations, drugs, and outcomes. We will model each study on our successful collaborative research evaluating the comparative effectiveness of antihypertensive monotherapy previously published in The Lancet [@Suchard2019].
 
-Table \@ref(tab:drug-table) list the major classes of antihypertensive agents and those ingredients lisenced in the U.S. within each class.
+Table \@ref(tab:drug-table) lists the major classes of antihypertensive agents and those ingredients licensed in the U.S. within each class.
 
 For each comparison, we are interested in the relative risk of each of the cardiovascular and safety outcomes described in Section \@ref(outcomes).
 
@@ -69,12 +69,12 @@ if (knitr::is_latex_output()) {
 
 ## Study Design
 
-For each study, we will employ an active comparator, new-user cohort design[@Lund2015].
+For each study, we will employ an active comparator new-user cohort study design[@Lund2015].
 New-user cohort design is advocated as the primary design to be considered for comparative effectiveness and drug safety. 
 By identifying patients who start a new treatment course and using therapy initiation as the start of follow-up, the new-user design models a randomized controlled trial (RCT) where treatment commences at the index study visit.
-Exploiting such an index date allows a clear separation of baseline patient characteristics that occur prior to index date and are usable as covariates in the analysis without concern of inadvertently introducing mediator variables that arise between exposure and outcome.
-Excluding prevalent users as those without a sufficient washout period prior to first exposure occurrence further reduces bias due to balancing mediators on the causal pathway, time-varying hazards, and depletion of susceptibles. 
-Our systematic framework across studies further will address residual confounding, publication bias, and p-hacking using data-driven, large-scale propensity adjustment for measured confounding, a large set of negative control outcome experiments to address unmeasured and systematic bias, and full disclosure of hypotheses tested. 
+Exploiting such an index date allows a clear separation of baseline patient characteristics that occur prior to the index date and are usable as covariates in the analysis without concern of inadvertently introducing mediator variables that arise between exposure and outcome.
+Excluding prevalent users, as those without a sufficient washout period prior to first exposure occurrence, further reduces bias due to balancing mediators on the causal pathway, time-varying hazards, and depletion of susceptibles. 
+Our systematic framework across studies will further address residual confounding, publication bias, and p-hacking using data-driven, large-scale propensity score (PS) adjustment for measured confounding, a large set of negative control outcome experiments to address unmeasured and systematic bias, and full disclosure of hypotheses tested. 
 Figure \@ref(fig:study-schematic) below illustrates our design for all studies that the following sections describe in more detail.
 
 ```{r study-schematic, echo=FALSE, message=FALSE, fig.align='center', fig.cap='Schematic of LEGEND-HtnStepCare new-user cohort design for the Class-vs-Class, Drug-vs-Drug and Heterogeneity studies.', fig.pos='H'}
@@ -88,9 +88,9 @@ if (knitr::is_latex_output()) {
 ## Data Sources
 
 We will execute LEGEND-HTNStepCare as a series of OHDSI network studies. All data partners within OHDSI are encouraged to participate voluntarily and can do so conveniently, because of the community’s shared Observational Medical Outcome Partnership (OMOP) common data model (CDM) and OHDSI tool-stack [@Schuemie2019-ha]. 
-Many OHDSI community data partners have already committed to participate and we will recruit further data partners through OHDSI’s standard recruitment process, which includes protocol publication on OHDSI’s GitHub, an announcement in OHDSI’s research forum, presentation at the weekly OHDSI all-hands-on meeting and direct requests to data holders.
+Many OHDSI community data partners have already committed to participate, and we will recruit further data partners through OHDSI’s standard recruitment process, which includes protocol publication on OHDSI’s GitHub, an announcement in OHDSI’s research forum, presentation at the weekly OHDSI all-hands-on meeting, and direct requests to data holders.
 
-In Table \@ref(tab:data-sources), we report a brief description of already committed databases and their size of the population it represents and its patient capture process and start date. While the earliest patient capture begins in 2000 (VA), the vast majority come from the 2010s to today, providing a decade of HTN treatment coverage. The US population include those publicly insured, enriched for older individuals (VA) and racially diverse (VA, Sentara). The US data sources may capture the same patients across multiple sources. Different views of the same patients are an advantage in capturing the diversity of real-world health events that patients experience. All data sources will receive institutional review board approval or exemption for their participation before executing LEGEND-HTNStepCare.
+In Table \@ref(tab:data-sources), we report a brief description of already committed databases and their size of the population, representation, their patient capture process, and start date. While the earliest patient capture begins in 2000 (VA), the vast majority come from the 2010s to today, providing a decade of HTN treatment coverage. The US population include those publicly insured, enriched for older individuals (VA) and racially diverse (VA, Sentara). The US data sources may capture the same patients across multiple sources. Different views of the same patients are an advantage in capturing the diversity of real-world health events that patients experience. All data sources will receive institutional review board approval or exemption for their participation before executing LEGEND-HTNStepCare.
 
 ```{r data-sources, echo=FALSE, warning=FALSE}
 data_sources <- readr::read_delim(col_names = TRUE, delim = ";", trim_ws = TRUE, file = "
@@ -120,20 +120,20 @@ if (knitr::is_latex_output()) {
 
 ## Study Population
 
-We will include all subjects in a data source who meet inclusion criteria for the stepped care exposure cohorts. 
-Broadly, these cohorts will consist of hypertension patients with any of ACEis, ARBs, THZs, and CCBs previous as a first line hypertension treatment. 
+We will include all subjects in a data source who meet the inclusion criteria for the stepped care exposure cohorts. 
+Broadly, these cohorts will consist of hypertension patients with any of ACEIs, ARBs, THZs, and CCBs previously as a first-line hypertension treatment. 
 We describe specific definitions of exposure cohorts for each study in the following sections.
 
 ## Exposure Comparators
 
 ### Class-vs-Class Study comparisons {#class-v-class}
 The **Class-vs-Class** Study will construct twenty-three exposure cohorts for secondary use of any drug ingredient within the major classes in Table \@ref(tab:drug-table). 
-Cohort entry (index date) for each patient is their first observed exposure to any drug ingredient for secondary added drug classes (different to primary class). 
+Cohort entry (index date) for each patient is their first observed exposure to any drug ingredient for secondary added drug classes (different from the class of first-line). 
 Consistent with an idealized target trial for hypertension therapy and cardiovascular risk, inclusion criteria for patients based on the index date will include: 
 
 * Hypertension diagnosis but no secondary HTN diagnosis before the index date;
 * At least 1 year of observation time before the index date (to improve new-user sensitivity);
-* At least one prescription of first antihypertensive agents before 30 days earlier than the index date;
+* At least one prescription of first antihypertensive agents within 30 days earlier than the index date;
 * No single use of antihypertensives at the index date;
 * No prior drug exposure to a comparator antihypertensive agent; and
 * No other antihypertensive agents (other diuretics: loop diuretics/K+ sparing diuretics/aldosterone antagonists; direct renin inhibitor; alpha-1 blocker; central alpha-2 agonist and other centrally acting drugs; direct vasodilators).
@@ -142,29 +142,28 @@ We will construct and compare separately cohorts patients either with
 
 * At least 1 months use of first-line antihypertensive agents use before the index date.
 
-In this case, a month of first-line antihypertensive agents is consistent with 2017 AHA/ACC guidelines. 
+In this case, a month of first-line antihypertensive agents is consistent with the 2017 AHA/ACC guidelines. 
 We will use cohort diagnostics, such as achieving covariate balance and clinical empirical equipoise between exposure cohorts (Section 9) and stakeholder input to guide the possible need to exclude other prior diagnoses, such as heart failure.
 
 Of note, the inclusion criteria do not directly incorporate quantitative measures of blood pressure control, such as elevated blood pressure; such laboratory values are irregularly captured in even EHR data sources. 
-The ACC/AHA guidelines advise escalating to add a second agent when average BP is more than 20/10 mmHg above their BP target. 
+The ACC/AHA guidelines advise escalating to add a second agent when the average BP is more than 20/10 mmHg above their BP target. 
 We will conduct sensitivity analyses involving available BP measurements to demonstrate their balance between exposure cohorts (described later in Section 9).
-In the unlikely event that balance is not met, we will consider an inclusion criterion of BP >130/80 (or 140/90) mmHg within 6 months before the index. 
+In the unlikely event that balance is met, we will consider an inclusion criterion of BP >130/80 (or 140/90) mmHg within 6 months before the index.
+
+For example, Appendix A. 1. reports the complete OHDSI cohort description for new users of TZD following the first-line ACEI. This description lists the complete specification of cohort entry events, inclusion criteria, cohort exit events, and all associated standard OMOP concept sets used in the definition. 
+[CapR](https://github.com/OHDSI/Capr) automatically translates these definitions into network-deployable SQL source code. 
+Significantly fewer numbers of patients strongly suggest data source-specific differences in prescribing practices that may introduce residual bias and sufficient sample sizes are required to construct effective PS models.
 
 For each data source, we will then execute all 42 pairwise class comparisons for which the data source yields $\ge$ 1,000 patients in each arm.
-Appendix A. 1. reports the complete OHDSI ATLAS cohort description for new-users of thiazide or thiazide-like diuretics with the first line ACEI. 
-This description lists complete specification of cohort entry events, additional inclusion criteria, cohort exit events, and all associate standard OMOP CDM concept code sets used in the definition. 
-ATLAS automatically translates these definitions into network-deployable SQL source code. 
-Significantly fewer numbers of patients strongly suggest data source-specific differences in prescribing practices that may introduce residual bias and sufficient sample sizes are required to construct effective propensity score models.
 
 ### Drug-vs-Drug Study comparisons {#drug-v-drug}
 
-The **Drug-vs-Drug** Study will construct 1,070 exposure cohorts for new-users of each drug ingredient in Table 8.1. 
+The **Drug-vs-Drug** Study will construct 1,070 exposure cohorts for new users of each drug ingredient in Table 8.1. 
 We will apply the same cohort definition, inclusion criteria and patient count minimum as described in Section 8.4.1. 
 
-Theoretically, $\binom{1070}{2}$ = 571,915 comparisons are possible. However, we want to take into account the fact that Class-vs-Class comparisons will be performed and clinical situation when stepped care is performed. Therefore, we will focus primary clinical interpretation and scientific publishing to the 3,400 comparisons where the first-line drug is the same and the second line drug is a different ingredient within the same class, e.g, First amlodipine adding acebutolol vs. First amlodipine adding atenolol.
+Theoretically, $\binom{1070}{2}$ = 571,915 comparisons are possible. However, we want to take into account the fact that Class-vs-Class comparisons will be performed and practical situation when stepped care is performed. Therefore, we will focus primary clinical interpretation and scientific publishing to the 3,400 comparisons where the first-line drug is the same and the second line drug is a different ingredient within the same class, e.g, Acebutolol following first-line amlodipine vs. Atenolol following first-line amlodipine.
 
-Appendix A.5 reports the complete OHDSI ATLAS cohort description for new-users of acebutolol added to amlodipine monotherapy. Again, we programmatically construct all new-user drug-level cohort and automatically translate into SQL.
-
+Appendix A.5 reports the complete OHDSI cohort description for new-users of acebutolol added to amlodipine monotherapy. Again, we programmatically construct all new-user drug-level cohort and automatically translate into SQL.
 
 ### Heterogeneity Study comparisons
 
@@ -175,39 +174,38 @@ These factors will include:
 * Sex (women / men)
 * Race (White / African American or black / Hispanic)
 
-Appendix A. 3 presents complete OHDSI ATLAS specifications for these subgroups.
+Appendix A. 3 presents complete OHDSI cohort specifications for these subgroups.
 
 ### Validation
 
 We will validate exposure cohorts and aggregate drug utilization using comprehensive cohort characterization tools against data sources. Chief among these tools stands OHDSI’s CohortDiagnostics package (https://github.com/OHDSI/CohortDiagnostics). 
-For any cohort and data source mapped to OMOP CDM, this package systematically generates incidence new-user rates (stratified by age, gender, and calendar year), cohort characteristics (all comorbidities, drug use, procedures, health utilization) and the actual codes found in the data triggering the various rules in the cohort definitions. 
+For any cohort and data source mapped to OMOP CDM, this package systematically generates incidence new-user rates (stratified by age, sex, and calendar year), cohort characteristics (all comorbidities, drug use, procedures, health utilization) and the actual codes found in the data triggering the various rules in the cohort definitions. 
 This can allow researchers and stakeholders to understand the heterogeneity of source coding for exposures and health outcomes as well as the impact of various inclusion criteria on overall cohort counts (details described in Section 9).
 
 ## Outcomes {#outcomes}
 
-We originally identified outcomes for LEGEND-HTNStepCare from clinical trial endpoints from clinical guidelines and systematic reviews. We augmented these with adverse events from US structured product labels of hypertension drugs. 
-For each outcome, we developed an operational phenotype definition to determine if observational data could in fact support evaluation of the outcome. 
-We used the same approach to design, implement, and evaluate all phenotypes. Specifically, clinical guidelines and systematic review of clinical trial of hypertension treatments informed our clinical definition of cardiovascular outcomes. 
-We developed all exposure cohorts according to the definition itself through ATLAS. We did not perform source record verification or other validation methods.
+We originally identified outcomes for LEGEND-HTN from clinical trial endpoints from clinical guidelines, and systematic reviews. We augmented these with adverse events from the US's structured product labels of hypertension drugs. 
+For each outcome, we developed an operational phenotype definition to determine if observational data could, in fact, support evaluation of the outcome. 
+We used the same approach to design, implement, and evaluate all phenotypes. Specifically, clinical guidelines and systematic review of clinical trials of hypertension treatments informed our clinical definition of cardiovascular outcomes.
+We developed all exposure cohorts according to the definition itself through ATLAS and CapR. We did not perform source record verification or other validation methods.
 
-Across all data sources and pairwise exposure cohorts, we will assess relative risks of 32 cardiovascular and patient-centered outcomes (Table 8.3). Primary outcomes of interest are: 
+Across all data sources and pairwise exposure cohorts, we will assess relative risks of 72 cardiovascular and patient-centered outcomes \@ref(tab:outcome-table). Primary outcomes of interest are: 
 
-
-* 3-point major adverse cardiovascular events (MACE), including acute myocardial infarction, stroke, and sudden cardiac death, and
+* 3-point MACE including acute myocardial infarction, stroke, and sudden cardiac death, and
 * 4-point MACE that additionally includes heart failure hospitalization.
 
 Secondary outcomes include:
 
-* individual MACE components,
+* individual MACE components - acute myocardial infarction, stroke (transient ischemic attack, ischemic stroke, and hemorrhagic stroke), sudden cardiac death, and hospitalization with heart failure
+* All-cause death
 
 In data sources with laboratory measurements, secondary outcomes further include:
 
-* Blood pressure control
+* Blood pressure control (systolic blood pressure < 130 mmHg and diastolic blood pressure < 80 mmHg)
 
-We will also study secondary antihypertensive agent adverse events and safety concerns highlighted in the 2017 ACC/AHA guidelines and from RCTs, including SPRINT trial. We will employ the same level of systematic rigor in studying outcomes regardless of their primary or secondary label. 
-A majority of outcome definitions have been previously implemented and validated in our own work, based heavily on prior development by others (see prior development in Table 8.3). 
+We will also study antihypertensive agents' adverse events and safety concerns highlighted in the 2017 ACC/AHA guidelines and from RCTs, including SPRINT trial[@sprint2015]. 
 
-To assess across-source consistency and general clinical validity, we will characterize outcome incidence, stratified by age, sex and index year for each data source.
+To assess across-source consistency and general clinical validity, we will characterize outcome incidence, stratified by age, sex, and index year for each data source.
 
 <!-- While we list many patient-centered outcomes as "exploratory" in the table, we use this term to highlight those that are less likely to achieve high statistical power across all data sources due to lower event rates. -->
 We will employ the same level of systematic rigor in studying outcomes regardless of their primary or secondary label.
@@ -254,7 +252,8 @@ if (knitr::is_latex_output()) {
 outcomes <- outcomes %>% select(-hyperlink)
 ```
 
-A majority of outcome definitions have been previously implemented and validated in our own work [@Suchard2019-gq; @You_undated-fz; @Ryan2018-ci; @Wang2017-su; @Weinstein2020-ic; @Yuan2018-am] based heavily on prior development by others (see references in Table \@ref(tab:outcome-table) `r citeList`).
+A majority of outcome definitions have been previously implemented and validated in our own work [@Suchard2019-gq; @You_undated-fz; @Ryan2018-ci; @Wang2017-su; @Weinstein2020-ic; @Yuan2018-am; @Khera2024-ja] based heavily on prior development by others (see prior development in Table \@ref(tab:outcome-table)).
+
 To assess across-source consistency and general clinical validity, we will characterize outcome incidence, stratified by age, sex and index year for each data source.
 
 ```{r outcome-table, echo=FALSE, warning=FALSE, results='asis'}
@@ -265,7 +264,7 @@ tab <- kable(outcomes, booktabs = TRUE, linesep = "", escape = FALSE,
       caption = "LEGEND-HtnSteppedCare study outcomes") %>%
   kable_styling(bootstrap_options = "striped", latex_options = "striped") %>%
   pack_rows("Cardiovascular outcomes", 1, 2, latex_align = "c", indent = FALSE)  %>%
-  pack_rows("Patient-centered safety outcomes", 12, 13, latex_align = "c", indent = FALSE)
+  pack_rows("Patient-centered safety outcomes", 11, 12, latex_align = "c", indent = FALSE)
 
 if (knitr::is_latex_output()) {
   tab %>%
@@ -283,26 +282,26 @@ if (knitr::is_latex_output()) {
 
 ### Contemporary utilization of drug classes and individual agents
 
-For all cohorts in the three studies, we will describe overall utilization as well as temporal trends in the use of each drug class and agents within the class. Further, we will evaluate these trends in patient groups by age (18-44 / 45-64 / $\ge$ 65 years), sex, race and geographic regions. 
-These data will provide insight into the current patterns of use ad possible disparities. These data are critical to guide the real-world application of treatment decision pathways for the treatment of HTN patients. 
+For all cohorts in the three studies, we will describe overall utilization as well as temporal trends in the use of each drug class and agents within the class. Further, we will evaluate these trends in patient groups by age (18-44 / 45-64 / $\ge$ 65 years), sex, race, and geographic regions. 
+These data will provide insight into the current patterns of use ad possible disparities. These data are critical to guide the real-world application of treatment decision pathways for the treatment of patients with hypertension. 
 
 Specifically, we will calculate and validate aggregate drug utilization using the OHDSI’s CohortDiagnostics package against data sources. 
-The CohortDiganostics package works in two steps: 1) Generate the utilization results and diagnostics against a data source and 2) Explore the generated utilization and diagnostics in a user-friendly graphical interface R-Shiny app. 
+The CohortDiagnostics package works in two steps: 1) Generate the utilization results and diagnostics against a data source, and 2) Explore the generated utilization and diagnostics in a user-friendly graphical interface R-Shiny app. 
 Through the interface, one can explore patient profiles of a random sample of subjects in a cohort. 
 These diagnostics provide a consistent methodology to evaluate cohort definition and phenotype algorithms across a variety of observational databases. 
-This will enable researchers and stakeholders to become informed on the appropriateness of including specific data sources within analyses, exposing potential risks related to heterogeneity and variability in patient care delivery that, when not addressed in the design, could result in errors such as high correlated covariates in propensity score matching of a target and a comparator cohort. 
-Thus, the added value of this approach is two-fold in terms of exposing data quality for a study question and ensuring face validity checks are performed on proposed covariates to be used for balancing propensity scores.
+This will enable researchers and stakeholders to become informed on the appropriateness of including specific data sources within analyses, exposing potential risks related to heterogeneity and variability in patient care delivery that, when not addressed in the design, could result in errors such as high correlated covariates in PS matching of a target and a comparator cohort. 
+Thus, the added value of this approach is twofold in terms of exposing data quality for a study question and ensuring face validity checks are performed on proposed covariates to be used for balancing PS.
 
 ### Relative risk of cardiovascular and patient-centered outcomes
 
-We will execute a systematic process to estimate the relative risk of cardiovascular and patient-centered outcomes between new-users of second-line HTN agents. 
-The process will adjust for measured confounding, control from further residual (unmeasured) bias and accommodate important design choices to best emulate the nearly impossible to execute, idealized RCT that our stakeholders envision across data source populations, comparators, outcomes, and subgroups. 
+We will execute a systematic process to estimate the relative risk of cardiovascular and patient-centered outcomes between new users of second-line HTN agents. 
+The process will adjust for measured confounding, control for further residual (unmeasured) bias and accommodate important design choices to best emulate the nearly impossible to execute, idealized RCT that our stakeholders envision across data source populations, comparators, outcomes, and subgroups. 
 
-To adjust for potential measured confounding and improve the balance between cohorts, we will build large-scale propensity score (PS) models for each pairwise comparison and data source using a consistent data-driven process through regularized regression. 
-This process engineers a large set of predefined baseline patient characteristics, including age, gender, race, index month/year and other demographics and prior conditions, drug exposures, procedures, laboratory measurements and health service utilization behaviors, to provide the most accurate prediction of treatment and balance patient cohorts across many characteristics. 
+To adjust for potential measured confounding and improve the balance between cohorts, we will build large-scale PS models for each pairwise comparison and data source using a consistent data-driven process through regularized regression. 
+This process engineers a large set of predefined baseline patient characteristics, including age, sex, race, index month/year, other demographics, prior conditions, drug exposures, procedures, laboratory measurements, and health service utilization behaviors, to provide the most accurate prediction of treatment and balance patient cohorts across many characteristics. 
 Construction of condition, drug, procedures and observations include occurrences within 365, 180, and 30 days prior to index date and are aggregated at several SNOMED (condition) and ingredient/ATC class (drug) levels. 
-Other demographic measures include comorbidity risk scores (Charlson, DCSI, CHADS2, CHAD2VASc). 
-From prior work, feature counts have ranged in the 1,000s-10,000s, and these large-scale PS models have outperformed hdPS in simulation and real-world examples.
+Other demographic measures include comorbidity risk scores (Charlson comorbidity index, DCSI, CHADS2, CHAD2VASc). 
+From prior work, feature counts have ranged in the 1,000s-10,000s, and these large-scale PS models have outperformed hdPS in simulation and real-world examples [@Tian2018-xy].
 
 We will:
 
@@ -317,14 +316,15 @@ We will prefer stratification over matching if both sufficiently balance patient
 
 We will execute each comparison using three different TAR definitions, reflecting different and important causal contrasts:
 
-* Intent-to-treat (TAR: index + 1 → end of observation) captures both direct treatment effects and (long-term) behavioral/treatment changes that initial assignment triggers [@Hernan2012-kz];
+* Intent-to-treat (TAR: index + 1 → end of observation) captures both direct treatment effects and (long-term) behavioral/treatment changes that initial assignment triggers  [@Hernan2012-kz];
 * On-treatment-1 (TAR: index + 1 → treatment discontinuation) is more patient-centered [@Murray2018-zf] and captures direct treatment effect while allowing for escalation with additional antihypertensive agents; and
 * On-treatment-2 (TAR: index + 1 → discontinuation or escalation with other antihypertensive agents) carries the least possible confounding with other concurrent antihypertensive agents.
+* Landmark design (TAR: index + 365 → end of observation) excludes patients who lose follow-up or experience the outcome within the first year, to reduce time-related bias [@dafni2011-cq].
 
 Our “on-treatment” is often called “per-protocol”. Systematically executing with multiple causal contrasts enables us to identify potential biases that missing prescription data, treatment escalation and behavioral changes introduce, while preserving the ease of intent-to-treat interpretation and power if the data demonstrate them as unbiased. 
 Appendix A.3 reports the modified cohort exit rule for the on-treatment-2 TAR.
 
-We will aggregate HR estimates across non-overlapping data sources to produce meta-analytic estimates using a random-effects meta-analysis. 
+We will aggregate HR estimates across data sources to produce meta-analytic estimates using a random-effects meta-analysis. 
 The classic meta-analysis assumes that per-data source likelihoods are approximately normally distributed. 
 This assumption fails when outcomes are rare as we expect for some safety events. 
 Here, our recent research shows that as the number of data sources increases, the non-normality effect increases to where coverage of 95% confidence intervals (CIs) can be as low as 5%. 
@@ -333,7 +333,7 @@ To counter this, we will also apply a Bayesian meta-analysis model that neither 
 Residual study bias from unmeasured and systematic sources often remains in observational studies even after controlling for measured confounding through PS-adjustment. 
 For each comparison-outcome effect, we will conduct negative control (falsification) outcome experiments, where the null hypothesis of no effect is believed to be true, using approximately 100 controls. 
 We identified these controls through a data-rich algorithm that identifies prevalent OMOP condition concept occurrences that lack evidence of association with exposures in published literature, drug-product labeling and spontaneous reports, and were then adjudicated by clinical review. 
-We previously validated 60 of the controls in LEGEND-HTN. Appendix C lists these negative controls and their OMOP condition concept IDs.
+We previously validated 60 of the controls in LEGEND-HTN study. Appendix C lists these negative controls and their OMOP condition concept IDs.
 Using the empirical null distributions from these experiments, we will calibrate each study effect HR estimate, its 95% CI and the p-value to reject the null hypothesis of no differential effect. 
 We will declare an HR as significantly different from no effect when its calibrated p < 0.05 without correcting for multiple testing. 
 Finally, blinded to all trial results, study investigators will evaluate study diagnostics for all comparisons to assess if they were likely to yield unbiased estimates (Section 9).
@@ -347,9 +347,9 @@ Within a study, for each exposure pair, we will first rebuild PS models where we
 A limitation of the Cox model is that no doubly robust procedure is believed to exist for estimating HRs, due to their non-collapsibility. 
 Doubly robust procedures combine baseline patient characteristic-adjusted outcome and PS models to control for confounding and, in theory, remain unbiased when either (but not necessarily both) model is correctly specified. 
 Doubly robust procedures do exist for hazard differences, and we will validate the appropriateness of our univariable Cox modelling by comparing estimate differences under an additive hazards model with and without doubly robust-adjustment. 
-In practice, however, neither the outcome nor PS model is correctly specified, leading to systematic error in the observational setting.
+In practice, however, neither the outcome nor the PS model is correctly specified, leading to systematic error in the observational setting.
 
-Missing data of potential concern are patient demographics (gender, age, race)  for our inclusion criteria.
+Missing data of potential concern are patient demographics (sex, age, race)  for our inclusion criteria.
 We will include only individuals whose baseline eligibility can be characterized that will most notably influence race subgroup assessments in the **Heterogeneity Study**.
 No further missing data can arise in our large-scale PS models because all features, with the exception of demographics, simply indicate the presence or absence of health records in a given time-period.  Finally, we limit the impact of missing data, such as prescription information, relating to exposure time-at-risk by entertaining multiple definitions [@Schneeweiss2007-am].
 In all reports, we will clearly tabulate numbers of missing observations and patient attrition.
@@ -357,14 +357,13 @@ In all reports, we will clearly tabulate numbers of missing observations and pat
 # Sample Size and Study Power {#sample-size}
 
 Within each data source, we will execute all comparisons with $\ge$ 1,000 eligible patients per arm.
-Blinded to effect estimates, investigators and stakeholders will evaluate extensive study diagnostics for each comparison to assess reliability and generalizability, and only report risk estimates that pass [@Schuemie2018-zi; @Schuemie2020-wx].
+Blinded to effect estimates, investigators and stakeholders will evaluate extensive study diagnostics for each comparison to assess reliability and generalizability, and only report risk estimates that pass [@Schuemie2018-zi; @Schuemie2020-wx;@Conover2025-jm].
 These diagnostics will include
 
 1. Minimum detectable risk ratio (MDRR) as a typical proxy for power,
 2. Preference score distributions to evaluate empirical equipoise [@Walker2013-za] and population generalizability,
 3. Extensive patient characteristics to evaluate cohort balance before and after PS-adjustment,
-4. Negative control calibration plots to assess residual bias, and
-5. Kaplan-Meier plots to examine hazard ratio proportionality assumptions.
+4. Negative control calibration plots to assess residual bias and systematic error
 
 We will define cohorts to stand in empirical equipoise if the majority of patients carry preference scores between 0.3 and 0.7 and to achieve balance if all after-adjustment characteristics return absolute standardized mean differences $<$ 0.1 [@Austin2009-af].
 
@@ -372,8 +371,8 @@ We will define cohorts to stand in empirical equipoise if the majority of patien
 
 ## Strengths
 
-The strengths of the LegendHtnStepCare study stem from the research question, the methodologies employed, and our commitment to open science:
-*	This study is poised to be the first to systematically address the critical clinical question: What are the relative benefits and risks of adding a second antihypertensive drug to monotherapy in patients with hypertension?
+The strengths of the LEGEND-HTNStepCare study stem from the research question, the methodologies employed, and our commitment to open science:
+*	This study is poised to be the first to systematically address the critical clinical question: What are the comparative benefits and risks of adding different second antihypertensive drugs to monotherapy in patients with hypertension?
 * We are employing massive, diverse real-world datasets and cutting-edge observational research methods to provide comprehensive estimates of effectiveness and safety for second antihypertensive drugs added to monotherapy. These tools have previously evaluated antihypertensive monotherapies, but have not been used to assess the addition of a second drug when monotherapy is insufficient for managing hypertension.
 *	Unlike typical observational research, this study will minimize residual bias by employing reproducible methods to mitigate observed confounding. We will enhance transparency by reporting diagnostics such as empirical equipoise and covariate balance, and by using a large set of control outcomes to detect and correct for any remaining systematic errors. This approach marks a significant advancement in observational research.
 *	We will assess antihypertensive medications at both class and individual drug levels, evaluating effectiveness and safety across patient subgroups defined by demographic and clinical characteristics. This comprehensive approach has not been adequately explored in previous studies.

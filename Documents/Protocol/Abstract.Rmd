@@ -6,25 +6,25 @@ Many patients are unable to reach their target blood pressure with a monotherapy
 
 **Study Description**: We will conduct large-scale, systematic, observational studies to make pairwise comparisons of all stepped care regimens at the drug-, class- and population subgroup-level within our proposed Large-Scale Evidence Generations Across a Network of Database for Hypertension Stepped Care (LEGEND-HTNStepCare) initiative. LEGEND-HTNStepCare will leverage the Observational Health Data Sciences and Informatics (OHDSI) Community that provides access to a standing global network of administrative claims and electronic health record (EHR) data sources. LEGEND-HTNStepCare will study: 
 
-* **Population**: Adult, hypertension patients who newly added a secondary antihypertensive agent for their uncontrolled blood pressure by monotherapy
+* **Population**: Adult patients with hypertension who newly added a secondary antihypertensive agent for their uncontrolled blood pressure by monotherapy
 
-* **Exposures**: The exposure of interest is a combination of monotherapy with the following drug groups (except BB), followed by an addition of drugs from other groups. For example, patients with dCCB added after ACEI monotherapy.
-  - RAS agents: 
+* **Exposures**: The exposure of interest is a combination of monotherapy with the following drug groups (except beta-blocker [BB]), followed by an addition of drugs from other groups. For example, patients with dihydropyridine calcium channel blocker (dCCB) added after angiotension converting enzyme inhibitor (ACEI) monotherapy.
+  - Renin-angiotensin system (RAS) agents: 
     - ACEI: Benazepril, Captopril, Enalapril, Fosinopril, Lisinopril, Moexipril, Perindopril, Quinapril, Ramipril, Trandolapril
-    - ARB: Azilsartan, Candesartan, Eprosartan, Irbesartan, Losartan, Olmesartan, Telmisartan, Valsartan
-  - THZ: Chlorthalidone, Hydrochlorothiazide, Indapamide, Metolazone
+    - Angiotensin receptor blocker (ARB): Azilsartan, Candesartan, Eprosartan, Irbesartan, Losartan, Olmesartan, Telmisartan, Valsartan
+  - Thiazide and thiazide-like diuretics (THZ): Chlorthalidone, Hydrochlorothiazide, Indapamide, Metolazone
   - CCB: 
     - dCCB: Amlodipine, Felodipine, Isradipine, Nicardipine, Nifedipine, Nisoldipine
-    - ndCCB: Diltiazem, Verapamil
+    - non-dihypdropyridine CCB (ndCCB): Diltiazem, Verapamil
   - BB (second-line only): Atenolol, Acebutolol, Betaxolol, Bisoprolol, Carvedilol, Labetalol, Metoprolol, Nadolol, Nebivolol, Penbutolol, Pindolol, Propranolol
 
 * **Outcomes**:
-  - Primary: 3- and 4-point major adverse cardiovascular events
-  - Secondary effectiveness: Acute myocardial infarction, hospitalization with heart failure, revascularization, stroke, sudden cardiac death
-  - Secondary safety: Abdominal pain, Abnormal weight gain, Abnormal weight loss, Acute pancreatitis, Acute renal failure, All-cause mortality, Angioedema, Anaphylactic reaction, Anemia, Anxiety, Bone fracture, Bradycardia, Cardiac arrhythmia, Chest pain or angina, Chronic kidney disease, Cough, Diarrhea, Dementia, Depression, Diarrhea, End stage renal disease, Fall, Gastrointestinal bleeding, Genitourinary infection, Gout, Headache, Hepatic failure, Hyperkalemia, Hypokalemia, Hyponatremia, Hypomagnesemia, Hypotension, Impotence, Joint pain, Malignant neoplasm, Measured renal dysfunction, Nausea, Neutropenia or agranulocytosis, Peripheral edema, Photosensitivity, Rash, Rhabdomyolysis, Syncope, Transient ischemic attack, Thrombocytopenia, Type 2 diabetes, Unstable angina, Vasculitis, Venous thromboembolism, Vertigo, Vomiting
+  - Primary: 3- and 4-point major adverse cardiovascular events (MACE)
+  - Secondary effectiveness: Acute myocardial infarction, Hospitalization with heart failure, Sudden cardiac death, Stroke, Transient ischemic attack, Ischemic stroke, Hemorrhagic stroke, Revascularization, All-cause mortality
+  - Secondary safety: Abdominal pain, Abnormal weight gain, Abnormal weight loss, Acute pancreatitis, Acute renal failure, Anaphylactic reaction, Anemia, Angioedema, Angle-closure glaucoma, Anxiety, Bone fracture, Bradycardia, Breast Cancer, Cardiac arrhythmia, Chest pain or angina, Chronic kidney disease, Cough, Decreased libido, Dementia, Depression, Diarrhea, End stage renal disease, Fall, Gastrointestinal bleeding, Genitourinary infection, Gout, Headache, Hepatic failure, Hyperkalemia, Hypoglycemia, Hypokalemia, Hypomagnesemia, Hyponatremia, Hypotension, Impotence, Insomnia, Interstitial lung disease, Lung cancer, Malignant neoplasm, Measured renal dysfunction, Nausea, Neutropenia, Non-melanoma skin cancer, Open-angle glaucoma, Peripheral edema, Photosensitivity, Pneumonitis, Pulmonary fibrosis, Rash, Rhabdomyolysis, Seizure, Stevens-Johnson syndrome/toxic epidermal necrolysis, Sucide and suicidal ideation, Syncope, Thrombocytopenia, Tinnitus, Type 2 diabetes, Vasculitis, Venous thromboembolism, Vertigo, Vomiting
   
 For each data source and comparison, LEGEND-HTNStepCare will employ a state-of-the-art design:
 
-* **Design**: Observational: active-comparator, new-user cohort study
+* **Design**: Observational, active-comparator, new-user cohort study design
 
-Our systematic framework will address residual confounding, publication bias and $p$-hacking using data-driven, large-scale propensity adjustment for measured confounding, a large set of negative control outcome experiments to address unmeasured and systematic bias, prespecification and full disclosure of hypotheses tested and their results. These approaches capitalize on mature OHDSI open source resources and a large body of clinical and quantitative research that the LEGEND-HTNStepCare investigators originated and continue to drive. Finally, LEGEND-HTNStepCare is dedicated to open science and transparency and will publicly share all our analytic code from reproducible cohort definitions through turn-key software, enabling other research groups to leverage our methods, data, and results in order to verify and extend our findings.
+Our systematic framework will address residual confounding, publication bias and $p$-hacking using data-driven, large-scale propensity adjustment for measured confounding, a large set of negative control outcome experiments to address unmeasured and systematic bias, pre-specification and full disclosure of hypotheses tested and their results. These approaches capitalize on mature OHDSI open source resources and a large body of clinical and quantitative research that the LEGEND-HTNStepCare investigators originated and continue to drive. Finally, LEGEND-HTNStepCare is dedicated to open science and transparency and will publicly share all our analytic code from reproducible cohort definitions through turn-key software, enabling other research groups to leverage our methods, data, and results in order to verify and extend our findings.
