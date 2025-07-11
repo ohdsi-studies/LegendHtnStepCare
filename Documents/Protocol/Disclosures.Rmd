@@ -4,5 +4,5 @@ This study is undertaken within Observational Health Data Sciences and Informati
 **GH** receives grant funding from the US National Institutes of Health and the US Food & Drug Administration and contracts from Johnson and Johnson.
 **PBR** reported being an employee and shareholder of Johnson and Johnson.
 **HMK** received expenses and/or personal fees from UnitedHealth, Element Science, Aetna, Reality Labs, Tesseract/4Catalyst, F-Prime, the Siegfried and Jensen Law Firm, Arnold and Porter Law Firm, and Martin/Baughman Law Firm. He is a co-founder of Refactor Health and HugoHealth, and is associated with contracts, through Yale New Haven Hospital, from the Centers for Medicare & Medicaid Services and through Yale University from Johnson & Johnson.
-**MAS** receives grant funding from the US National Institutes of Health, the US Department of Veterans Affairs and the US Food & Drug Administration and contracts from Johnson and Johnson and IQVIA.
+**MAS** receives grant funding from the US National Institutes of Health and the US Department of Veterans Affairs and contracts from Johnson and Johnson and Gilead Sciences.
 **YL** received support from the Sentara Research Foundation, the National Heart, Lung, and Blood Institute (grant Nos. R01HL169954, R01HL169171) and the Patient-Centered Outcomes Research Institute (No. HM-2022C2-28354).
