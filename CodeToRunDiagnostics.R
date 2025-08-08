@@ -1,6 +1,8 @@
 if(!require('renv')) install.packages('renv')
 library(renv)
 
+library(LegendHtnStepCare) # Please build this package first.
+
 renv::activate()
 renv::restore()
 .rs.restartR()
@@ -12,7 +14,7 @@ library(OhdsiShinyModules)
 library(DatabaseConnector)
 
 workingDir <- file.path(getwd(), 'output')
-if(!file.exist(workingDir)) dir.create(workingDir, recursive = T)
+if(!file.exists(workingDir)) dir.create(workingDir, recursive = T)
 
 ## Please fill below with your own database information
 connectionDetails <- DatabaseConnector::createConnectionDetails(
@@ -71,10 +73,10 @@ analysisSpecifications <- ParallelLogger::loadSettingsFromJson(
 # Execution the study with Strategus
 
 executionSettings <- Strategus::createCdmExecutionSettings(
-  workDatabaseSchema = 'main',
-  cdmDatabaseSchema = 'main',
+  workDatabaseSchema = 'main', #please change this based on your schema name
+  cdmDatabaseSchema = 'main', #please change this based on your schema name
   cohortTableNames = CohortGenerator::getCohortTableNames(
-    cohortTable = 'my_cohorts'),
+    cohortTable = 'LegendHtnStepCare'),
   workFolder = file.path(workingDir, 'strategusWork'),
   resultsFolder = file.path(workingDir, 'strategusOutput'),
   minCellCount = 5
@@ -88,7 +90,7 @@ Strategus::execute(
 
 # Saving results to a sqlite database
 
-resultsDatabaseSchema <- 'main'
+resultsDatabaseSchema <- 'main' #please change this based on your schema name
 resultsConnectionDetails <- DatabaseConnector::createConnectionDetails(
   dbms = 'sqlite',
   server = file.path(workingDir, 'strategusOutput', 'results.sqlite')
