@@ -12,6 +12,7 @@ library(dplyr)
 library(ShinyAppBuilder)
 library(OhdsiShinyModules)
 library(DatabaseConnector)
+remotes::install_github("OHDSI/CohortDiagnostics", ref = 'v3.4.1')
 
 workingDir <- file.path(getwd(), 'output')
 if(!file.exists(workingDir)) dir.create(workingDir, recursive = T)
