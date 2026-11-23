@@ -1,55 +1,5 @@
 # CohortGenerator, CohortDiagnostics, and CohortMethod
 
-# Install packages (run only once)
-
-install.packages(
-  c("remotes", "dplyr", "RSQLite", "CirceR"),
-  repos = "https://cloud.r-project.org"
-)
-
-remotes::install_version(
-  "ParallelLogger",
-  version = "3.5.1",
-  repos = "https://cloud.r-project.org",
-  upgrade = "never"
-)
-
-remotes::install_github(
-  "OHDSI/DatabaseConnector",
-  ref = "v7.0.0",
-  upgrade = "never"
-)
-
-remotes::install_github(
-  "OHDSI/ResultModelManager",
-  ref = "v0.6.2",
-  upgrade = "never"
-)
-
-remotes::install_github(
-  "OHDSI/CohortGenerator",
-  ref = "v1.0.1",
-  upgrade = "never"
-)
-
-remotes::install_github(
-  "OHDSI/CohortMethod",
-  ref = "v5.5.2",
-  upgrade = "never"
-)
-
-remotes::install_github(
-  "OHDSI/CohortDiagnostics",
-  ref = "c4b9c5706bb4418b9c3f4b397fb3ba1fae822e9d",
-  upgrade = "never"
-)
-
-remotes::install_github(
-  "OHDSI/Strategus",
-  ref = "v1.3.1",
-  upgrade = "never"
-)
-
 # Load packages
 
 library(LegendHtnStepCare)
