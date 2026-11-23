@@ -1,7 +1,9 @@
+# Load renv project environment
+renv::load()
+
 # CohortGenerator, CohortDiagnostics, and CohortMethod
 
 # Load packages
-
 library(LegendHtnStepCare)
 library(Strategus)
 library(CohortGenerator)
