@@ -1,5 +1,7 @@
-# Load renv project environment
+# Set up renv environment and install study package
 renv::load()
+renv::restore()
+renv::install(".")
 
 # CohortGenerator, CohortDiagnostics, and CohortMethod
 
